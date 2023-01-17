@@ -8,19 +8,18 @@ import Card from "../components/Card.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function () {
-    return <>
+    return <div className="main-container">
         <Header/>
         <Navbar/>
         <Searchbar/>
         <PopularEvents/>
-
-
-            <Card/>
-
-
+        <Card/>
         <Footer/>
 
 
-    </>
+
+
+
+    </div>
 
 }
