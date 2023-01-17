@@ -24,11 +24,13 @@ export default function () {
             image: 'https://veryveganrecipes.com/wp-content/uploads/2015/12/how-to-make-vegan-portobello-mushroom-burger-recipe.png'
         }
     ]
-    return <div>
+    return <div className="card-area-wrapper">
         <h2>Popular events</h2>
+        <div className="card-area">
         {
             artists.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
         }
+        </div>
     </div>
 
 }
