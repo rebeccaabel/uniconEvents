@@ -14,12 +14,12 @@ export default function () {
         </Link>
         <Link to="events">
             <button>
-                Test
+                Work with us
             </button>
         </Link>
         <Link to="events">
             <button>
-                Test
+                About Us
             </button>
         </Link>
 
