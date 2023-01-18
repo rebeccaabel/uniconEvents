@@ -6,7 +6,7 @@
 
 }
 
-html {
+#root {
     box-sizing: border-box;
     background: linear-gradient(180deg, #D7AFF6 0%, rgba(215, 175, 246, 0) 100%);
 
