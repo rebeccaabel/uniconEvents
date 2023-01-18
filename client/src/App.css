@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +20,10 @@ header {
     position: sticky;
     top: 0;
     background-color: aliceblue;
-    height: 160px;
+    height: 300px;
+    width: 900px;
+    background-size: cover;
+background-image:url("./components/unicornlogo.png");
 }
 
 .top-searchbar{
@@ -77,18 +82,16 @@ nav button{
 }
 .card-area-wrapper h2 {
     text-align: center;
+    font-size: 3rem;
+    padding: 5%;
     width: 100%;
 }
 
 .card-area {
-    /*display: flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; */
+    justify-content: space-around;
     gap: 2em;
-    display: grid;
-
-
-
 }
 
 .card {
@@ -100,8 +103,8 @@ nav button{
     border-radius: 2em;
     width: 350px;
     height: 200px;
-
 }
+
 .card:hover {
     cursor: pointer;
 }
@@ -110,9 +113,24 @@ nav button{
     display: none; 
 }
 
-@media screen and ( min-width: 700px) {
-    .card-area {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+footer {
+    height: 6rem;
+    background-color: black;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer ul {
+    height: 2rem;
+    width: 100%;
+    color: white;
+
+}
+
+footer ul li {
+    width: 6rem;
+    height: 5rem;
+    font-size: 1.5rem;
+
+
 }
