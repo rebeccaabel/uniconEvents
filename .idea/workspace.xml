@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-    </list>
+    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,9 +16,6 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KSD3vDPfFA4nXhUndbdfhCEX7t" />
   <component name="ProjectViewState">
@@ -39,7 +33,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AtomConfig&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -54,8 +48,8 @@
       <workItem from="1673958896533" duration="1184000" />
       <workItem from="1674025764788" duration="1250000" />
       <workItem from="1674027384828" duration="1194000" />
-      <workItem from="1674030315479" duration="295000" />
-      <workItem from="1674034969636" duration="1300000" />
+      <workItem from="1674030875662" duration="908000" />
+      <workItem from="1674035726607" duration="25000" />
     </task>
     <servers />
   </component>
