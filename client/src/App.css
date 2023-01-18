@@ -81,10 +81,13 @@ nav button{
 }
 
 .card-area {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
     gap: 2em;
+    display: grid;
+
+
 
 }
 
@@ -94,14 +97,22 @@ nav button{
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    border-bottom-right-radius: 2em;
-    width: 400px;
+    border-radius: 2em;
+    width: 350px;
     height: 200px;
+
+}
+.card:hover {
+    cursor: pointer;
 }
 
-.card img {
-    width: 10rem;
-}
 .card p {
     display: none; 
+}
+
+@media screen and ( min-width: 700px) {
+    .card-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
