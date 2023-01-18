@@ -4,12 +4,12 @@ export default function () {
     return <nav>
         <Link to="events">
             <button>
-                Events
+                Home
             </button>
         </Link>
         <Link to="artists">
             <button>
-                Artist
+                Advanced search
             </button>
         </Link>
         <Link to="events">

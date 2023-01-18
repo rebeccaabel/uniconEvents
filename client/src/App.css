@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
-
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 html {
     box-sizing: border-box;
     background: linear-gradient(180deg, #D7AFF6 0%, rgba(215, 175, 246, 0) 100%);
-
 }
 
 header {
@@ -19,12 +19,38 @@ header {
     justify-content: end;
     position: sticky;
     top: 0;
-    background-color: aliceblue;
-    height: 300px;
-    width: 900px;
-    background-size: cover;
-background-image:url("./components/unicornlogo.png");
+    background-color: #27272c;
+    height: 5%;
+    width: 100%;
+    /*background-size: cover;
+    background-image:url("./components/LogoPurpleBlack.png");*/
 }
+
+header  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoheader  {
+    width: 35rem;
+    border-radius: 5rem;
+    padding: 2%;
+}
+
+.horse-logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profileheader  {
+    width: 5rem;
+    border-radius: 5rem;
+    position: relative;
+    left: 600%;
+}
+
 
 .top-searchbar{
     display: flex;
@@ -46,7 +72,6 @@ background-image:url("./components/unicornlogo.png");
 
 .top-searchbar input {
     padding-left: 2rem;
-
 }
 
 .top-searchbar button {
@@ -54,7 +79,13 @@ background-image:url("./components/unicornlogo.png");
     height: 3rem;
     border-radius: 0.5rem;
     border: 0;
+}
 
+.top-searchbar button:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 0 40px 30px rgba(165, 238, 245, 0.2);
+    cursor:pointer;
 }
 
 nav {
@@ -63,7 +94,6 @@ nav {
     align-items: center;
     padding: 1em;
     margin-bottom: 2rem;
-
 }
 
 nav button{
@@ -71,7 +101,14 @@ nav button{
     height: 4rem;
     border-radius: 0.5rem;
     border: 0;
+    background-color: #c9b9f1;
+}
 
+nav button:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 0 30px 20px rgba(165, 238, 245, 0.2);
+    cursor:pointer;
 }
 
 .card-area-wrapper {
@@ -85,6 +122,8 @@ nav button{
     font-size: 3rem;
     padding: 5%;
     width: 100%;
+    color:  #c9b9f1;
+    letter-spacing: 0.7rem;
 }
 
 .card-area {
@@ -115,7 +154,7 @@ nav button{
 
 footer {
     height: 6rem;
-    background-color: black;
+    background-color: rgba(222, 189, 189, 0.2);
     text-align: center;
     padding-top: 2rem;
 }
@@ -123,14 +162,17 @@ footer {
 footer ul {
     height: 2rem;
     width: 100%;
-    color: white;
-
 }
 
 footer ul li {
     width: 6rem;
     height: 5rem;
     font-size: 1.5rem;
+}
 
-
+footer p {
+    color: #553177;
+}
+footer ul a {
+    color: #553177;
 }
