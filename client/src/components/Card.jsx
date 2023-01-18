@@ -1,10 +1,8 @@
 import PopularEvents from "./PopularEvents.jsx";
-
+import Penguin from "./Penguin.png"
 export default function ({title, text, image}) {
-    console.log(title)
     return <>
-        <div className="card">
-        <img className="front-images" src={image} alt="artist image"/>
+        <div className="card"  alt='artist picture' style={{backgroundImage:`url(${image})`}}>
         <h3>{title}</h3>
         <p>{text}</p>
         </div>
