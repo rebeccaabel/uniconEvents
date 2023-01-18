@@ -1,0 +1,79 @@
+
+.filter-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.filter-container {
+
+    border: 1px solid black;
+    padding: 5%;
+    width: 50%;
+    background-color: bisque;
+    border-radius: 1rem;
+
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.filter-buttons {
+    display: flex;
+    flex:auto;
+    gap:5%;
+
+}
+
+.filter-buttons button{
+    font-size: 0.5rem;
+    margin-bottom: 5%;
+
+}
+
+.calender-container {
+    display: block;
+}
+
+.calender-container button {
+    display: flex;
+    color: green;
+    margin: 5% auto;
+
+}
+
+
+
+/*
+export default function() {
+    return <div className="filter-container">
+    <div>
+    <h1>Filter by date</h1>
+    </div>
+
+    <div className="filter-buttons">
+
+    <button>Today</button>
+    <button>Tomorrow</button>
+    <button>This Week</button>
+    <button>This Month</button>
+    <button>This Year</button>
+    <button>Next Year</button>
+    <button id="recent-added-events">Recently added events</button>
+
+    </div>
+
+    <div className="calender-container">
+    <input/>
+    <input/>
+    <button>Search</button>
+
+    </div>
+
+    </div>
+
+ */
