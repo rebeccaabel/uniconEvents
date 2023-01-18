@@ -7,6 +7,7 @@ import PopularEvents from "../components/PopularEvents.jsx";
 import Card from "../components/Card.jsx";
 import Footer from "../components/Footer.jsx";
 
+
 export default function () {
     return <>
         <Header/>
