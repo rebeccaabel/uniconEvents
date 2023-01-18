@@ -13,7 +13,6 @@ export default function () {
         <Navbar/>
         <Searchbar/>
         <PopularEvents/>
-        <Card/>
         <Footer/>
     </>
 
