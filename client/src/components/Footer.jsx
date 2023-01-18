@@ -1,8 +1,12 @@
 export default function (){
     return <footer>
-        <i className="fa-brands fa-facebook"></i>
-        <i className="fa-brands fa-twitter"></i>
-        <i className="fa-brands fa-instagram"></i>
+
+        <ul>
+            <a href="https://facebook.com"> <li className="fa-brands fa-facebook"></li> </a>
+            <a href="https://twitter.com"><li className="fa-brands fa-twitter"></li></a>
+            <a href="https://instagram.com"><li className="fa-brands fa-instagram"></li></a>
+        </ul>
+
 
 
         Unicorn events </footer>
