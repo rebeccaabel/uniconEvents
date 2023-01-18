@@ -81,14 +81,10 @@ nav button{
 }
 
 .card-area {
-    /*display: flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; */
+    justify-content: space-between;
     gap: 2em;
-    display: grid;
-
-
-
 }
 
 .card {
@@ -110,9 +106,3 @@ nav button{
     display: none; 
 }
 
-@media screen and ( min-width: 700px) {
-    .card-area {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
