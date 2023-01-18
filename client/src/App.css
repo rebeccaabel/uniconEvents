@@ -20,7 +20,9 @@ header {
     position: sticky;
     top: 0;
     background-color: aliceblue;
-    height: 160px;
+    height: 300px;
+    width: 900px;
+    background-size: cover;
 background-image:url("./components/unicornlogo.png");
 }
 
