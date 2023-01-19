@@ -7,6 +7,7 @@ import PopularEvents from "../components/PopularEvents.jsx";
 import Card from "../components/Card.jsx";
 import Footer from "../components/Footer.jsx";
 import MostRecentEvents from "../components/mostRecentEvents.jsx";
+import TodayEvents from "../components/todayEvents.jsx";
 
 
 export default function () {
@@ -14,6 +15,7 @@ export default function () {
         <Header/>
         <Navbar/>
         <Searchbar/>
+        <TodayEvents/>
         <PopularEvents/>
         <MostRecentEvents/>
         <Footer/>

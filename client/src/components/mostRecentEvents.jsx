@@ -8,12 +8,12 @@ export default function () {
         if (artistsSortedByDateAdded.length > numberOfCardsShown) {
             continue
         }
-        if (artists[i].dateAdded > sortingNumber) {
+        if (artists[i].dateAdded.getTime() >= sortingNumber) {
             artistsSortedByDateAdded.unshift(artists[i])
-            sortingNumber = artists[i].dateAdded
+            sortingNumber = artists[i].dateAdded.getTime()
         } else {
             artistsSortedByDateAdded.push(artists[i])
-            sortingNumber = artists[i].dateAdded
+            sortingNumber = artists[i].dateAdded.getTime()
         }
     }
 
