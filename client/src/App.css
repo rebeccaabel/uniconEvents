@@ -157,11 +157,39 @@ footer ul li {
     font-size: 1.5rem;
 }
 
+
+
+
+
+
 /* formatting of profilepage */
+
+.side-navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 .side-navbar {
     display: flex;
     justify-content: left;
-    flex-direction: column;
-    width: 2rem;
+    width: 5rem;
+    background-color: #D7AFF6;
+
 }
+
+.side-navbar-info {
+    display: flex;
+    justify-content: center;
+    background-color: #D7AFF6;
+
+
+}
+.contact-information-container input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+}
+
+
+

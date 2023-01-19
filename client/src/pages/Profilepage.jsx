@@ -6,7 +6,6 @@ export default function () {
     return <>
         <Header/>
         <h1>Personuppgifter</h1>
-        <Usersettings/>
         <Sidenavbar/>
     </>
 
