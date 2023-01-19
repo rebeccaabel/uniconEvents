@@ -4,6 +4,7 @@ import App from './App'
 import './index.css'
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Router} from "react-router-dom";
 import Startpage from './pages/Startpage.jsx'
+import Profilepage from "./pages/Profilepage.jsx";
 
 
 
@@ -15,6 +16,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                   <Route path={'/'}>
                       <Route index element={<App/>}/>
                       <Route path={'/Startpage'} element={<Startpage/>}/>
+                      <Route path={'/profile'} element={<Profilepage/>}/>
+                      <Route path={'/settings'} element={<Startpage/>}/>
+
+
                   </Route>
               )
           )
