@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/unicornlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/images/unicornlogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ArtistArray.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/filterpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/filterpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" afterDir="false" />
     </list>
