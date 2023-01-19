@@ -6,6 +6,7 @@ import EventsStartpage from "../components/PopularEvents.jsx";
 import PopularEvents from "../components/PopularEvents.jsx";
 import Card from "../components/Card.jsx";
 import Footer from "../components/Footer.jsx";
+import MostRecentEvents from "../components/mostRecentEvents.jsx";
 
 
 export default function () {
@@ -14,6 +15,7 @@ export default function () {
         <Navbar/>
         <Searchbar/>
         <PopularEvents/>
+        <MostRecentEvents/>
         <Footer/>
     </>
 
