@@ -5,26 +5,26 @@ export default function () {
         {
         ArtistImage: "https://veryveganrecipes.com/wp-content/uploads/2015/12/how-to-make-vegan-portobello-mushroom-burger-recipe.png",
         Name: "Taylor Swift",
-        Age: "45",
-        Genre: "Rock n Roll",
+        Age: "Age: 45",
+        Genre: "Genre: Rock n Roll",
         },
         {
             ArtistImage: "https://papunet.net/sites/papunet.net/files/kuvapankki/20190425/14_kysymys_0.png",
             Name: "Taylor Swift",
-            Age: "45",
-            Genre: "Rock n Roll",
+            Age: "Age: 45",
+            Genre: "Genre: Rock n Roll",
         },
         {
             ArtistImage: "https://papunet.net/sites/papunet.net/files/kuvapankki/20190425/14_kysymys_0.png",
             Name: "Taylor Swift",
-            Age: "45",
-            Genre: "Rock n Roll",
+            Age: "Age: 45",
+            Genre: "Genre: Rock n Roll",
         },
         {
             ArtistImage: "https://papunet.net/sites/papunet.net/files/kuvapankki/20190425/14_kysymys_0.png",
             Name: "Taylor Swift",
-            Age: "45",
-            Genre: "Rock n Roll",
+            Age: "Age: 45",
+            Genre: "Genre: Rock n Roll",
         },
     ]
     return <div className="card-area-wrapper">

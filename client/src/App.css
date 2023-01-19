@@ -110,8 +110,32 @@ nav button{
 }
 
 .card p {
-
+display:none;
 }
+.artist-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 350px;
+    height: 200px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.about-artist-text {
+    text-align: left;
+    background-color: azure;
+   border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.artist-details{
+    color: cornflowerblue;
+    padding: 1rem;
+    width: 200px;
+}
+
+
 
 footer {
     height: 6rem;
