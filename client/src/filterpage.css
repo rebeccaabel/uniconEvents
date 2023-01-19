@@ -33,21 +33,37 @@ h1 {
     color: #d4bffa;
 }
 
-.filter-buttons {
+.filter-buttons-dates {
+    display: flex;
+    flex: auto;
+    gap: 5%;
+
+}
+.filter-buttons-cities  {
     display: flex;
     flex: auto;
     gap: 5%;
 
 }
 
-.filter-buttons button {
+.filter-buttons-dates button {
     font-size: 1rem;
     margin-bottom: 5%;
     padding: 0.5rem;
     border-radius: 0.7rem;
 }
 
-.filter-buttons button:hover {
+.filter-buttons-dates button:hover {
+    cursor:pointer;
+}
+.filter-buttons-cities button {
+    font-size: 1rem;
+    margin-bottom: 5%;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.filter-buttons-cities button:hover {
     cursor:pointer;
 }
 
@@ -79,3 +95,17 @@ h1 {
     cursor:pointer;
 }
 
+.card-area-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+
+.card-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
