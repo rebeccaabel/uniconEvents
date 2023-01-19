@@ -1,4 +1,4 @@
-import Card from "./Card.jsx";
+import Eventcard from "./Eventcard.jsx";
 
 
 export default function () {
@@ -58,7 +58,7 @@ export default function () {
         <h2>Popular events</h2>
         <div className="card-area">
         {
-            artists.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
+            artists.map(artist => <Eventcard title={artist.title} text={artist.text} image={artist.image} />)
         }
         </div>
     </div>

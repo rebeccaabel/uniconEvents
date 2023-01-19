@@ -1,4 +1,4 @@
-import Card from "./Card.jsx";
+import Card from "./EventCard.jsx";
 import { artists } from "./artistArray.jsx";
 let artistsSortedByDateAdded = []
 let numberOfCardsShown = 9;

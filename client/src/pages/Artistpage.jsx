@@ -1,11 +1,8 @@
-import {Link} from "react-router-dom";
+import AboutArtists from "../components/AboutArtists.jsx";
 import Header from "../components/Header.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Searchbar from "../components/Searchbar.jsx";
-import PopularEvents from "../components/PopularEvents.jsx";
 import Footer from "../components/Footer.jsx";
-import MostRecentEvents from "../components/mostRecentEvents.jsx";
-import TodayEvents from "../components/todayEvents.jsx";
 
 
 export default function () {
@@ -13,9 +10,7 @@ export default function () {
         <Header/>
         <Navbar/>
         <Searchbar/>
-        <TodayEvents/>
-        <PopularEvents/>
-        <MostRecentEvents/>
+        <AboutArtists/>
         <Footer/>
     </>
 
