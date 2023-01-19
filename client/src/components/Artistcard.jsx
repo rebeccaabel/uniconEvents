@@ -16,9 +16,7 @@ export default function ({ArtistImage,Name,Age,Genre}) {
                     sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua."</p>
             </details>
-
-
-
+            
         </div>
 
     </div>
