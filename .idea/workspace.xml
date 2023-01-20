@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="" />
+    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/profilepage" />
       </map>
     </option>
   </component>
@@ -66,11 +69,7 @@
       <workItem from="1674117723119" duration="5491000" />
       <workItem from="1674124752325" duration="55000" />
       <workItem from="1674125364588" duration="703000" />
-      <workItem from="1674201572450" duration="692000" />
-      <workItem from="1674204310179" duration="996000" />
-      <workItem from="1674205365638" duration="31000" />
-      <workItem from="1674205611645" duration="8329000" />
-      <workItem from="1674221795942" duration="329000" />
+      <workItem from="1674208969519" duration="1139000" />
     </task>
     <servers />
   </component>
