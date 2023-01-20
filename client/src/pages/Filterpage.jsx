@@ -1,9 +1,9 @@
+
 import Header from "../components/Header.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Searchbar from "../components/Searchbar.jsx";
 import Footer from "../components/Footer.jsx";
-import Filter from "../components/Filter.jsx"
-import ArtistArray from "../components/ArtistArray.jsx"
+import Filter from "../components/Filter.jsx";
 
 
 
@@ -14,7 +14,7 @@ export default function () {
         <Navbar/>
         <Searchbar/>
         <Filter/>
-        <ArtistArray/>
+
 
         <Footer/>
     </>
