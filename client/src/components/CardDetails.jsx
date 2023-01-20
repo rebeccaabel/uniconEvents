@@ -1,9 +1,8 @@
 import {useRef} from "react";
-
+import {clearInput} from "./Usersettings.jsx";
 import {artists} from "./artistArray.jsx";
 
 export default function () {
-
 
     function fetchDetails() {
 
@@ -56,7 +55,7 @@ export default function () {
             </div>
 
 
-            <button onClick={fetchDetails}>Purchase</button>
+            <button onClick={clearInput}>Purchase</button>
 
         </div>
 
