@@ -4,9 +4,14 @@ import {useEffect, useState} from "react";
 function clearInput(){
     let getValue = document.getElementsByTagName("input");
     for (let i = 0; i<getValue.length; i++) {
-        if(getValue[i].type == "text"){
+        console.log(getValue[i].value); // logs out the string value
+
+        if(getValue[i].type === "text"){
             getValue[i].value = ""
         }
+
+
+
     }
 
 }
