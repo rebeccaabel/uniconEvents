@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                       <Route index element={<App/>}/>
                       <Route path={'/Startpage'} element={<Startpage/>}/>
                       <Route path={'/Artists'} element={<Artistpage/>}/>
+                      <Route path={'/Filterpage'} element={<Filterpage/>}/>
                   </Route>
               )
           )
