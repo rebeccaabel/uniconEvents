@@ -6,6 +6,7 @@ import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Ro
 import Startpage from './pages/Startpage.jsx'
 import Artistpage from "./pages/Artistpage.jsx";
 import Filterpage from "./pages/Filterpage.jsx";
+import Profilepage from "./pages/Profilepage.jsx";
 
 
 
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                       <Route path={'/Startpage'} element={<Startpage/>}/>
                       <Route path={'/Artists'} element={<Artistpage/>}/>
                       <Route path={'/Filterpage'} element={<Filterpage/>}/>
+                      <Route path={'/profile'} element={<Profilepage/>}/>
                   </Route>
               )
           )
