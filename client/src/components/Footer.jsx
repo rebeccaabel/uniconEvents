@@ -9,5 +9,5 @@ export default function (){
 
 
 
-        Unicorn events </footer>
+        <p>Unicorn events</p> </footer>
 }
