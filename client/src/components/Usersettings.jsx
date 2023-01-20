@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 
 
-function clearInput(){
+export function clearInput(){
     let getValue = document.getElementsByTagName("input");
     for (let i = 0; i<getValue.length; i++) {
         console.log(getValue[i].value); // logs out the string value
@@ -9,9 +9,6 @@ function clearInput(){
         if(getValue[i].type === "text"){
             getValue[i].value = ""
         }
-
-
-
     }
 
 }
