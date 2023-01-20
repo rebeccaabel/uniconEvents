@@ -1,6 +1,22 @@
-import { useState } from "react";
+import {  useRef } from "react";
+
 
 export default function () {
+
+
+
+
+    function fetchDetails() {
+
+
+        let fetchInputs = document.getElementsByTagName('input');
+
+        for(let i = 0; i < fetchInputs.length; i++) {
+            if(fetchInputs[i].value=='') {
+                console.log(fetchInputs[i])
+            }
+        }
+    }
 
     return <div className="payment-wrapper">
         <div className="payment-container">
@@ -21,7 +37,7 @@ export default function () {
                 <form className="date-form"><p>Card digits</p><input type="text"
                                                                      placeholder="Enter card number "/></form>
 
-                <form className="date-form"><p>Expiration date</p><input type="text"
+                <form className="date-form"><p>Expiration date</p><input
                                                                          placeholder="mm/dd"/></form>
                 <form className="date-form"><p>CVC</p><input type="text"
                                                              placeholder="123"/></form>
@@ -31,8 +47,10 @@ export default function () {
             </div>
 
 
-            <button>Purchase</button>
+            <button onClick={fetchDetails} >Purchase</button>
+
         </div>
+
     </div>
 
 }
