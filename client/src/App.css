@@ -154,6 +154,8 @@ nav button:hover {
 .card p {
 display:none;
 }
+
+
 .artist-card{
     display: flex;
     flex-direction: column;
