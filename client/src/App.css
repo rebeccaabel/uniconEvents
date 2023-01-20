@@ -4,11 +4,13 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
-html {
+#root {
     box-sizing: border-box;
     background: linear-gradient(180deg, #D7AFF6 0%, rgba(215, 175, 246, 0) 100%);
+
 }
 
 header {
@@ -19,12 +21,10 @@ header {
     position: sticky;
     top: 0;
     background-color: aliceblue;
-    height: 25vh;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-image: url("./components/unicornlogo.png");
+    height: 300px;
+    width: 900px;
+    background-size: cover;
+background-image:url("./components/unicornlogo.png");
 }
 
 header  {
@@ -74,6 +74,7 @@ header  {
 
 .top-searchbar input {
     padding-left: 2rem;
+
 }
 
 .top-searchbar button {
@@ -81,6 +82,7 @@ header  {
     height: 3rem;
     border-radius: 0.5rem;
     border: 0;
+
 }
 
 .top-searchbar button:hover {
@@ -96,6 +98,7 @@ nav {
     align-items: center;
     padding: 1em;
     margin-bottom: 2rem;
+
 }
 
 nav button{
@@ -119,12 +122,11 @@ nav button:hover {
     flex-wrap: wrap;
     padding: 3rem;
 }
-
 .card-area-wrapper h2 {
     text-align: center;
     font-size: 3rem;
     padding: 5%;
-    width: auto;
+    width: 100%;
 }
 
 .card-area {
@@ -137,23 +139,12 @@ nav button:hover {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    border-radius: 2rem;
+    border-radius: 2em;
     width: 350px;
     height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.card h3 {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), 70%, rgba(255, 255, 255, 0.8));
-    color: black;
-    width: 80%;
-    text-align: center;
-    border-radius: 0.2rem;
 }
 
 .card:hover {
@@ -161,8 +152,9 @@ nav button:hover {
 }
 
 .card p {
-    display: none;
+display:none;
 }
+
 
 .artist-card{
     display: flex;
@@ -175,19 +167,19 @@ nav button:hover {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
-
 .about-artist-text {
     text-align: left;
     background-color: azure;
    border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }
-
 .artist-details{
     color: cornflowerblue;
     padding: 1rem;
     width: 200px;
 }
+
+
 
 footer {
     height: 6rem;
@@ -213,4 +205,71 @@ footer p {
 footer ul a {
     color: #553177;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* formatting of profilepage */
+
+.side-navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-navbar {
+    display: flex;
+    justify-content: left;
+    width: 5rem;
+    background-color: #D7AFF6;
+
+}
+
+.side-navbar-info {
+    display: flex;
+    justify-content: center;
+    background-color: #D7AFF6;
+
+
+}
+.contact-information-container input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+}
+
+
+.update-btn{
+    width: 15em;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: #c9b9f1;
+}
+
+.update-btn:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 0 30px 20px rgba(165, 238, 245, 0.2);
+    cursor:pointer;
+}
+.updated-settings {
+    color: green;
+    text-align: center;
+}
+
+
+
 
