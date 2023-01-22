@@ -1,9 +1,10 @@
 import Card from "./EventCard.jsx";
 import { artists } from "./artistArray.jsx";
-let artistsSortedByToday = []
+
 
 export default function () {
-    const today = new Date()    
+    const today = new Date()
+    let artistsSortedByToday = []
     for (let i = 0; i < artists.length; i++) {
         if (artists[i].date.getFullYear() == today.getFullYear() &
             artists[i].date.getMonth() == today.getMonth() &

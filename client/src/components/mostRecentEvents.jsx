@@ -1,9 +1,13 @@
 import Eventcard from "./Eventcard";
 import { artists } from "./artistArray.jsx";
-let artistsSortedByDateAdded = []
-let numberOfCardsShown = 9;
+
+
+
+
 export default function () {
     let sortingNumber = 0
+    let artistsSortedByDateAdded = []
+    let numberOfCardsShown = 50;
     for (let i = 0; i < artists.length; i++) {
         if (artistsSortedByDateAdded.length > numberOfCardsShown) {
             continue

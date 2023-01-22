@@ -1,5 +1,3 @@
-import Card from "./EventCard.jsx";
-
 export const artists = [
     {
         title: "Taylor Swift",
@@ -122,5 +120,4 @@ export const artists = [
         isBought: false,
         wishList: false,
     }
-
 ]
