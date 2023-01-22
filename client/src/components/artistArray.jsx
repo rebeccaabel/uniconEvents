@@ -1,3 +1,5 @@
+import Card from "./EventCard.jsx";
+
 export const artists = [
     {
         title: "Taylor Swift",
