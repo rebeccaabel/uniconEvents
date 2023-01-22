@@ -64,14 +64,3 @@ export default function () {
     </div>
 
 }
-
-
-
-
-
-
-
-
-
-
-
