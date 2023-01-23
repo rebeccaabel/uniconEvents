@@ -1,9 +1,9 @@
 import {useRef} from "react";
-import {clearInput} from "./Usersettings.jsx";
+import {clearInput} from "./UserSettings.jsx";
 import {artists} from "./artistArray.jsx";
 
 export default function () {
-
+/*
     function fetchDetails() {
 
 
@@ -12,11 +12,15 @@ export default function () {
         for (let i = 0; i < fetchInputs.length; i++) {
             if (fetchInputs[i].value == '') {
                 console.log(fetchInputs[i])
+
+
             }
         }
     }
+*/
 
 
+    console.log(artists[0].date)
     return <div className="payment-wrapper">
 
         <div className="payment-container">
@@ -25,7 +29,7 @@ export default function () {
                 <h1> Event Details</h1>
                 <p>{artists[0].title}</p>
                 <p>{artists[0].location}</p>
-                <p>{artists[0].date}</p>
+                <p>{artists[0].date.toLocaleDateString('sv-SE')}</p>
 
             </div>
             {/*
