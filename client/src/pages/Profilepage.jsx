@@ -1,14 +1,10 @@
-import Header from "../components/Header.jsx";
-import Sidenavbar from "../components/Sidenavbar.jsx";
-import Usersettings from "../components/Usersettings.jsx";
-import Footer from "../components/Footer.jsx";
+import SideNavbar from "../components/Sidenavbar.jsx";
+import {Outlet} from "react-router-dom";
 
 export default function () {
     return <>
-        <Header/>
-        <h1>Personuppgifter</h1>
-        <Sidenavbar/>
-        <Footer/>
+        <SideNavbar/>
+        <Outlet/>
     </>
 
 

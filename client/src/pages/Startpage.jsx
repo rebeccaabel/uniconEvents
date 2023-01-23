@@ -10,12 +10,10 @@ import TodayEvents from "../components/todayEvents.jsx";
 
 export default function () {
     return <>
-        <Header/>
         <Searchbar/>
         <TodayEvents/>
         <PopularEvents/>
         <MostRecentEvents/>
-        <Footer/>
     </>
 
 }

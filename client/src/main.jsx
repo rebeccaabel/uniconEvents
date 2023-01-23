@@ -8,6 +8,7 @@ import Artistpage from "./pages/Artistpage.jsx";
 import Filterpage from "./pages/Filterpage.jsx";
 import Profilepage from "./pages/Profilepage.jsx";
 import Paymentpage from "./pages/Paymentpage.jsx";
+import UserSettings from "./components/UserSettings.jsx";
 
 
 
@@ -16,13 +17,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RouterProvider router={
           createBrowserRouter(
               createRoutesFromElements(
-                  <Route path={'/'}>
-                      <Route index element={<App/>}/>
-                      <Route path={'/Startpage'} element={<Startpage/>}/>
-                      <Route path={'/Artists'} element={<Artistpage/>}/>
-                      <Route path={'/Filterpage'} element={<Filterpage/>}/>
-                      <Route path={'/profile'} element={<Profilepage/>}/>
-                      <Route path={'/Paymentpage'} element={<Paymentpage/>}/>
+                  <Route path={'/'} element={<App/>}>
+                      <Route index element={<Startpage/>}/>
+                      <Route path={'artists'} element={<Artistpage/>}/>
+                      <Route path={'filterpage'} element={<Filterpage/>}/>
+                      <Route path={'profile'} element={<Profilepage/>}>
+                          <Route path={'settings'} element={<UserSettings/>}/>
+                      </Route>
+                      <Route path={'paymentpage'} element={<Paymentpage/>}/>
 
                   </Route>
               )

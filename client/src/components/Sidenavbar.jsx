@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
-import Usersettings from "./Usersettings.jsx";
+import {Link} from "react-router-dom";
+
 
 export default function () {
     const [displayinfo, setinfo] = useState();
@@ -12,9 +13,7 @@ export default function () {
         <div className='side-navbar-wrapper'>
             <div className='side-navbar'>
                 <div>
-                    <button onClick={() => setinfo(Usersettings)}> Settings </button>
-                    <button>My tickets</button>
-                    <button>Calender</button>
+                    <Link to={'/profile/settings'}><button> Settings </button></Link>
                 </div>
             </div>
 

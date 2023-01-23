@@ -266,7 +266,7 @@ footer ul a {
 
 }
 
-.contact-information-container input {
+.contact-information input {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -274,7 +274,7 @@ footer ul a {
 }
 
 
-.update-btn {
+.update-button {
     width: 15em;
     height: 4rem;
     border-radius: 0.5rem;
@@ -282,7 +282,7 @@ footer ul a {
     background-color: #c9b9f1;
 }
 
-.update-btn:hover {
+.update-button:hover {
     transform: scale(1.1);
     z-index: 2;
     box-shadow: 0 0 30px 20px rgba(165, 238, 245, 0.2);

@@ -2,12 +2,12 @@ import {Link} from "react-router-dom";
 
 export default function () {
     return <nav>
-        <Link to="events">
+        <Link to="/startpage">
             <button>
                 Home
             </button>
         </Link>
-        <Link to="artists">
+        <Link to="/artists">
             <button>
                 About Artists
             </button>

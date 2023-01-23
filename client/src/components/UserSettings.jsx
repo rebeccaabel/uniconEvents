@@ -12,7 +12,7 @@ export function clearInput(){
     }
 
 }
-function displayUpdate(target){
+function displayUpdate(){
     document.querySelector(".updated-settings").innerHTML = "Updated"
 //Can be updated once we get the backend data
     clearInput()
@@ -20,14 +20,14 @@ function displayUpdate(target){
 
 export default function () {
     return <>
-        <div className='contact-information-container'>
+        <div className='contact-information'>
             <h2>Contact Information</h2>
             <div className="updated-settings"></div>
             <input placeholder="Name"/>
             <input placeholder="Surname"/>
             <input placeholder="E-mail"/>
             <input placeholder="Address"/>
-            <button className="update-btn" onClick={displayUpdate}>Save</button>
+            <button className="update-button" onClick={displayUpdate}>Save</button>
 
         </div>
 
