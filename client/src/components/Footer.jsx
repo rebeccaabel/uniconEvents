@@ -7,7 +7,6 @@ export default function (){
             <a href="https://instagram.com"><li className="fa-brands fa-instagram"></li></a>
         </ul>
 
-
-
-        <p>Unicorn events</p> </footer>
+        <p>Unicorn events</p>
+    </footer>
 }

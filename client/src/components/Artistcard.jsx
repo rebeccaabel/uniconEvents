@@ -1,6 +1,4 @@
-import aboutArtists from "./AboutArtists.jsx";
 export default function ({ArtistImage,Name,Age,Genre}) {
-    console.log(Age)
     return <div>
         <div className="artist-card"  alt='artist picture' style={{backgroundImage:`url(${ArtistImage})`}}>
 
