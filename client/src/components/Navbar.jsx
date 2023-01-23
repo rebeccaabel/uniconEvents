@@ -12,16 +12,10 @@ export default function () {
                 About Artists
             </button>
         </Link>
-        <Link to="events">
+        <Link to="/filterpage">
             <button>
-                Work with us
+                Advanced search
             </button>
         </Link>
-        <Link to="events">
-            <button>
-                About Us
-            </button>
-        </Link>
-
     </nav>
 }
