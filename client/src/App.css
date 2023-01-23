@@ -50,12 +50,19 @@ header {
     display: flex;
 }
 
+.top-searchbar-wrapper {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
 
 
 .top-searchbar {
     display: flex;
+
     align-items: center;
-    justify-content: space-evenly;
     width: 80%;
     height: 4em;
 
@@ -63,10 +70,24 @@ header {
 
 .top-searchbar input {
     width: 80%;
-    height: 90%;
+    height: 40%;
     border-radius: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
     border: 0;
+    padding:1em;
+
+}
+
+.top-searchbar button {
+    display: flex;
+    align-items: center;
+   font-size: 1em;
+    padding:0.2em;
+    border-radius: 0.3rem;
+    border: 0;
+
+
+
 
 }
 
@@ -245,7 +266,7 @@ footer ul a {
 
 }
 
-.contact-information-container input {
+.contact-information input {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -253,7 +274,7 @@ footer ul a {
 }
 
 
-.update-btn {
+.update-button {
     width: 15em;
     height: 4rem;
     border-radius: 0.5rem;
@@ -261,7 +282,7 @@ footer ul a {
     background-color: #c9b9f1;
 }
 
-.update-btn:hover {
+.update-button:hover {
     transform: scale(1.1);
     z-index: 2;
     box-shadow: 0 0 30px 20px rgba(165, 238, 245, 0.2);
