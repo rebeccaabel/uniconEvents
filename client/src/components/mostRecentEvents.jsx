@@ -1,19 +1,17 @@
 import Eventcard from "./Eventcard";
 import { artists } from "./artistArray.jsx";
-let artistsSortedByDateAdded = []
-let numberOfCardsShown = 9;
+
 export default function () {
     let sortingNumber = 0
+
+    let artistsSortedByDateAdded = []
     for (let i = 0; i < artists.length; i++) {
-        if (artistsSortedByDateAdded.length > numberOfCardsShown) {
-            continue
-        }
-        if (artists[i].dateAdded > sortingNumber) {
+        if (artists[i].dateAdded.getTime() >= sortingNumber) {
             artistsSortedByDateAdded.unshift(artists[i])
-            sortingNumber = artists[i].dateAdded
+            sortingNumber = artists[i].dateAdded.getTime()
         } else {
             artistsSortedByDateAdded.push(artists[i])
-            sortingNumber = artists[i].dateAdded
+            sortingNumber = artists[i].dateAdded.getTime()
         }
     }
 
