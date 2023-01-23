@@ -1,0 +1,132 @@
+.section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.all-wrapper {
+    margin: 5%;
+}
+.all-wrapper i {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green-section {
+    width: 100%;
+    height: 50%;
+    margin: 5%;
+    background-color: #ace54d;
+    border-radius: 1rem;
+    padding: 2% 30% 2% 10%;
+}
+.blue-section {
+    width: 100%;
+    height: 50%;
+    margin: 5%;
+    background-color: #80b4c7;
+    border-radius: 1rem;
+    padding: 2% 30% 2% 10%;
+}
+.purple-section {
+    width: 100%;
+    height: 50%;
+    margin: 5%;
+    background-color: #d4bffa;
+    border-radius: 1rem;
+    padding: 2% 30% 2% 10%;
+}
+.red-section {
+    width: 100%;
+    height: 50%;
+    margin: 5%;
+    background-color: #f35d5d;
+    border-radius: 1rem;
+    padding: 2% 30% 2% 10%;
+
+}
+
+h3 {
+    display: inline;
+}
+
+button {
+    margin-right: 1%;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(165, 238, 245, 0.2);
+}
+
+#numberOfSeats {
+    margin: 2%;
+}
+img {
+    width: 30%;
+    height: 30%;
+}
+
+i {
+    color: black;
+    text-align: center;
+}
+
+@media  (max-width:1000px) {
+    .section-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .green-section {
+        padding: 2% 5% 2% 5%;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 20%;
+    }
+    .blue-section {
+        padding: 2% 5% 2% 5%;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 20%;
+    }
+    .purple-section {
+        padding: 2% 5% 2% 5%;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 20%;
+    }
+    .red-section {
+        padding: 2% 5% 2% 5%;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 20%;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}

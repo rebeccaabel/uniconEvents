@@ -4,6 +4,7 @@ import './App.css'
 import Startpage from "./pages/Startpage.jsx";
 import './Filterpage.css'
 import './Paymentpage.css'
+import './Sectionpage.css'
 
 
 
