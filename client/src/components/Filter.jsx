@@ -1,59 +1,45 @@
-
-
-
-
-
-let todayButtonActive = false;
-
+import { useState } from "react";
+import Card from "./EventCard";
+import { sortByMostRecentAdded, sortIfNextYear, sortIfThisMonth, sortIfThisWeek, sortIfThisYear, sortIfToday, sortIfTomorrow } from "./artistArrayFunctions";
 
 
 export default function () {
+    let [sortedArray, setFilter] = useState([])
 
-
-
-    function testClick() {
-        alert("hello")
+    function mostRecentEventsFilter() {
+        setFilter(sortedArray = sortByMostRecentAdded)
     }
-
-    function filterClick() {
-        if(!todayButtonActive) {
-            todayButtonActive = true;
-        }
-        else {todayButtonActive = false }
-        let todayButton = document.getElementById("today");
-        console.log(todayButtonActive)
-        if (todayButton.textContent == "Today") {
-
-        }
-
-        /*
-        if (todayButtonActive == "true") {
-            todayButtonActive = false;
-        }
-
-        else if (todayButtonActive == "false") {
-            todayButtonActive = true;
-        }
-        alert(todayButtonActive)*/
+    function todayEventsFilter() {
+        setFilter(sortedArray = sortIfToday)
     }
-
-
-
+    function tomorrowEventsFilter() {
+        setFilter(sortedArray = sortIfTomorrow)
+    }
+    function thisWeekEventsFilter(){
+        setFilter(sortedArray = sortIfThisWeek)
+    }
+    function thisMonthEventsFilter(){
+        setFilter(sortedArray = sortIfThisMonth)
+    }
+    function thisYearEventsFilter(){
+        setFilter(sortedArray = sortIfThisYear)
+    }
+    function nextYearEventsFilter(){
+        setFilter(sortedArray = sortIfNextYear)
+    }
 
     return <>
         <h1>Filter by date</h1>
         <div className="filter-container-wrapper">
             <div className="filter-container">
                 <div className="filter-buttons-dates">
-                    <button id="today" onClick={filterClick}
-                            style={{backgroundColor: todayButtonActive ? "black" : "white"}}>Today
-                    </button>
-                    <button>Tomorrow</button>
-                    <button>This Week</button>
-                    <button>This Month</button>
-                    <button>This Year</button>
-                    <button>Next Year</button>
-                    <button id="recent-added-events">Recently added events</button>
+                    <button onClick={todayEventsFilter}>Today</button>
+                    <button onClick={tomorrowEventsFilter}>Tomorrow</button>
+                    <button onClick={thisWeekEventsFilter}>This Week</button>
+                    <button onClick={thisMonthEventsFilter}>This Month</button>
+                    <button onClick={thisYearEventsFilter}>This Year</button>
+                    <button onClick={nextYearEventsFilter}>Next Year</button>
+                    <button onClick={mostRecentEventsFilter}>Recently added events</button>
                 </div>
                 <div className="filter-buttons-cities">
                     <button>Malmö</button>
@@ -72,10 +58,16 @@ export default function () {
 
                 </div>
                 <div className="calender-container">
-                    <button onClick={testClick}>Search</button>
+                    <button>Search</button>
                 </div>
+                <div className="card-area-wrapper">
 
-
+        <div className="card-area">
+            {
+                sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
+            }
+        </div>
+    </div> 
             </div>
         </div>
     </>
