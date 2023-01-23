@@ -1,13 +1,7 @@
-import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 
 
 export default function () {
-    const [displayinfo, setinfo] = useState();
-    useEffect(() => {
-        setinfo('');
-
-    },[])
 
     return <>
         <div className='side-navbar-wrapper'>
@@ -18,7 +12,7 @@ export default function () {
             </div>
 
             <div className='side-navbar-info'>
-                <div>{displayinfo}</div>
+
             </div>
 
         </div>

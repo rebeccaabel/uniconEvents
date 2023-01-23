@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 export default function () {
     return <nav>
-        <Link to="/startpage">
+        <Link to="/">
             <button>
                 Home
             </button>
