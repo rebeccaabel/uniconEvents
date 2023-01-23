@@ -9,7 +9,7 @@ export default function () {
         </Link>
         <Link to="artists">
             <button>
-                Advanced search
+                About Artists
             </button>
         </Link>
         <Link to="events">
