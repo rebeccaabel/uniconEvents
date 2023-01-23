@@ -50,12 +50,19 @@ header {
     display: flex;
 }
 
+.top-searchbar-wrapper {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
 
 
 .top-searchbar {
     display: flex;
+
     align-items: center;
-    justify-content: space-evenly;
     width: 80%;
     height: 4em;
 
@@ -63,10 +70,24 @@ header {
 
 .top-searchbar input {
     width: 80%;
-    height: 90%;
+    height: 40%;
     border-radius: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
     border: 0;
+    padding:1em;
+
+}
+
+.top-searchbar button {
+    display: flex;
+    align-items: center;
+   font-size: 1em;
+    padding:0.2em;
+    border-radius: 0.3rem;
+    border: 0;
+
+
+
 
 }
 
