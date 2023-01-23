@@ -1,5 +1,9 @@
 import {clearInput} from "./UserSettings.jsx";
 import {artists} from "./artistArray.jsx";
+import {sectionAtickets, sectionBtickets, sectionCtickets, sectionDtickets}  from "./Sectionpricing.jsx"
+
+
+
 
 export default function () {
 
@@ -19,10 +23,8 @@ export default function () {
 
             <div className="payment-details">
 
-                <p>Total:
-                    <label>
-                        200kr
-                    </label></p>
+               Total: $
+
                 <form className="date-form"><p>Name on Card</p><input type="text" placeholder="Input name here"/></form>
                 <form className="date-form"><p>Card digits</p><input type="text" placeholder="Enter card number "/></form>
 

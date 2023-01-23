@@ -9,6 +9,7 @@ import Filterpage from "./pages/Filterpage.jsx";
 import Profilepage from "./pages/Profilepage.jsx";
 import Paymentpage from "./pages/Paymentpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
+import Sectionpage from "./pages/Sectionpage.jsx";
 
 
 
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                           <Route path={'settings'} element={<UserSettings/>}/>
                       </Route>
                       <Route path={'paymentpage'} element={<Paymentpage/>}/>
+                      <Route path={'sectionpage'} element={<Sectionpage/>}/>
 
                   </Route>
               )

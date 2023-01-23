@@ -1,18 +1,28 @@
 
 
 export function sectionAtickets() {
-    console.log("hej");
-    let numberOfSeats = document.querySelector('#numberOfSeats');
+    let numberOfSeats = document.getElementById("number1");
     let seats = numberOfSeats.value;
-    console.log(seats)
+    let result = seats*30;
+    console.log("The cost of your tickets will be " + result + " $.")
 
 }
 export function sectionBtickets() {
-
+    let numberOfSeats = document.getElementById('number2');
+    let seats = numberOfSeats.value;
+    let result = seats*40;
+    console.log("The cost of your tickets will be " + result + " $.")
 }
 export function sectionCtickets() {
-    alert("hej")
+    let numberOfSeats = document.getElementById('number3');
+    let seats = numberOfSeats.value;
+    let result = seats*60;
+    console.log("The cost of your tickets will be " + result + " $.")
 }
 export function sectionDtickets() {
-    alert("hej")
+    let numberOfSeats = document.getElementById('number4');
+    let seats = numberOfSeats.value;
+    let result = seats*80;
+    console.log("The cost of your tickets will be " + result + " $.")
 }
+
