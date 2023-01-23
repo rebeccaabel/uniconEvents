@@ -11,7 +11,6 @@ export default function () {
 
     return <>
         <Header/>
-        <Navbar/>
         <Searchbar/>
         <Filter/>
 

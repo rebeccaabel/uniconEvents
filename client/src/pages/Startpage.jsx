@@ -11,7 +11,6 @@ import TodayEvents from "../components/todayEvents.jsx";
 export default function () {
     return <>
         <Header/>
-        <Navbar/>
         <Searchbar/>
         <TodayEvents/>
         <PopularEvents/>

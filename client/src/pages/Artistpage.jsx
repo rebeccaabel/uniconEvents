@@ -8,7 +8,6 @@ import Footer from "../components/Footer.jsx";
 export default function () {
     return <>
         <Header/>
-        <Navbar/>
         <Searchbar/>
         <AboutArtists/>
         <Footer/>
