@@ -90,7 +90,7 @@ export const artists = [
         image: 'https://veryveganrecipes.com/wp-content/uploads/2015/12/how-to-make-vegan-portobello-mushroom-burger-recipe.png',
         dateAdded: new Date("2023/02/01"),
         location: "Borås",
-        date: new Date(),
+        date: new Date('2023/01/05'),
         totalSeats: 200,
         availableSeats: 200,
         isBought: false,
