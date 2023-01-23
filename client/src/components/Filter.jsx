@@ -1,43 +1,17 @@
-
-
-
-
-
 let todayButtonActive = false;
-
-
 
 export default function () {
 
 
-
-    function testClick() {
-        alert("hello")
-    }
-
     function filterClick() {
-        if(!todayButtonActive) {
+        if (!todayButtonActive) {
             todayButtonActive = true;
+        } else {
+            todayButtonActive = false
         }
-        else {todayButtonActive = false }
         let todayButton = document.getElementById("today");
         console.log(todayButtonActive)
-        if (todayButton.textContent == "Today") {
-
-        }
-
-        /*
-        if (todayButtonActive == "true") {
-            todayButtonActive = false;
-        }
-
-        else if (todayButtonActive == "false") {
-            todayButtonActive = true;
-        }
-        alert(todayButtonActive)*/
     }
-
-
 
 
     return <>
@@ -45,8 +19,7 @@ export default function () {
         <div className="filter-container-wrapper">
             <div className="filter-container">
                 <div className="filter-buttons-dates">
-                    <button id="today" onClick={filterClick}
-                            style={{backgroundColor: todayButtonActive ? "black" : "white"}}>Today
+                    <button id="today" onClick={filterClick}>Today
                     </button>
                     <button>Tomorrow</button>
                     <button>This Week</button>
@@ -65,16 +38,13 @@ export default function () {
 
                 <div className="calender-container">
 
-                    <form className="date-form"><p>Please input start date</p><input type="text"
-                                                                                     placeholder="yyyy/mm/dd"/></form>
-                    <form className="date-form"><p>Please input end date</p><input type="text"
-                                                                                   placeholder="yyyy/mm/dd"/></form>
+                    <form className="date-form"><p>Please input start date</p><input type="text" placeholder="yyyy/mm/dd"/></form>
+                    <form className="date-form"><p>Please input end date</p><input type="text" placeholder="yyyy/mm/dd"/></form>
 
                 </div>
                 <div className="calender-container">
-                    <button onClick={testClick}>Search</button>
+                    <button>Search</button>
                 </div>
-
 
             </div>
         </div>

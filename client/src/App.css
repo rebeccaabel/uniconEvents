@@ -17,13 +17,6 @@
 
 }
 
-
-.header-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 header {
     margin-bottom: 2rem;
     display: flex;
@@ -46,16 +39,11 @@ header {
     width: 5rem;
     border-radius: 5rem;
 }
-.top-navbar{
-    display: flex;
-}
 
 .top-searchbar-wrapper {
     display:flex;
     justify-content: space-around;
     align-items: center;
-
-
 }
 
 
@@ -171,7 +159,7 @@ nav button:hover {
 }
 
 .card p {
-    display: none;
+   display: none;
 }
 
 
