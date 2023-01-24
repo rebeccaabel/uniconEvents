@@ -1,34 +1,47 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Card from "./EventCard";
-import { sortByLocation, sortByMostRecentAdded, sortIfNextYear, sortIfThisMonth, sortIfThisWeek, sortIfThisYear, sortIfToday, sortIfTomorrow } from "./artistArrayFunctions";
+import { sortBetweenTwoDates, sortByLocation, sortByMostRecentAdded, sortIfNextYear, sortIfThisMonth, sortIfThisWeek, sortIfThisYear, sortIfToday, sortIfTomorrow } from "./artistArrayFunctions";
 
 
 export default function () {
     let [sortedArray, setFilter] = useState([])
+    let startDate = useRef(null)
+    let endDate = useRef(null)
 
     function mostRecentEventsFilter() {
         setFilter(sortedArray = sortByMostRecentAdded)
     }
+
     function todayEventsFilter() {
         setFilter(sortedArray = sortIfToday)
     }
+
     function tomorrowEventsFilter() {
         setFilter(sortedArray = sortIfTomorrow)
     }
+
     function thisWeekEventsFilter() {
         setFilter(sortedArray = sortIfThisWeek)
     }
+
     function thisMonthEventsFilter() {
         setFilter(sortedArray = sortIfThisMonth)
     }
+
     function thisYearEventsFilter() {
         setFilter(sortedArray = sortIfThisYear)
     }
+
     function nextYearEventsFilter() {
         setFilter(sortedArray = sortIfNextYear)
     }
+
     function locationFilter(input) {
         setFilter(sortedArray = sortByLocation(input))
+    }
+    
+    function sortBetweenTwoDatesFilter(input1, input2) {
+        setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
     }
 
     return <>
@@ -54,14 +67,19 @@ export default function () {
 
                 <div className="calender-container">
 
-                    <form className="date-form"><p>Please input start date</p><input type="text"
-                        placeholder="yyyy/mm/dd" /></form>
-                    <form className="date-form"><p>Please input end date</p><input type="text"
-                        placeholder="yyyy/mm/dd" /></form>
+                    <form className="date-form">
+                    <p>Please input start date</p>
+                    <input type="date" ref={startDate}/>
+                    </form>
+
+                    <form className="date-form">
+                    <p>Please input end date</p>
+                    <input type="date" ref={endDate}/>
+                        </form>
 
                 </div>
                 <div className="calender-container">
-                    <button>Search</button>
+                    <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
                 </div>
                 <div className="card-area-wrapper">
 

@@ -129,11 +129,16 @@ export function sortByLocation(input) {
 
 export function sortBetweenTwoDates(input1, input2) {
     let sortedArray = []
+    const startDate = new Date(input1.current.value)
+    const endDate = new Date(input2.current.value)
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date == location) {
+        if (artists[i].date.getTime() > startDate.getTime() & 
+            artists[i].date.getTime() < endDate.getTime()
+        ) {
             sortedArray.push(artists[i])
         }
     }
+    sortedArray.reverse()
     return sortedArray
 }
