@@ -1,8 +1,19 @@
 import Eventcard from "./Eventcard";
-import { sortByMostRecentAdded } from "./artistArrayFunctions";
+import { artists } from "./artistArray.jsx";
 
 export default function () {
-    let artistsSortedByDateAdded = sortByMostRecentAdded()
+    let sortingNumber = 0
+
+    let artistsSortedByDateAdded = []
+    for (let i = 0; i < artists.length; i++) {
+        if (artists[i].dateAdded.getTime() >= sortingNumber) {
+            artistsSortedByDateAdded.unshift(artists[i])
+            sortingNumber = artists[i].dateAdded.getTime()
+        } else {
+            artistsSortedByDateAdded.push(artists[i])
+            sortingNumber = artists[i].dateAdded.getTime()
+        }
+    }
 
     // Kolla up compare och sort funktion -M
 

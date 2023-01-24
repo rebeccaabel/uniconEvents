@@ -1,8 +1,5 @@
 import {clearInput} from "./UserSettings.jsx";
 import {artists} from "./artistArray.jsx";
-import {Link} from "react-router-dom";
-import PaymentVerifiedTicket from "./PaymentVerifiedTicket.jsx";
-
 
 export default function () {
 
@@ -35,7 +32,7 @@ export default function () {
 
             </div>
 
-            <Link to={'/VerifiedPaymentPage'}><button> Purchase </button></Link>
+            <button onClick={clearInput}>Purchase</button>
 
         </div>
 
