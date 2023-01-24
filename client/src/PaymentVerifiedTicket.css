@@ -19,4 +19,11 @@
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+     
+}
+
+iframe{
+    height: 23rem;
+    border-radius: 5%;
+    box-shadow: 5px 10px 10px 10px rgb(48, 152, 187);
 }
