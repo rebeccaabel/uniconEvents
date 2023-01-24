@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Sectionpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Sectionpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Sectionpricing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Sectionpricing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArray.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="PaymentFinishPage" />
       </map>
     </option>
   </component>
@@ -30,6 +28,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KSD3vDPfFA4nXhUndbdfhCEX7t" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,14 +40,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kimberlymorgan/Desktop/Unicorn events 2/unicornEvents",
+    "last_opened_file_path": "C:/Users/dator/OneDrive/Skrivbord/Projekt/uniconEvents",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "AtomConfig",
-    "ts.external.directory.path": "/Users/kimberlymorgan/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/leozarazaga/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,7 +81,7 @@
       <workItem from="1674458335063" duration="449000" />
       <workItem from="1674482074910" duration="165000" />
       <workItem from="1674482627271" duration="630000" />
-      <workItem from="1674493595904" duration="6130000" />
+      <workItem from="1674548318085" duration="379000" />
     </task>
     <servers />
   </component>

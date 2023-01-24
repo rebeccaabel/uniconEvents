@@ -1,19 +1,5 @@
 import {useEffect, useState} from "react";
 
-
-export function clearInput() {
-    let getValue = document.getElementsByTagName("input");
-    for (let i = 0; i < getValue.length; i++) {
-        console.log(getValue[i].value); // logs out the string value
-
-        if (getValue[i].type === "text") {
-            getValue[i].value = ""
-        }
-    }
-
-}
-
-
 export default function () {
     const [name, setName] = useState('')
     const [surname, setSurname] = useState('')
@@ -33,7 +19,6 @@ export default function () {
         //todo: implement push updated user info to server
 
     }
-
 
 }
 
