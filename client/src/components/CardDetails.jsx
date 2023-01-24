@@ -1,10 +1,25 @@
-import {clearInput} from "./UserSettings.jsx";
+
 import {artists} from "./artistArray.jsx";
 import {Link} from "react-router-dom";
 import PaymentVerifiedTicket from "./PaymentVerifiedTicket.jsx";
+import { useState } from "react";
+
 
 
 export default function () {
+
+    const [name, setName] = useState('');
+    const [digits, setDigits] = useState('');
+    const  [date, setDate] = useState('')
+    const [cvc, setCvc] = useState('')
+
+    function PurchaseButton() {
+        if (name && digits && date && cvc) {
+            return <button className="button-purchase" type="button">Purchase</button>
+        } else {
+            return <button className="button-disabled" type="button" disabled> Purchase</button>
+        }
+    }
 
     return <div className="payment-wrapper">
 
@@ -26,16 +41,18 @@ export default function () {
                     <label>
                         200kr
                     </label></p>
-                <form className="date-form"><p>Name on Card</p><input type="text" placeholder="Input name here"/></form>
-                <form className="date-form"><p>Card digits</p><input type="text" placeholder="Enter card number "/></form>
+                <form className="date-form"><p>Name on Card</p><input value={name} onChange={event => setName(event.target.value)} type="text" placeholder="Input name here"/></form>
+                <form className="date-form"><p>Card digits</p><input value={digits} onChange={event => setDigits(event.target.value)} type="text" placeholder="Enter card number "/></form>
 
-                <form className="date-form"><p>Expiration date</p><input placeholder="mm/dd"/></form>
-                <form className="date-form"><p>CVC</p><input type="text" placeholder="123"/></form>
+                <form className="date-form"><p>Expiration date</p><input value={date} onChange={event => setDate(event.target.value)} placeholder="mm/dd"/></form>
+                <form className="date-form"><p>CVC</p><input value={cvc} onChange={event => setCvc(event.target.value)} type="text" placeholder="123"/></form>
                 <input type="radio" /> Buy for a friend
 
             </div>
 
-            <Link to={'/VerifiedPaymentPage'}><button> Purchase </button></Link>
+
+
+            <Link to={'/VerifiedPaymentPage'}><PurchaseButton/></Link>
 
         </div>
 

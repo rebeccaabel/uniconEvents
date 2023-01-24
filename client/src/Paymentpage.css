@@ -29,8 +29,16 @@ img {
 }
 
 button {
-    margin-bottom: 5%;
+    margin-bottom: 20%;
 
+}
+
+.button-disabled {
+    margin-bottom: 52%;
+}
+
+button:disabled {
+    margin-bottom: 10%;
 }
 
 button:hover {
