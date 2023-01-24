@@ -1,4 +1,4 @@
-import {clearInput} from "./UserSettings.jsx";
+
 import {artists} from "./artistArray.jsx";
 import {Link} from "react-router-dom";
 import PaymentVerifiedTicket from "./PaymentVerifiedTicket.jsx";

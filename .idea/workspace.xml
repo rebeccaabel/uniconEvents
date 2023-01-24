@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArray.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +32,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/dator/OneDrive/Skrivbord/Projekt/uniconEvents",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AtomConfig",
-    "ts.external.directory.path": "/Users/leozarazaga/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dator/OneDrive/Skrivbord/Projekt/uniconEvents&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AtomConfig&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/leozarazaga/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/components" />
@@ -83,6 +80,7 @@
       <workItem from="1674482627271" duration="630000" />
       <workItem from="1674548318085" duration="379000" />
       <workItem from="1674565592512" duration="2869000" />
+      <workItem from="1674581037821" duration="231000" />
     </task>
     <servers />
   </component>
