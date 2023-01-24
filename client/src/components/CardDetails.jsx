@@ -35,9 +35,9 @@ export default function () {
 
             </div>
 
-            <button onClick={clearInput}>Purchase</button>
+            {/* <button onClick={clearInput}>Purchase</button> */}
 
-            <Link to={'../pages/VerifiedPaymentPage.jsx'}><button> Purchase </button></Link>
+            <Link to={'/VerifiedPaymentPage'}><button> Purchase </button></Link>
 
         </div>
 
