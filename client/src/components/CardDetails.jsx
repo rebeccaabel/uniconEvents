@@ -35,8 +35,6 @@ export default function () {
 
             </div>
 
-            {/* <button onClick={clearInput}>Purchase</button> */}
-
             <Link to={'/VerifiedPaymentPage'}><button> Purchase </button></Link>
 
         </div>
