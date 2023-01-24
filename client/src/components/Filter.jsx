@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Card from "./EventCard";
-import { sortByMostRecentAdded, sortIfNextYear, sortIfThisMonth, sortIfThisWeek, sortIfThisYear, sortIfToday, sortIfTomorrow } from "./artistArrayFunctions";
+import { sortByLocation, sortByMostRecentAdded, sortIfNextYear, sortIfThisMonth, sortIfThisWeek, sortIfThisYear, sortIfToday, sortIfTomorrow } from "./artistArrayFunctions";
 
 
 export default function () {
@@ -15,17 +15,20 @@ export default function () {
     function tomorrowEventsFilter() {
         setFilter(sortedArray = sortIfTomorrow)
     }
-    function thisWeekEventsFilter(){
+    function thisWeekEventsFilter() {
         setFilter(sortedArray = sortIfThisWeek)
     }
-    function thisMonthEventsFilter(){
+    function thisMonthEventsFilter() {
         setFilter(sortedArray = sortIfThisMonth)
     }
-    function thisYearEventsFilter(){
+    function thisYearEventsFilter() {
         setFilter(sortedArray = sortIfThisYear)
     }
-    function nextYearEventsFilter(){
+    function nextYearEventsFilter() {
         setFilter(sortedArray = sortIfNextYear)
+    }
+    function locationFilter(input) {
+        setFilter(sortedArray = sortByLocation(input))
     }
 
     return <>
@@ -42,19 +45,19 @@ export default function () {
                     <button onClick={mostRecentEventsFilter}>Recently added events</button>
                 </div>
                 <div className="filter-buttons-cities">
-                    <button>Malmö</button>
-                    <button>Stockholm</button>
-                    <button>Göteborg</button>
-                    <button>Borås</button>
-                    <button>Skövde</button>
+                    <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
+                    <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
+                    <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
+                    <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
+                    <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
                 </div>
 
                 <div className="calender-container">
 
                     <form className="date-form"><p>Please input start date</p><input type="text"
-                                                                                     placeholder="yyyy/mm/dd"/></form>
+                        placeholder="yyyy/mm/dd" /></form>
                     <form className="date-form"><p>Please input end date</p><input type="text"
-                                                                                   placeholder="yyyy/mm/dd"/></form>
+                        placeholder="yyyy/mm/dd" /></form>
 
                 </div>
                 <div className="calender-container">
@@ -62,12 +65,12 @@ export default function () {
                 </div>
                 <div className="card-area-wrapper">
 
-        <div className="card-area">
-            {
-                sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
-            }
-        </div>
-    </div> 
+                    <div className="card-area">
+                        {
+                            sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     </>

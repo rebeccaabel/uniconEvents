@@ -41,7 +41,7 @@ export const artists = [
         text: `Mushrooms are surprisingly similar in taste and texture to meat when cooked, and this mushroom veggie burger recipe may just surprise you with how tasty it is. While mushrooms provide plenty of flavor and texture, the addition of pinto beans makes this recipe high in fiber and protein too. `,
         image: 'https://veryveganrecipes.com/wp-content/uploads/2015/12/how-to-make-vegan-portobello-mushroom-burger-recipe.png',
         dateAdded: new Date("2023/01/22"),
-        location: "Sövde",
+        location: "Skövde",
         date: new Date("2023/03/01"),
         totalSeats: 2005,
         availableSeats: 2005,
