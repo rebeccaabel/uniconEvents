@@ -1,4 +1,4 @@
-import {clearInput} from "./UserSettings.jsx";
+
 import {artists} from "./artistArray.jsx";
 
 export default function () {
