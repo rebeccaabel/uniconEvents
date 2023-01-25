@@ -67,13 +67,7 @@ export default function () {
                     <button onClick={nextYearEventsFilter}>Next Year</button>
                     <button onClick={mostRecentEventsFilter}>Recently added events</button>
                 </div>
-                <div className="filter-buttons-cities">
-                    <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
-                    <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
-                    <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
-                    <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
-                    <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
-                </div>
+              <CitiesFilter/>
 
                 <div className="calender-container">
 
@@ -103,4 +97,13 @@ export default function () {
             </div>
         </div>
     </>
+    function CitiesFilter() {
+        return   <div className="filter-buttons-cities">
+            <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
+            <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
+            <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
+            <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
+            <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
+        </div>
+    }
 }
