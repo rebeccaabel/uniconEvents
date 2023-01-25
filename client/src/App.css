@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
     top: 0;
     height: 100px;
     width: 100%;
@@ -32,72 +33,40 @@ header {
     width: 15%;
     border-radius: 5rem;
     box-shadow: 1px 1px 1px #9a9ae1;
+     padding-right: 5px;
 }
 
 #profileheader {
     display: flex;
-    width: 5rem;
+    width: 2.5rem;
     border-radius: 5rem;
 }
 
-.top-searchbar-wrapper {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
 .top-searchbar {
     display: flex;
-
     align-items: center;
-    width: 80%;
+    width: 2%;
     height: 4em;
-
 }
 
-.top-searchbar input {
-    width: 80%;
-    height: 40%;
+/*.top-searchbar input {
+    width: 50%;
+    height: 15%;
     border-radius: 0.5rem;
     font-size: 1rem;
     border: 0;
     padding:1em;
 
-}
+} */
 
 .top-searchbar button {
     display: flex;
     align-items: center;
-   font-size: 1em;
+    font-size: 1em;
     padding:0.2em;
     border-radius: 0.3rem;
-    border: 0;
-
-
-
-
+   /* border: 0; */
 }
-
-/*.top-searchbar input {
-    padding-left: 2rem;
-
-}
-
-.top-searchbar button {
-    width: 6rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    border: 0;
-
-}
-
-.top-searchbar button:hover {
-    transform: scale(1.1);
-    z-index: 2;
-    box-shadow: 0 0 40px 30px rgba(165, 238, 245, 0.2);
-    cursor: pointer;
-} */
 
 nav {
     display: flex;
@@ -106,19 +75,15 @@ nav {
 }
 
  nav button {
-    width: 10em;
-    height: 4rem;
-    border-radius: 0.5rem;
-    border: 0;
-    margin: 1em;
-    background-color: #c9b9f1;
+    width: 8em;
+    height: 2.5rem;
+     background: transparent;
+     border: transparent;
 }
 
 nav button:hover {
-    transform: scale(1.1);
-    z-index: 2;
-    box-shadow: 0 0 30px 20px rgba(165, 238, 245, 0.2);
     cursor: pointer;
+    font-weight: bolder;
 }
 
 .card-area-wrapper {
@@ -187,8 +152,6 @@ nav button:hover {
     padding: 1rem;
     width: 200px;
 }
-
-
 
 footer {
     height: 6rem;
