@@ -21,7 +21,7 @@ export default function () {
 
             <div className="payment-details">
 
-                {returnPrice()}
+
 
                 <form className="date-form"><p>Name on Card</p><input type="text" placeholder="Input name here"/></form>
                 <form className="date-form"><p>Card digits</p><input type="text" placeholder="Enter card number "/></form>

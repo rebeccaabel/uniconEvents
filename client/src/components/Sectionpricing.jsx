@@ -1,11 +1,10 @@
-import useRef from "react";
-import returnPrice from "CardDetails";
-
-export function sectionAtickets(input) {
-    let numberOfSeats1 = input;
-    let seats1 = numberOfSeats1;
+export function sectionAtickets() {
+    let numberOfSeats1 = document.getElementById("#number1");
+    let seats1 = numberOfSeats1.value;
     let result1 = seats1*30;
-    return returnPrice(result1);
+    console.log(result1);
+    console.log(numberOfSeats1);
+    //console.log("The cost of your tickets will be " + result1 + " $.")
 }
 export function sectionBtickets() {
     let numberOfSeats2 = document.getElementById('number2');

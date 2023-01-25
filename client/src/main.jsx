@@ -11,13 +11,10 @@ import Paymentpage from "./pages/Paymentpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
 import PaymentVerifiedTicket from "./components/PaymentVerifiedTicket.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
+import Sectionpage from "./pages/Sectionpage.jsx"
 
-                  </Route>
-              )
-          )
-      }/>
 
-  </React.StrictMode>,
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <RouterProvider router={

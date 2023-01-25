@@ -1,26 +1,21 @@
-
 import arena from "../images/Section.png"
 import {Link} from "react-router-dom";
 import React, {useState} from "react";
 import {sectionAtickets, sectionBtickets, sectionCtickets, sectionDtickets} from "./Sectionpricing.jsx";
-import {useRef} from "react";
 
-
+function chooseNumberOfSeats () {
+    return  <>
+        <label htmlFor="seats">Choose number of tickets</label>
+        <select name="numberOfSeats" id="numberOfSeats">
+            <option value="0" id="number0">0</option>
+            <option value="1" id="number1">1</option>
+            <option value="2" id="number2">2</option>
+            <option value="3" id="number3">3</option>
+            <option value="4" id="number4">4</option>
+        </select>
+    </>
+}
 export default function () {
-    function chooseNumberOfSeats () {
-        let selectedTickets = useRef(null);
-
-        return <>
-            <select ref={selectedTickets}>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <p>Selected amount of seats: {selectedTickets}</p>
-        </>
-    }
     return <>
         <div className="all-wrapper">
             <div className="section-wrapper">
@@ -30,7 +25,7 @@ export default function () {
                         <h3>Section A </h3><p>- 30$ per ticket. Seated section. </p>
                         {chooseNumberOfSeats()}
                         <Link to="/Paymentpage">
-                            <button onClick ={ () => {sectionAtickets({selectedTickets})}}>Proceed to payment</button>
+                            <button onClick={sectionAtickets}>Proceed to payment</button>
                         </Link>
                     </div>
                     <div className="blue-section">
