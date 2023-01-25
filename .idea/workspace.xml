@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="" />
+    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Paymentpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Paymentpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +82,7 @@
       <workItem from="1674548318085" duration="379000" />
       <workItem from="1674571718289" duration="2245000" />
       <workItem from="1674639420560" duration="7000" />
+      <workItem from="1674639802451" duration="3982000" />
     </task>
     <servers />
   </component>

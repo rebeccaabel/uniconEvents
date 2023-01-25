@@ -20,7 +20,9 @@
     margin: 5% 5%;
 }
 
-
+input::placeholder {
+    margin-left: 2%;
+}
 
 
 img {
@@ -50,4 +52,10 @@ input {
 a button:disabled {
     margin-bottom: 2rem;
     width:5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

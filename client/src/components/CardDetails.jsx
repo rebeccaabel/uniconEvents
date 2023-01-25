@@ -11,10 +11,10 @@ export default function () {
     const [name, setName] = useState('');
     const [digits, setDigits] = useState('');
     const  [date, setDate] = useState('')
-    const [cvc, setCvc] = useState('')
+    const [C, setCvc] = useState('')
 
     function PurchaseButton() {
-        if (name && digits && date && cvc) {
+        if (name && digits && date && C) {
             return <button className="button-purchase" type="button">Purchase</button>
         } else {
             return <button className="button-disabled" type="button" disabled>Purchase</button>
@@ -37,15 +37,15 @@ export default function () {
 
             <div className="payment-details">
 
-                <p>Total:
-                    <label>
-                        200kr
-                    </label></p>
-                <form className="date-form"><p>Name on Card</p><input value={name} onChange={event => setName(event.target.value)} type="text" placeholder="Input name here"/></form>
-                <form className="date-form"><p>Card digits</p><input value={digits} onChange={event => setDigits(event.target.value)} type="text" placeholder="Enter card number "/></form>
 
-                <form className="date-form"><p>Expiration date</p><input value={date} onChange={event => setDate(event.target.value)} placeholder="mm/dd"/></form>
-                <form className="date-form"><p>CVC</p><input value={cvc} onChange={event => setCvc(event.target.value)} type="text" placeholder="123"/></form>
+                    <label>
+                        <p>Total: 200 kr</p>
+                    </label>
+                <form className="date-form"><p>Name on Card</p><input value={name} onChange={event => setName(event.target.value)} type="text" placeholder="Input name here"/></form>
+                <form className="date-form"><p>Card digits</p><input value={digits} onChange={event => setDigits(event.target.value)} type="number" placeholder="Enter card number "/></form>
+
+                <form className="date-form"><p>Expiration date</p><input value={date} onChange={event => setDate(event.target.value)} type="number" placeholder="mm/dd"/></form>
+                <form className="date-form"><p>CVC</p><input value={C} onChange={event => setCvc(event.target.value)} type="text" maxLength="3" placeholder="123"/></form>
                 <input type="radio" /> Buy for a friend
 
             </div>
