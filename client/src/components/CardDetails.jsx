@@ -1,11 +1,7 @@
 
 import {artists} from "./artistArray.jsx";
-import {sectionAtickets} from "./Sectionpricing.jsx";
+import {Link} from "react-router-dom";
 
-
-/*function returnPrice(input) {
-    return <>
-    <p>{input}</p></>*/
 
 export default function () {
 
@@ -36,10 +32,8 @@ export default function () {
 
             </div>
 
-            <button onClick={clearInput}>Purchase</button>
-
+            <Link to={'/VerifiedPaymentPage'}><button> Purchase </button></Link>
         </div>
-
     </div>
 
 }
