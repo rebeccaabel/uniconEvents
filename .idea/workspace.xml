@@ -10,10 +10,9 @@
       <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Sectionpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Sectionpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Sectionpricing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Sectionpricing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/artistArrayFunctions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArrayFunctions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
