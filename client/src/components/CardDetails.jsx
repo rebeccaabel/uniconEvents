@@ -17,7 +17,7 @@ export default function () {
         if (name && digits && date && cvc) {
             return <button className="button-purchase" type="button">Purchase</button>
         } else {
-            return <button className="button-disabled" type="button" disabled> Purchase</button>
+            return <button className="button-disabled" type="button" disabled>Purchase</button>
         }
     }
 
