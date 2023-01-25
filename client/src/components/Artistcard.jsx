@@ -1,3 +1,5 @@
+import Button from "../components/ButtonToSectionPage.jsx";
+
 export default function ({ArtistImage,Name,Age,Genre}) {
     return <div>
         <div className="artist-card"  alt='artist picture' style={{backgroundImage:`url(${ArtistImage})`}}>
@@ -14,9 +16,9 @@ export default function ({ArtistImage,Name,Age,Genre}) {
                     sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua."</p>
             </details>
-
-            <button>Buy Ticket/s</button>
             
+            <Button/>
+
         </div>
 
     </div>
