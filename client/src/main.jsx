@@ -11,6 +11,7 @@ import Paymentpage from "./pages/Paymentpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
 import PaymentVerifiedTicket from "./components/PaymentVerifiedTicket.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
+import MyCalender from "./components/MyCalender.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'filterpage'} element={<Filterpage/>}/>
                         <Route path={'profile'} element={<Profilepage/>}>
                             <Route path={'settings'} element={<UserSettings/>}/>
+                            <Route path={'MyCalender'} element={<MyCalender/>}/>
                         </Route>
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
