@@ -1,6 +1,16 @@
-import { useRef, useState } from "react";
+import {useRef, useState} from "react";
 import Card from "./EventCard";
-import { sortBetweenTwoDates, sortByLocation, sortByMostRecentAdded, sortIfNextYear, sortIfThisMonth, sortIfThisWeek, sortIfThisYear, sortIfToday, sortIfTomorrow } from "./artistArrayFunctions";
+import {
+    sortBetweenTwoDates,
+    sortByLocation,
+    sortByMostRecentAdded,
+    sortIfNextYear,
+    sortIfThisMonth,
+    sortIfThisWeek,
+    sortIfThisYear,
+    sortIfToday,
+    sortIfTomorrow
+} from "./artistArrayFunctions";
 
 
 export default function () {
@@ -39,7 +49,7 @@ export default function () {
     function locationFilter(input) {
         setFilter(sortedArray = sortByLocation(input))
     }
-    
+
     function sortBetweenTwoDatesFilter(input1, input2) {
         setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
     }
@@ -68,14 +78,14 @@ export default function () {
                 <div className="calender-container">
 
                     <form className="date-form">
-                    <p>Please input start date</p>
-                    <input type="date" ref={startDate}/>
+                        <p>Please input start date</p>
+                        <input type="date" ref={startDate}/>
                     </form>
 
                     <form className="date-form">
-                    <p>Please input end date</p>
-                    <input type="date" ref={endDate}/>
-                        </form>
+                        <p>Please input end date</p>
+                        <input type="date" ref={endDate}/>
+                    </form>
 
                 </div>
                 <div className="calender-container">
@@ -85,7 +95,8 @@ export default function () {
 
                     <div className="card-area">
                         {
-                            sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
+                            sortedArray.map(artist => <Card title={artist.title} text={artist.text}
+                                                            image={artist.image}/>)
                         }
                     </div>
                 </div>

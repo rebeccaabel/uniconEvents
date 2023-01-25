@@ -1,4 +1,4 @@
-import { artists } from "./artistArray.jsx";
+import {artists} from "./artistArray.jsx";
 
 export function sortByMostRecentAdded() {
     let sortingNumber = 0
@@ -20,9 +20,9 @@ export function sortIfToday() {
     const today = new Date()
     let sortedArray = []
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date.getFullYear() == today.getFullYear() &
-            artists[i].date.getMonth() == today.getMonth() &
-            artists[i].date.getDate() == today.getDate()
+        if (artists[i].date.getFullYear() === today.getFullYear() &
+            artists[i].date.getMonth() === today.getMonth() &
+            artists[i].date.getDate() === today.getDate()
 
             /*  
             IMPLEMENT THIS WHEN WE GET THE REAL JSON-FILE FOR THE EVENTS
@@ -40,10 +40,10 @@ export function sortIfTomorrow() {
     let sortedArray = []
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date.getFullYear() == today.getFullYear() &
-            artists[i].date.getMonth() == today.getMonth() &
-            artists[i].date.getDate() + 1 == today.getDate()
-            ) {
+        if (artists[i].date.getFullYear() === today.getFullYear() &
+            artists[i].date.getMonth() === today.getMonth() &
+            artists[i].date.getDate() + 1 === today.getDate()
+        ) {
             sortedArray.push(artists[i])
         }
     }
@@ -55,10 +55,10 @@ export function sortIfThisWeek() {
     let sortedArray = []
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date.getFullYear() == today.getFullYear() &
-            artists[i].date.getMonth() == today.getMonth() &
+        if (artists[i].date.getFullYear() === today.getFullYear() &
+            artists[i].date.getMonth() === today.getMonth() &
             artists[i].date.getDate() >= today.getDate() &
-            artists[i].date.getDate() +7 < today.getDate() 
+            artists[i].date.getDate() + 7 < today.getDate()
         ) {
             sortedArray.push(artists[i])
         }
@@ -71,7 +71,7 @@ export function sortIfThisMonth() {
     let sortedArray = []
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date.getMonth() == today.getMonth()
+        if (artists[i].date.getMonth() === today.getMonth()
         ) {
             sortedArray.push(artists[i])
         }
@@ -84,7 +84,7 @@ export function sortIfThisYear() {
     let sortedArray = []
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date.getFullYear() == today.getFullYear()
+        if (artists[i].date.getFullYear() === today.getFullYear()
         ) {
             sortedArray.push(artists[i])
         }
@@ -97,7 +97,7 @@ export function sortIfNextYear() {
     let sortedArray = []
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date.getFullYear() == today.getFullYear() + 1) {
+        if (artists[i].date.getFullYear() === today.getFullYear() + 1) {
             sortedArray.push(artists[i])
         }
     }
@@ -109,7 +109,7 @@ export function sortIfInName(input) {
     let sortedArray = []
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].title == name) {
+        if (artists[i].title === name) {
             sortedArray.push(artists[i])
         }
     }
@@ -120,7 +120,7 @@ export function sortByLocation(input) {
     let sortedArray = []
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].location == location) {
+        if (artists[i].location === location) {
             sortedArray.push(artists[i])
         }
     }
@@ -133,7 +133,7 @@ export function sortBetweenTwoDates(input1, input2) {
     const endDate = new Date(input2.current.value)
 
     for (let i = 0; i < artists.length; i++) {
-        if (artists[i].date.getTime() > startDate.getTime() & 
+        if (artists[i].date.getTime() > startDate.getTime() &
             artists[i].date.getTime() < endDate.getTime()
         ) {
             sortedArray.push(artists[i])

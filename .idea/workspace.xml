@@ -8,6 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/artistArrayFunctions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArrayFunctions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
