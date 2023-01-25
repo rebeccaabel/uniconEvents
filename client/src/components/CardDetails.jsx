@@ -1,11 +1,11 @@
-import {clearInput} from "./UserSettings.jsx";
+
 import {artists} from "./artistArray.jsx";
 import {sectionAtickets} from "./Sectionpricing.jsx";
 
 
-function returnPrice(input) {
+/*function returnPrice(input) {
     return <>
-    <p>{input}</p></>
+    <p>{input}</p></>*/
 
 export default function () {
 
