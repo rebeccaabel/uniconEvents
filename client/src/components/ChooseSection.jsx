@@ -1,58 +1,27 @@
-import arena from "../images/Section.png"
-import {Link} from "react-router-dom";
-import React, {useState} from "react";
-import {sectionAtickets, sectionBtickets, sectionCtickets, sectionDtickets} from "./Sectionpricing.jsx";
+import Buttons from "../Components/Seat.jsx"
+import {Link} from "react-router-dom"
 
-function chooseNumberOfSeats () {
-    return  <>
-        <label htmlFor="seats">Choose number of tickets</label>
-        <select name="numberOfSeats" id="numberOfSeats">
-            <option value="0" id="number0">0</option>
-            <option value="1" id="number1">1</option>
-            <option value="2" id="number2">2</option>
-            <option value="3" id="number3">3</option>
-            <option value="4" id="number4">4</option>
-        </select>
-    </>
-}
 export default function () {
     return <>
-        <div className="all-wrapper">
-            <div className="section-wrapper">
-                <img src={arena} alt="arena-image"/>
-                <div className="pricing-wrapper">
-                    <div className="green-section">
-                        <h3>Section A </h3><p>- 30$ per ticket. Seated section. </p>
-                        {chooseNumberOfSeats()}
-                        <Link to="/Paymentpage">
-                            <button onClick={sectionAtickets}>Proceed to payment</button>
-                        </Link>
-                    </div>
-                    <div className="blue-section">
-                        <h3>Section B </h3><p>  - 40$ per ticket. Seated section. </p>
-                        {chooseNumberOfSeats()}
-                        <Link to="/Paymentpage">
-                            <button onClick ={sectionBtickets}>Proceed to payment</button>
-                        </Link>
-                    </div>
-                    <div className="purple-section">
-                        <h3>Section C </h3><p>- 60$ per ticket. Seated section. </p>
-                        {chooseNumberOfSeats()}
-                        <Link to="/Paymentpage">
-                            <button onClick ={sectionCtickets}>Proceed to payment</button>
-                        </Link>
-                    </div>
-                    <div className="red-section">
-                        <h3>Section D </h3><p>- 80$ per ticket. This is the standing section.</p>
-                        {chooseNumberOfSeats()}
-                        <Link to="/Paymentpage">
-                            <button onClick ={sectionDtickets}>Proceed to payment</button>
-                        </Link>
-                    </div>
-                </div>
+        <div id="outer-div1">
+        <div id="outer-div">
+            <div id="stage-area"><h1>STAGE</h1></div>
+            <div id="standing-area"><h2>STANDING AREA</h2></div>
+            <div id="seated-area">
+                <h4>This is the seated area. Please choose your preferred seats.</h4>
+                <Buttons/>
             </div>
-            <i>*  Please note that you can only purchase tickets for one section at once. If you wish to purchase tickets
-                for multiple sections, you will have to split your booking into multiple sessions. No need to grieve, you have probably had worse problems than this. </i>
+            <div id="price-ticket-button">
+
+                <p>You have chosen seats number: x, y, z for the seated area</p>
+                <p>You have chosen x amount of tickets for the standing area</p>
+                <p>The price of your tickets will be: xxx kr</p>
+
+                <Link to={"/Paymentpage.jsx"}>
+                    <button>Proceed to payment</button>
+                </Link>
+            </div>
+        </div>
         </div>
     </>
 }
