@@ -4,87 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-24__09_32__Changes_.xml" afterDir="false" />
+    <list default="true" id="08718784-2e30-4dd7-b4f7-2e2bc133701e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Sectionpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Sectionpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/artistArrayFunctions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArrayFunctions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2KSD3vDPfFA4nXhUndbdfhCEX7t" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kimberlymorgan/Desktop/Unicorn events 2/unicornEvents",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AtomConfig",
-    "ts.external.directory.path": "/Users/kimberlymorgan/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/components" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="" />
-      <created>1673958895404</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1673958895404</updated>
-      <workItem from="1673958896533" duration="1184000" />
-      <workItem from="1674025764788" duration="1250000" />
-      <workItem from="1674027384828" duration="1194000" />
-      <workItem from="1674030875662" duration="908000" />
-      <workItem from="1674035726607" duration="25000" />
-      <workItem from="1674036515506" duration="11000" />
-      <workItem from="1674047141868" duration="1210000" />
-      <workItem from="1674050074136" duration="653000" />
-      <workItem from="1674115249757" duration="2279000" />
-      <workItem from="1674117723119" duration="5491000" />
-      <workItem from="1674124752325" duration="55000" />
-      <workItem from="1674125364588" duration="703000" />
-      <workItem from="1674208969519" duration="1139000" />
-      <workItem from="1674222967486" duration="113000" />
-      <workItem from="1674458335063" duration="449000" />
-      <workItem from="1674482074910" duration="165000" />
-      <workItem from="1674482627271" duration="630000" />
-      <workItem from="1674493595904" duration="6130000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>
