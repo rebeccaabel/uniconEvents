@@ -2,8 +2,7 @@ import Buttons from "../Components/Seat.jsx"
 import {Link} from "react-router-dom"
 
 export default function () {
-    return <>
-        <div id="outer-div1">
+    return <div id="outer-div1">
         <div id="outer-div">
             <div id="stage-area"><h1>STAGE</h1></div>
             <div id="standing-area"><h2>STANDING AREA</h2></div>
@@ -22,6 +21,6 @@ export default function () {
                 </Link>
             </div>
         </div>
-        </div>
-    </>
+
+</>
 }
