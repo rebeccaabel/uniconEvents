@@ -1,18 +1,18 @@
-.payment-wrapper {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.payment-container {
-    display:flex;
+.main-content {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    width: 80%;
+    margin: 0 30%;
     margin-bottom: 10%;
     background-color: rgba(255, 255, 255, 0.26);
+
+
+}
+
+.event-details {
     text-align: center;
 }
 
@@ -24,21 +24,27 @@ input::placeholder {
     margin-left: 2%;
 }
 
+.radio-button {
+    margin-top: 5%;
+}
+
 
 img {
     width:50%;
     border-radius: 5%;
 }
 
-button {
-    margin-bottom: 20%;
-
-}
-
-
 
 .button-purchase {
+    margin-bottom: 2rem;
     width:5rem;
+    border:0;
+}
+
+a button:disabled {
+    margin-bottom: 2rem;
+    width:5rem;
+    border:0;
 }
 
 button:hover {
@@ -49,10 +55,7 @@ input {
     border:0;
 }
 
-a button:disabled {
-    margin-bottom: 2rem;
-    width:5rem;
-}
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -13,6 +13,7 @@ export default function () {
     const  [date, setDate] = useState('')
     const [C, setCvc] = useState('')
 
+
     function PurchaseButton() {
         if (name && digits && date && C) {
             return <button className="button-purchase" type="button">Purchase</button>
@@ -21,9 +22,10 @@ export default function () {
         }
     }
 
-    return <div className="payment-wrapper">
 
-        <div className="payment-container">
+
+
+    return <div className="main-content">
 
             <div className="event-details">
                 <h1> Event Details</h1>
@@ -46,7 +48,7 @@ export default function () {
 
                 <form className="date-form"><p>Expiration date</p><input value={date} onChange={event => setDate(event.target.value)} type="number" placeholder="mm/dd"/></form>
                 <form className="date-form"><p>CVC</p><input value={C} onChange={event => setCvc(event.target.value)} type="text" maxLength="3" placeholder="123"/></form>
-                <input type="radio" /> Buy for a friend
+                <input className="radio-button" type="radio" value="buy-for-friend" name="friend" /> Buy for a friend
 
             </div>
 
@@ -56,6 +58,6 @@ export default function () {
 
         </div>
 
-    </div>
+
 
 }
