@@ -9,63 +9,76 @@
 
 #root {
     box-sizing: border-box;
-   /* background: linear-gradient(180deg, #D7AFF6 0%, rgba(215, 175, 246, 0) 100%);
-    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);*/
-
-    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-
+   /* background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    background-image: url("/images/Group 1background.png");
 
 }
 
 header {
     margin-bottom: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: sticky;
+    background-color: white;
     top: 0;
     height: 100px;
-    width: 100%;
+}
+
+
+#logoheader {
+    display: flex;
+    padding-left: 15px;
+    width: 4.5rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
 
 }
 
- #logoheader {
-    width: 15%;
-    border-radius: 5rem;
-    box-shadow: 1px 1px 1px #9a9ae1;
-     padding-right: 5px;
+#header-title{
+    display: flex;
+    margin-bottom: 6.5rem;
+    margin-right: 15rem;
+    margin-left: 1rem;
+    width: 20em;
 }
 
 #profileheader {
     display: flex;
-    width: 2.5rem;
+    width: 2rem;
     border-radius: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
 }
 
-.top-searchbar {
+.searchbar{
     display: flex;
-    align-items: center;
-    width: 2%;
-    height: 4em;
+    margin-top: 1rem;
 }
 
-/*.top-searchbar input {
-    width: 50%;
-    height: 15%;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    border: 0;
-    padding:1em;
-
-} */
-
-.top-searchbar button {
+#search-bar {
     display: flex;
-    align-items: center;
-    font-size: 1em;
-    padding:0.2em;
-    border-radius: 0.3rem;
-   /* border: 0; */
+    height: 43px;
+    border: 0.5px solid lightgrey;
+    padding-left: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 40rem;
+}
+
+#search-btn {
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    padding: 15px;
+    font-size: 1.1em;
+    right: 15px;
+    border: #232328;
+
+
 }
 
 nav {
@@ -74,11 +87,12 @@ nav {
     align-items: center;
 }
 
- nav button {
+nav button {
     width: 8em;
     height: 2.5rem;
-     background: transparent;
-     border: transparent;
+    background: transparent;
+    border: transparent;
+   margin-left: 3rem;
 }
 
 nav button:hover {
@@ -124,7 +138,7 @@ nav button:hover {
 }
 
 .card p {
-   display: none;
+    display: none;
 }
 
 
@@ -155,7 +169,6 @@ nav button:hover {
 
 footer {
     height: 6rem;
-    background-color: rgba(222, 189, 189, 0.2);
     text-align: center;
     padding-top: 2rem;
 }
@@ -178,20 +191,6 @@ footer p {
 footer ul a {
     color: #553177;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* formatting of profilepage */
