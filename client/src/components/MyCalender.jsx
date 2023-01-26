@@ -1,52 +1,80 @@
 import React, {useState} from 'react'
+import {artists} from "./artistArray.jsx";
 
 export default function () {
     const [variousMonths, setMonths] = useState([handleMonth()]);
+    const [currentMonth, setCurrentMonth] = useState(new Date().getMonth())
+    const [prevMonth, setPrevMonth] = useState(new Date().getMonth())
     let displayNextMonth = () => {
-        setMonths(() => ["Next is" + nextMonth()])
+        if (currentMonth < 11) {
+            setCurrentMonth(currentMonth + 1);
+        } else {
+            setCurrentMonth(0);
+        }
+
     }
     let displayPrevMonth = () => {
-        setMonths(() => ["Prev is" + prevMonth()])
+           setPrevMonth(prevMonth - 1)
     }
     return <>
         <div>
 
             <p className={"month"}>{variousMonths}</p>
-            <button className="prev" onClick={() => setMonths(displayPrevMonth)}>Click for previous month</button>
-            <button className="next-month" onClick={() => setMonths(displayNextMonth)}>Click for next month</button>
+            <p>{`Current Month: ${currentMonth}`}</p>
+            <p>{`Previous Month: ${prevMonth}`}</p>
+            <button className="prev" onClick={() => setPrevMonth(displayPrevMonth)}>Click for previous month</button>
+            <button className="next-month" onClick={() => setCurrentMonth(displayNextMonth)}>Click for next month</button>
+
             <p className="saved-date">Possible saved events here</p>
-
-
         </div>
 
 
     </>
 }
-const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 export function handleMonth(){
     //todo: Given i am on the profilepage When i click on my calender.
     // Then I can see a scrolldown menu with my saved events for each month
+    let dates = new Date().getMonth()
 
-    let savedEvents = "24/1";
-    let dates = new Date();
-    let currentMonth = months[dates.getMonth()];
-    console.log(currentMonth)
-
-    if(savedEvents.includes("24/1")){
-        console.log(savedEvents)
+}
+/*
+let currentIndex = 0;
+const months = [
+    {
+        month: "January"
+    },
+    {
+        month: "February"
+    },
+    {
+        month: "March"
+    },
+    {
+        month: "April"
+    },
+    {
+        month: "May"
+    },
+    {
+        month: "June"
+    },
+    {
+        month: "July"
+    },
+    {
+        month: "August"
+    },
+    {
+        month: "September"
+    },
+    {
+        month: "October"
+    },
+    {
+        month: "November"
+    },  {
+        month: "December"
     }
+] */
 
-    return currentMonth;
-}
-function nextMonth(){
-    let dates = new Date();
-    let monthIncrement = months[dates.getMonth() + 1];
-    return monthIncrement;
-
-}
-function prevMonth(){
-    let dates = new Date();
-    let monthDecrement = months[dates.getMonth() - 1];
-    return monthDecrement;
-}
