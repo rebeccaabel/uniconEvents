@@ -10,7 +10,10 @@
 #root {
     box-sizing: border-box;
    /* background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
-    background-image: url("/images/Group 1background.png");
+    background-image: url("./images/Rectangle 29background2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -112,6 +115,7 @@ nav button:hover {
     font-size: 3rem;
     padding: 5%;
     width: auto;
+    color: #d6b8ff;
 }
 
 .card-area {
@@ -150,15 +154,16 @@ nav button:hover {
     background-color: aliceblue;
     width: 350px;
     height: 200px;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .about-artist-text {
     text-align: left;
     background-color: azure;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-left: 2rem;
 }
 
 .artist-details {
@@ -168,9 +173,10 @@ nav button:hover {
 }
 
 footer {
-    height: 6rem;
+    height: 4rem;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    background-color: white;
 }
 
 footer ul {
@@ -212,15 +218,12 @@ footer ul a {
     display: flex;
     justify-content: center;
     background-color: #D7AFF6;
-
-
 }
 
 .contact-information input {
     display: flex;
     flex-direction: column;
     margin: 1rem;
-
 }
 
 

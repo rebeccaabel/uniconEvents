@@ -69,20 +69,16 @@ export default function () {
                 </div>
               <CitiesFilter/>
 
-                <div className="calender-container">
 
                     <form className="date-form">
-                        <p>Please input start date</p>
+                        <p>start date</p>
                         <input type="date" ref={startDate}/>
-                    </form>
 
-                    <form className="date-form">
-                        <p>Please input end date</p>
+                        <p>end date</p>
                         <input type="date" ref={endDate}/>
                     </form>
 
-                </div>
-                <div className="calender-container">
+                <div className="filter-search-button">
                     <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
                 </div>
                 <div className="card-area-wrapper">
