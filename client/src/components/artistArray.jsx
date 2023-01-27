@@ -10,6 +10,7 @@ export const artists = [
         availableSeats: 200,
         isBought: false,
         wishList: false,
+        pricePerTicket: 500,
 
     },
     {
