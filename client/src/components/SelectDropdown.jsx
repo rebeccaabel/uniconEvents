@@ -14,7 +14,7 @@ export default function () {
         console.log(setMyValue(event.target.value));
     }
     return  <>
-        <label>Choose number of tickets</label>
+        <label>Choose number of tickets </label>
         <select value={value} onChange={handleChange}>
             <option value="0" id="number0">0</option>
             <option value="1" id="number1">1</option>

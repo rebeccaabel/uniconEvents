@@ -7,8 +7,8 @@ export default function () {
     return <>
         <div id="outer-div1">
             <div id="outer-div">
-                <div id="stage-area"><h1>STAGE</h1></div>
-                <div id="standing-area"><h2>This is the standing area</h2>
+                <div id="stage-area"><h1>💃🏽 STAGE 💃🏽</h1></div>
+                <div id="standing-area"><h2> 👯 This is the standing area 👯</h2>
                     <Dropdown/>
                 </div>
                 <div id="seated-area">

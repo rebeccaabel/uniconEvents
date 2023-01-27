@@ -4,7 +4,8 @@
     padding: 5%;
     background-image: linear-gradient(to right, #090d2c, #ffffff);
     border-radius: 0.3rem;
-    width: 40%;
+    width: 70%;
+    height: 50%;
     margin: 5%;
 }
 
@@ -39,8 +40,8 @@ display: flex;
 }
 
 button {
-    margin: 1%;
-    padding: 1%;
+    margin: 0.5%;
+    padding: 0.3%;
     border-radius: 0.4rem;
 }
 

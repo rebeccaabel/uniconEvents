@@ -18,6 +18,7 @@ export default function () {
             setActive(!active);
         };
         const checkSeat = () => {
+
             for (let i=0; i<seats.length; i++) {
 
                 if(seats[i].props.className === "black-btn") {
