@@ -2,7 +2,6 @@ import Buttons from "../Components/Seat.jsx"
 import {Link} from "react-router-dom"
 import Price from "../Components/PriceCalculation.jsx"
 import Dropdown from "../Components/SelectDropdown.jsx"
-import {ClickBtn} from "../Components/ButtonClick-SeatsComponent.jsx"
 
 export default function () {
     return <>
@@ -23,7 +22,6 @@ export default function () {
                     <Link to={"./Paymentpage.jsx"}>
                         <button>Proceed to payment</button>
                     </Link>
-                    <ClickBtn/>
                 </div>
             </div>
         </div>
