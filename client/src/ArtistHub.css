@@ -1,0 +1,50 @@
+.artist-image{
+    display: flex;
+    justify-content: center;
+}
+
+#image{
+    width: 25rem;
+    margin-top: 2rem;
+    
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.artist-list{
+
+}
+
+.location{
+
+}
+
+.ticket{
+
+}
+
+@media screen and (max-width: 480px){
+
+    #image{
+        width: 15rem;
+    }
+
+    .description h1{
+        font-size: 1.3rem;
+    }
+
+    .description{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
