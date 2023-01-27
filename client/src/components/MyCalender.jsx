@@ -4,10 +4,14 @@ import {monthByName} from "./MonthArray.jsx"
 import {artists} from "./artistArray.jsx"
 
 export default function () {
+    let years = new Date().getFullYear()
+    const [year, setYear] = useState(years)
     const [month, setMonth] = useState(0)
 
-    let prev = month > 0;
-    let next = month < monthByName.length -1;
+    const handleChange = () => {
+        setYear(event.target.value);
+    }
+
 
     const displaymonth = () => {
         let today = new Date();
@@ -16,46 +20,46 @@ export default function () {
         if(next){
             setMonth(month + 1)
         }
-
     }
+    let prev = month > 0;
+    let next = month < monthByName.length -1;
     let monthIndex = monthByName[month]
     const displayPrevMonth = () => {
 
     if(prev) {
         setMonth(month - 1)
     }
+        //todo: Fråga Manuel varför denna inte funkar >:(
         /*previousMonths.setMonth(previousMonths.getMonth() - 1)
         setPrevMonth(previousMonths.toLocaleString('default', { month: 'long' }))*/
     }
-    console.log(artists[0].date.getMonth().toLocaleString('default', { month: 'long' })) //Returns 5 (June).
+
     const SavedEvent = () => {
-        let newDate = new Date();
-        for (let i = 0; i<monthByName.length; i++) {
-            if(monthByName[5].getMonth === artists[0].date.getMonth().toLocaleString('default', { month: 'long' })){
-                console.log("found event")
+        for (let i = 0; i<artists.length; i++){
+            if(artists[i].wishList === true && artists[i].date === artists[i].date){ //Needs to be matched with current month
                 return  <AboutArtists/>
             }
         }
-
     }
 
     return <>
 
-    <div className={"calender-container"}>
-        <select>
-            <option>2023</option>
-            <option>2024</option>
-            <option>2025</option>
-            <option>2026</option>
-            <option>2027</option>
-        </select>
+    <div className={"calender"}>
         <button className="prev" onClick={displayPrevMonth} disabled={!prev}><i className="fa-solid fa-arrow-left"></i></button>
+        <select className={"years"} value={year} onChange={handleChange}>
+            <option value={"2023"}>2023</option>
+            <option value={"2024"}>2024</option>
+            <option value={"2025"}>2025</option>
+            <option value={"2026"}>2026</option>
+            <option value={"2027"}>2027</option>
+        </select>
         <button className="next-month" onClick={displaymonth} disabled={!next}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
-
+        <h4>{year}</h4>
         <div className={"my-events"}>
 
         <h3>{monthIndex.month}</h3>
+
 
         </div>
         <h4>Your planned events:</h4>

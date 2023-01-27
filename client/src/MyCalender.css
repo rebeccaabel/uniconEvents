@@ -1,17 +1,24 @@
 
-select {
+.years {
+    height: 3em;
+    width: 5em;
     opacity: 70%;
     color: white;
     background-color: black;
-   margin-left: 20em;
-    position: absolute;
+
+}
+select option {
+    opacity: 70%;
+    color: white;
+    background-color: darkgray;
+    padding: 1em;
 }
 
-.calender-container {
+.calender {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.calender-container button {
+.calender button {
     color: white;
     opacity: 70%;
     width: 20rem;
@@ -20,7 +27,7 @@ select {
     display: flex;
     justify-content: space-between;
 }
-.calender-container button:hover{
+.calender button:hover{
     opacity: 50%;
 }
 
