@@ -15,13 +15,15 @@ export default function () {
         }
     }
 
+
+
     // Kolla up compare och sort funktion -M
 
     return <div className="card-area-wrapper">
         <h2>Newly Added Events</h2>
         <div className="card-area">
             {
-                artistsSortedByDateAdded.map(artist => <Eventcard title={artist.title} text={artist.text} image={artist.image} />)
+                artistsSortedByDateAdded.map(artist => <Eventcard title={artist.title} location={artist.location} date={artist.date.toLocaleString()}  image={artist.image} />)
             }
         </div>
     </div>

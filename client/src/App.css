@@ -141,26 +141,52 @@ nav button:hover {
     justify-content: space-around;
     width: auto;
     gap: 2em;
+
 }
+
+.card h3, p {
+    margin-left: 1rem;
+    color: #ffffff;
+
+}
+
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
     background-color: aliceblue;
     border-radius: 2em;
     width: 350px;
     height: 200px;
+
+
+
 }
+
+
+
+.event-card-details-wrapper {
+    margin-bottom: 1rem;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.57), rgba(0, 0, 0, 0.8));
+    border-radius: 10%;
+}
+
+
 
 .card:hover {
     cursor: pointer;
 }
 
-.card p {
-   display: none;
+.card-area img {
+    max-width: 100%;
+    height: auto;
+
 }
+
+
+
 
 
 .artist-card {
