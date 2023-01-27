@@ -43,12 +43,12 @@ export default function () {
                     <label>
                         <p>Total: 200 kr</p>
                     </label>
-                <form className="date-form"><p>Name on Card</p><input value={name} onChange={event => setName(event.target.value)} type="text" placeholder="Input name here"/></form>
+                <form className="date-form"><p>Name on Card</p><input value={name} onChange={event => setName(event.target.value)}  type="text" placeholder="Input name here"/></form>
                 <form className="date-form"><p>Card digits</p><input value={digits} onChange={event => setDigits(event.target.value)} type="number" placeholder="Enter card number "/></form>
 
                 <form className="date-form"><p>Expiration date</p><input value={date} onChange={event => setDate(event.target.value)} type="number" placeholder="mm/dd"/></form>
-                <form className="date-form"><p>CVC</p><input value={C} onChange={event => setCvc(event.target.value)} type="text" maxLength="3" placeholder="123"/></form>
-                <input className="radio-button" type="radio" value="buy-for-friend" name="friend" /> Buy for a friend
+                <form className="date-form"><p>CVC</p><input value={C} onChange={event => setCvc(event.target.value)} type="tel" maxLength="3" placeholder="123"/></form>
+
 
             </div>
 
