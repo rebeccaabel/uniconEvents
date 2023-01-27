@@ -1,80 +1,72 @@
 import React, {useState} from 'react'
-import {artists} from "./artistArray.jsx";
+import AboutArtists from "./AboutArtists.jsx";
+import {monthByName} from "./MonthArray.jsx"
+import {artists} from "./artistArray.jsx"
 
 export default function () {
-    const [variousMonths, setMonths] = useState([handleMonth()]);
-    const [currentMonth, setCurrentMonth] = useState(new Date().getMonth())
-    const [prevMonth, setPrevMonth] = useState(new Date().getMonth())
-    let displayNextMonth = () => {
-        if (currentMonth < 11) {
-            setCurrentMonth(currentMonth + 1);
-        } else {
-            setCurrentMonth(0);
+    const [month, setMonth] = useState(0)
+
+    let prev = month > 0;
+    let next = month < monthByName.length -1;
+
+    const displaymonth = () => {
+        let today = new Date();
+        let getTodayMonth = monthByName[today.getFullYear()]
+        setMonth(getTodayMonth) //Not working
+        if(next){
+            setMonth(month + 1)
         }
 
     }
-    let displayPrevMonth = () => {
-           setPrevMonth(prevMonth - 1)
+    let monthIndex = monthByName[month]
+    const displayPrevMonth = () => {
+
+    if(prev) {
+        setMonth(month - 1)
     }
+        /*previousMonths.setMonth(previousMonths.getMonth() - 1)
+        setPrevMonth(previousMonths.toLocaleString('default', { month: 'long' }))*/
+    }
+    console.log(artists[0].date.getMonth().toLocaleString('default', { month: 'long' })) //Returns 5 (June).
+    const SavedEvent = () => {
+        let newDate = new Date();
+        for (let i = 0; i<monthByName.length; i++) {
+            if(monthByName[5].getMonth === artists[0].date.getMonth().toLocaleString('default', { month: 'long' })){
+                console.log("found event")
+                return  <AboutArtists/>
+            }
+        }
+
+    }
+
     return <>
-        <div>
 
-            <p className={"month"}>{variousMonths}</p>
-            <p>{`Current Month: ${currentMonth}`}</p>
-            <p>{`Previous Month: ${prevMonth}`}</p>
-            <button className="prev" onClick={() => setPrevMonth(displayPrevMonth)}>Click for previous month</button>
-            <button className="next-month" onClick={() => setCurrentMonth(displayNextMonth)}>Click for next month</button>
-
-            <p className="saved-date">Possible saved events here</p>
+    <div className={"calender-container"}>
+        <select>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+        </select>
+        <button className="prev" onClick={displayPrevMonth} disabled={!prev}><i className="fa-solid fa-arrow-left"></i></button>
+        <button className="next-month" onClick={displaymonth} disabled={!next}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
+
+        <div className={"my-events"}>
+
+        <h3>{monthIndex.month}</h3>
+
+        </div>
+        <h4>Your planned events:</h4>
+        <SavedEvent/>
+
 
 
     </>
 }
 
-export function handleMonth(){
-    //todo: Given i am on the profilepage When i click on my calender.
-    // Then I can see a scrolldown menu with my saved events for each month
-    let dates = new Date().getMonth()
 
-}
-/*
-let currentIndex = 0;
-const months = [
-    {
-        month: "January"
-    },
-    {
-        month: "February"
-    },
-    {
-        month: "March"
-    },
-    {
-        month: "April"
-    },
-    {
-        month: "May"
-    },
-    {
-        month: "June"
-    },
-    {
-        month: "July"
-    },
-    {
-        month: "August"
-    },
-    {
-        month: "September"
-    },
-    {
-        month: "October"
-    },
-    {
-        month: "November"
-    },  {
-        month: "December"
-    }
-] */
+
+
 

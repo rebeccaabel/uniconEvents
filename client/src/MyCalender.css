@@ -1,0 +1,35 @@
+
+select {
+    opacity: 70%;
+    color: white;
+    background-color: black;
+   margin-left: 20em;
+    position: absolute;
+}
+
+.calender-container {
+    display: flex;
+    justify-content: space-between;
+}
+.calender-container button {
+    color: white;
+    opacity: 70%;
+    width: 20rem;
+    padding: 1em;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.calender-container button:hover{
+    opacity: 50%;
+}
+
+.my-events {
+
+    display: flex;
+    justify-content: center;
+}
+h4 {
+    display: flex;
+    justify-content: center;
+}
