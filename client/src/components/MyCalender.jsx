@@ -1,19 +1,19 @@
 import React, {useState} from 'react'
-import AboutArtists from "./AboutArtists.jsx";
 import {monthByName} from "./MonthArray.jsx"
-import {artists} from "./artistArray.jsx"
+import saveAEvent from "./MySavedEvents.jsx";
+import {artists} from "./artistArray.jsx";
 
 export default function () {
+
     let years = new Date().getFullYear()
     const [year, setYear] = useState(years)
     const [month, setMonth] = useState(0)
 
-    const handleChange = () => {
+    const handleChange = (event) => {
         setYear(event.target.value);
     }
 
-
-    const displaymonth = () => {
+    const displayMonth = () => {
         let today = new Date();
         let getTodayMonth = monthByName[today.getFullYear()]
         setMonth(getTodayMonth) //Not working
@@ -25,23 +25,10 @@ export default function () {
     let next = month < monthByName.length -1;
     let monthIndex = monthByName[month]
     const displayPrevMonth = () => {
-
     if(prev) {
         setMonth(month - 1)
     }
-        //todo: Fråga Manuel varför denna inte funkar >:(
-        /*previousMonths.setMonth(previousMonths.getMonth() - 1)
-        setPrevMonth(previousMonths.toLocaleString('default', { month: 'long' }))*/
     }
-
-    const SavedEvent = () => {
-        for (let i = 0; i<artists.length; i++){
-            if(artists[i].wishList === true && artists[i].date === artists[i].date){ //Needs to be matched with current month
-                return  <AboutArtists/>
-            }
-        }
-    }
-
     return <>
 
     <div className={"calender"}>
@@ -53,20 +40,20 @@ export default function () {
             <option value={"2026"}>2026</option>
             <option value={"2027"}>2027</option>
         </select>
-        <button className="next-month" onClick={displaymonth} disabled={!next}><i className="fa-solid fa-arrow-right"></i></button>
+        <button className="next-month" onClick={displayMonth} disabled={!next}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
+
         <h4>{year}</h4>
         <div className={"my-events"}>
 
         <h3>{monthIndex.month}</h3>
 
-
         </div>
+
         <h4>Your planned events:</h4>
-        <SavedEvent/>
 
-
-
+        //todo: Fix needed: This function call renders the button on the calender page aswell
+        <div>{saveAEvent()}</div>
     </>
 }
 
