@@ -14,12 +14,14 @@ export default function () {
             <button>Advanced search</button>
         </Link>
 
+
         <Link to="/signUpPage">
             <button>Sign up</button>
         </Link>
 
         <Link to="/login">
-            <button>Log in</button>
+            <button id="login-button">Log in</button>
         </Link>
+
     </nav>
 }

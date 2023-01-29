@@ -8,10 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Filterpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Filterpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArray.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,9 @@
       <workItem from="1674814415056" duration="7603000" />
       <workItem from="1674847334584" duration="2117000" />
       <workItem from="1674852919100" duration="2468000" />
+      <workItem from="1674855663698" duration="546000" />
+      <workItem from="1674919202643" duration="7922000" />
+      <workItem from="1675003001619" duration="23719000" />
     </task>
     <servers />
   </component>

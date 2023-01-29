@@ -7,10 +7,15 @@ import Searchbar from "./Searchbar.jsx";
 
 export default function () {
     return <header>
-        <img id="logoheader" src={LogoHeader}/>
-        <h1 id='header-title'>Unicorn Events</h1>
-        <Searchbar/>
-        <Navbar/>
-        <Link to="profile"><img id="profileheader" src={profile2}/></Link>
+
+        <img id="header-logo-u" src={LogoHeader}/>
+        <h1 id='unicorn-events-title'>Unicorn Events</h1>
+        <div className="searchbar-and-navbar">
+            <Searchbar/>
+            <Navbar/>
+        </div>
+
+
+        <Link to="profile"><img id="round-login-avatar" src={profile2}/></Link>
     </header>
 }

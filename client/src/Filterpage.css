@@ -28,12 +28,6 @@ html {
 }
 
 
-/* THE BAD GUY IS BELOW */
-h1 {
-    text-align: center;
-    padding-top: 5%;
-    color: #d4bffa;
-}
 
 .filter-buttons-dates {
     display: flex;
