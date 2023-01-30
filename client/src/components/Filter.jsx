@@ -67,28 +67,18 @@ export default function () {
                     <button onClick={nextYearEventsFilter}>Next Year</button>
                     <button onClick={mostRecentEventsFilter}>Recently added events</button>
                 </div>
-                <div className="filter-buttons-cities">
-                    <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
-                    <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
-                    <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
-                    <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
-                    <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
-                </div>
+              <CitiesFilter/>
 
-                <div className="calender-container">
 
                     <form className="date-form">
-                        <p>Please input start date</p>
+                        <p>start date</p>
                         <input type="date" ref={startDate}/>
-                    </form>
 
-                    <form className="date-form">
-                        <p>Please input end date</p>
+                        <p>end date</p>
                         <input type="date" ref={endDate}/>
                     </form>
 
-                </div>
-                <div className="calender-container">
+                <div className="filter-search-button">
                     <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
                 </div>
                 <div className="card-area-wrapper">
@@ -103,4 +93,13 @@ export default function () {
             </div>
         </div>
     </>
+    function CitiesFilter() {
+        return   <div className="filter-buttons-cities">
+            <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
+            <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
+            <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
+            <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
+            <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
+        </div>
+    }
 }
