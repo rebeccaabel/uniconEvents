@@ -55,22 +55,29 @@ export default function () {
     }
 
     return <>
-        <div className="filter-container">
-            <DatesFilter />
-            <CitiesFilter />
-            <TwoDatesFilter />
-            <SearchButton />
-        </div>
+        <EventFilter/>
 
         <div className="card-area-wrapper">
+        <DisplayResults/>
+        </div>
+    </>
 
-            <div className="card-area">
+    function EventFilter() {
+        return <div className="filter-container">
+        <DatesFilter />
+        <CitiesFilter />
+        <TwoDatesFilter />
+        <SearchButton />
+    </div>
+    }
+
+    function DisplayResults() {
+    return <div className="card-area">
                 {
                     sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
                 }
             </div>
-        </div>
-    </>
+    }
 
     function CitiesFilter() {
         return <div className="city-filters">
