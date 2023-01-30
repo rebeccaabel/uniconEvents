@@ -15,8 +15,9 @@ export default function ({title, text, image}) {
     </>
 }
 
-export let savedArray = []
+
 export function saveAnEvent () {
+    let savedArray = []
    for(let i=0; i<artists.length; i++){
        artists[i].wishList = true;
        savedArray.push(artists[i])
