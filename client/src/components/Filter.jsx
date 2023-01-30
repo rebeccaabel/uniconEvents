@@ -59,7 +59,7 @@ export default function () {
             <DatesFilter />
             <CitiesFilter />
             <TwoDatesFilter />
-            <button id="filter-page-search-button" onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
+            <SearchButton />
         </div>
 
         <div className="card-area-wrapper">
@@ -96,8 +96,12 @@ export default function () {
 
     function TwoDatesFilter() {
         return <div className="two-dates-filter">
-        <p>Start Date:<input type="date" ref={startDate}/></p>
-        <p>End Date<input type="date" ref={endDate}/></p>
+            <p>Start Date:<input type="date" ref={startDate} /></p>
+            <p>End Date<input type="date" ref={endDate} /></p>
         </div>
+    }
+
+    function SearchButton() {
+        return <button id="filter-page-search-button" onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
     }
 }
