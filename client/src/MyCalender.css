@@ -4,7 +4,7 @@
     width: 5em;
     opacity: 70%;
     color: white;
-    background-color: black;
+    background-color: purple;
 
 }
 select option {
@@ -23,7 +23,7 @@ select option {
     opacity: 70%;
     width: 20rem;
     padding: 1em;
-    background-color: black;
+    background-color: purple;
     display: flex;
     justify-content: space-between;
 }
@@ -32,16 +32,18 @@ select option {
 }
 
 .my-events {
-
+    color: pink;
     display: flex;
     justify-content: center;
 }
 h4 {
+    color: pink;
     display: flex;
     justify-content: center;
 }
 
 p{
+    color: white;
     display: flex;
     justify-content: center;
     margin: 1em;

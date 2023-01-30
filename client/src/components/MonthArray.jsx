@@ -3,7 +3,6 @@
 //todo: Add new Date to month property, this so we can match this array with artist array?.
 // Then Convert artist date into month with string. Then see if properties match and can display saved events
 const getCurrentDate = new Date()
-const getYear = new Date()
 const date = new Date(getCurrentDate.getFullYear(),0,1);
 console.log(date.setMonth(date.getMonth()))
 
