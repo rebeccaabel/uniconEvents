@@ -27,49 +27,28 @@
 
 header {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 2rem;
     align-items: center;
     position: sticky;
     background-color: white;
-    height: 6em;
+    height: 10em;
 }
 
-.profile-signup-login {
+.header-logo-title{
+    border: 1px solid green;
     display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    padding-right: 1em;
-    border: 2px solid red;
+    justify-content: space-between;
+    align-items: center;
+
 
 }
 
-.profile-signup-login button:hover {
-    cursor: pointer;
-    font-weight: bolder;
+.header-logo-title img{
+width: 100px;
 }
 
-.profile-signup-login button {
-    margin-top: 0.6em;
-    background: transparent;
-    border: transparent;
-    font-size: 1em;
-    width: 5em;
-}
 
-#header-logo-u {
-    width: 6rem;
-
-    margin-left: 1rem;
-    border: 2px solid green;
-
-}
-
-#unicorn-events-title {
-    color: #d4bffa;
-    margin-right: 1em;
-    border: 2px solid green;
-
-}
 
 
 
@@ -101,13 +80,17 @@ header {
     border: #232328;
 
 }
+.searchbar-and-navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
 
+}
 
 nav {
     display: flex;
     justify-content: space-around;
     margin: auto;
-    border: 2px solid orange;
 }
 
 nav button {
@@ -122,6 +105,27 @@ nav button {
 nav button:hover {
     cursor: pointer;
     font-weight: bolder;
+}
+
+.profile-signup-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 1em;
+    border: 2px solid red;
+}
+
+.profile-signup-login button:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.profile-signup-login button {
+    margin-top: 0.6em;
+    background: transparent;
+    border: transparent;
+    font-size: 1em;
+    width: 5em;
 }
 
 #round-login-avatar {
@@ -139,16 +143,9 @@ nav button:hover {
     padding: 1px;
     width: 4em;
 
-
 }
 
 
-.searchbar-and-navbar-wrapper {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid blue;
-
-}
 
 /**************************
         CARD AREA
@@ -555,7 +552,7 @@ footer ul a {
 
 }
 
-@media (max-width: 1065px) {
+@media (max-width: 1180px) {
 
     #unicorn-events-title {
         display: none;
@@ -567,6 +564,10 @@ footer ul a {
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
+
+}
+
+@media(max-width: 1040px){
 
 }
 
