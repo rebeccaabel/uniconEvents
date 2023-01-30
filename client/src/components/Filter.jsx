@@ -11,13 +11,65 @@ import {
     sortIfToday,
     sortIfTomorrow
 } from "./artistArrayFunctions";
+import { artists } from "./artistArray";
 
 
 export default function () {
+    
     let [sortedArray, setFilter] = useState([])
     let startDate = useRef(null)
     let endDate = useRef(null)
+    let todayFilter = false
+    let tomorrow = false
+    let thisWeek = false
+    let thisMonth = false
+    let thisYear = false
+    let nextYear = false
 
+    function filterArray() {
+        let tempArray = artists
+        let returnArray = tempArray
+        const today = new Date()
+
+        for (let i = 0; i < tempArray.length; i++) {
+            if (todayFilter &&
+                tempArray[i].date.getDate() == today.getDate() &&
+                tempArray[i].date.getMonth() == today.getMonth() &&
+                tempArray[i].date.getFullYear() == today.getFullYear()
+                
+            ) {
+                returnArray = tempArray.splice(i, 1)
+            }
+
+        if (tomorrow) {
+
+        }
+
+        if (thisWeek) {
+
+        }
+
+        if (thisMonth &&
+            tempArray[i].date.getMonth() == today.getMonth() &&
+            tempArray[i].date.getFullYear() == today.getFullYear()
+            ) {
+            returnArray = tempArray.splice(i, 1)
+        }
+        
+        
+
+        if (thisYear) {
+
+        }
+
+        if (nextYear) {
+
+        }
+    }
+    console.log(todayFilter)
+    console.log(tempArray.length)
+    return setFilter(returnArray)
+}
     function mostRecentEventsFilter() {
         setFilter(sortedArray = sortByMostRecentAdded)
     }
@@ -54,9 +106,14 @@ export default function () {
         setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
     }
 
+    
+    function handleButtonColor(input) {
+        if(input.style.backgroundColor == "black")
+        {input.style.backgroundColor = "white"}
+    }
+
     return <>
         <EventFilter/>
-
         <div className="card-area-wrapper">
         <DisplayResults/>
         </div>
@@ -72,10 +129,12 @@ export default function () {
     }
 
     function DisplayResults() {
-    return <div className="card-area">
+    return <div id="filterwrapper-card-area">
+            <div className="card-area">
                 {
                     sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
                 }
+            </div>
             </div>
     }
 
@@ -91,14 +150,29 @@ export default function () {
 
     function DatesFilter() {
         return <div className="date-filters">
-            <button onClick={todayEventsFilter}>Today</button>
-            <button onClick={tomorrowEventsFilter}>Tomorrow</button>
+            <button onClick={e => e.target.style.backgroundColor="purple"}>Today</button>
+            <button>Tomorrow</button>
             <button onClick={thisWeekEventsFilter}>This Week</button>
-            <button onClick={thisMonthEventsFilter}>This Month</button>
+            <button onClick={() => {if (!thisMonth){thisMonth = true} else {thisMonth = false}}}>This Month</button>
             <button onClick={thisYearEventsFilter}>This Year</button>
             <button onClick={nextYearEventsFilter}>Next Year</button>
             <button onClick={mostRecentEventsFilter}>Recently added events</button>
+            <DateButton/>
+            <DateButton/>
+            <DateButton/>
         </div>
+    }
+
+    function DateButton() {
+        const [active, setActive] = useState(false);
+        const handleClick = () => {
+            setActive(!active);
+          };
+          
+        return <button
+        onClick={handleClick}
+        style={{ backgroundColor: active ? "gray" : "black" }}
+      />
     }
 
     function TwoDatesFilter() {
@@ -109,6 +183,8 @@ export default function () {
     }
 
     function SearchButton() {
-        return <button id="filter-page-search-button" onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
+        return <button id="filter-page-search-button" onClick={() => {filterArray()}}>Search</button>
     }
 }
+
+/* sortBetweenTwoDatesFilter(startDate, endDate) */

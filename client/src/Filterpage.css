@@ -13,13 +13,14 @@
     margin-top: -2rem;
 }
 
-.date-filters {
+.date-filters, .city-filters {
     display: flex;
     justify-content: space-evenly;
     margin: 0.5em;
 }
 
-.date-filters button {
+.date-filters button, .city-filters button {
+
     border-radius: 0.7rem;
     background-color: black;
     color: whitesmoke;
@@ -27,27 +28,11 @@
     padding: 0.5em;
 }
 
-.date-filters button:hover {
-    cursor:pointer;
+.date-filters button::selection, .city-filters button::selection {
+    border: inset;
 }
 
-
-.city-filters  {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0.5em;
-}
-
-
-.city-filters button {
-    border-radius: 0.7rem;
-    background-color: black;
-    color: whitesmoke;
-    margin: 0;
-    padding: 0.5em;
-}
-
-.city-filters button:hover {
+.date-filters button:hover, .city-filters button:hover  {
     cursor:pointer;
 }
 
@@ -59,10 +44,15 @@
 }
 
 .two-dates-filter input, .two-dates-filter p{
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
     background-color: black;
     color: whitesmoke;
+}
+.two-dates-filter input {
+    background-color: whitesmoke;
+    color: black;
     border-radius: 0;
-    width: auto;
 }
 #filter-page-search-button {
     width: 10%;
@@ -70,4 +60,7 @@
     background-color: black;
     color: whitesmoke;
     margin: 0.5em;
+}
+#filterwrapper-card-area {
+    min-height: 55vh;
 }
