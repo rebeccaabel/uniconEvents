@@ -1,5 +1,5 @@
 import {useRef, useState} from "react";
-import Card from "./EventCard";
+import Card from "./Card.jsx";
 import {
     sortBetweenTwoDates,
     sortByLocation,
@@ -14,91 +14,50 @@ import {
 
 
 export default function () {
-    let [sortedArray, setFilter] = useState([])
-    let startDate = useRef(null)
-    let endDate = useRef(null)
-
-    function mostRecentEventsFilter() {
-        setFilter(sortedArray = sortByMostRecentAdded)
-    }
-
-    function todayEventsFilter() {
-        setFilter(sortedArray = sortIfToday)
-    }
-
-    function tomorrowEventsFilter() {
-        setFilter(sortedArray = sortIfTomorrow)
-    }
-
-    function thisWeekEventsFilter() {
-        setFilter(sortedArray = sortIfThisWeek)
-    }
-
-    function thisMonthEventsFilter() {
-        setFilter(sortedArray = sortIfThisMonth)
-    }
-
-    function thisYearEventsFilter() {
-        setFilter(sortedArray = sortIfThisYear)
-    }
-
-    function nextYearEventsFilter() {
-        setFilter(sortedArray = sortIfNextYear)
-    }
-
-    function locationFilter(input) {
-        setFilter(sortedArray = sortByLocation(input))
-    }
-
-    function sortBetweenTwoDatesFilter(input1, input2) {
-        setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
-    }
+    const [sortedArray, setSortedArray] = useState([])
+    const startDate = useRef(null)
+    const endDate = useRef(null)
 
     return <>
         <h1>Filter by date</h1>
-        <div className="filter-container-wrapper">
-            <div className="filter-container">
-                <div className="filter-buttons-dates">
-                    <button onClick={todayEventsFilter}>Today</button>
-                    <button onClick={tomorrowEventsFilter}>Tomorrow</button>
-                    <button onClick={thisWeekEventsFilter}>This Week</button>
-                    <button onClick={thisMonthEventsFilter}>This Month</button>
-                    <button onClick={thisYearEventsFilter}>This Year</button>
-                    <button onClick={nextYearEventsFilter}>Next Year</button>
-                    <button onClick={mostRecentEventsFilter}>Recently added events</button>
-                </div>
-              <CitiesFilter/>
-
-                <div className="calender-container">
-
-                    <form className="date-form">
-                        <p>Please input start date</p>
-                        <input type="date" ref={startDate}/>
-                    </form>
-
-                    <form className="date-form">
-                        <p>Please input end date</p>
-                        <input type="date" ref={endDate}/>
-                    </form>
-
-                </div>
-                <div className="calender-container">
-                    <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
-                </div>
-                <div className="card-area-wrapper">
-
-                    <div className="card-area">
-                        {
-                            sortedArray.map(artist => <Card title={artist.title} text={artist.text}
-                                                            image={artist.image}/>)
-                        }
-                    </div>
-                </div>
-            </div>
+        <div className="filter-container">
+            <EventFilter/>
+            <EventCards/>
         </div>
     </>
+
+    function EventFilter() {
+        return <>
+            <DateFilters/>
+            <CitiesFilter/>
+            <DatePicker/>
+            <SearchButton/>
+        </>
+
+    }
+
+    function EventCards() {
+        return <div className="card-area">
+            {sortedArray.map(artist => <Card artist={artist}/>)}
+        </div>
+    }
+
+    function SearchButton() {
+        return <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
+    }
+
+    function DatePicker() {
+        return <form className="date-picker">
+            <p>Please input start date</p>
+            <input type="date" ref={startDate}/>
+            <p>Please input end date</p>
+            <input type="date" ref={endDate}/>
+        </form>
+    }
+
+
     function CitiesFilter() {
-        return   <div className="filter-buttons-cities">
+        return <div className="filter-buttons-cities">
             <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
             <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
             <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
@@ -106,4 +65,52 @@ export default function () {
             <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
         </div>
     }
+
+    function mostRecentEventsFilter() {
+        setSortedArray(sortByMostRecentAdded)
+    }
+
+    function todayEventsFilter() {
+        setSortedArray(sortIfToday)
+    }
+
+    function tomorrowEventsFilter() {
+        setSortedArray(sortIfTomorrow)
+    }
+
+    function thisWeekEventsFilter() {
+        setSortedArray(sortIfThisWeek)
+    }
+
+    function thisMonthEventsFilter() {
+        setSortedArray(sortIfThisMonth)
+    }
+
+    function thisYearEventsFilter() {
+        setSortedArray(sortIfThisYear)
+    }
+
+    function nextYearEventsFilter() {
+        setSortedArray(sortIfNextYear)
+    }
+
+    function locationFilter(input) {
+        setSortedArray(sortByLocation(input))
+    }
+
+    function sortBetweenTwoDatesFilter(input1, input2) {
+        setSortedArray(sortBetweenTwoDates(input1, input2))
+    }
+    function DateFilters() {
+        return <div className="filter-buttons-dates">
+            <button onClick={todayEventsFilter}>Today</button>
+            <button onClick={tomorrowEventsFilter}>Tomorrow</button>
+            <button onClick={thisWeekEventsFilter}>This Week</button>
+            <button onClick={thisMonthEventsFilter}>This Month</button>
+            <button onClick={thisYearEventsFilter}>This Year</button>
+            <button onClick={nextYearEventsFilter}>Next Year</button>
+            <button onClick={mostRecentEventsFilter}>Recently added events</button>
+        </div>
+    }
 }
+

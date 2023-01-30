@@ -1,4 +1,4 @@
-import {artists} from "./artistArray.jsx";
+import {artists} from "../utils/artists-data.js";
 
 export function sortByMostRecentAdded() {
     let sortingNumber = 0

@@ -1,5 +1,5 @@
 
-import {artists} from "./artistArray.jsx";
+import {artists} from "../utils/artists-data.js";
 import {Link} from "react-router-dom";
 
 

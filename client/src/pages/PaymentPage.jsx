@@ -1,4 +1,4 @@
-import CardDetails from "../components/CardDetails.jsx"
+import CardDetails from "../components/CreditCardDetails.jsx"
 
 export default function () {
     return <>

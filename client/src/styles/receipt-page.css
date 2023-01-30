@@ -1,21 +1,21 @@
-.verified-ticket{
+.receipt{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header{
+.receipt > h1{
     padding-bottom: 20px;
 }
 
-.details{
+.receipt > .card > .details{
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.card-img{
+.receipt > .card > img{
     display: flex;
     justify-content: center;
     padding-bottom: 20px;

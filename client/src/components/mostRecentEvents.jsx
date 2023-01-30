@@ -1,5 +1,5 @@
-import Eventcard from "./Eventcard";
-import { artists } from "./artistArray.jsx";
+import Card from "./Card.jsx";
+import { artists } from "../utils/artists-data.js";
 
 export default function () {
     let sortingNumber = 0
@@ -21,7 +21,7 @@ export default function () {
         <h2>Newly Added Events</h2>
         <div className="card-area">
             {
-                artistsSortedByDateAdded.map(artist => <Eventcard title={artist.title} text={artist.text} image={artist.image} />)
+                artistsSortedByDateAdded.map(artist => <Card details={artist}/>)
             }
         </div>
     </div>
