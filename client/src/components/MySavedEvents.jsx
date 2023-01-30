@@ -5,14 +5,13 @@ import savedArray from "./Eventcard.jsx"
 import savedAnEvent from "./Eventcard.jsx"
 
 export default function () {
-        console.log(savedArray())
+        console.log(savedArray)
     const showSavedEvent = () => {
         for (let i = 0; i<artists.length; i++){
 
         }
         return <Eventcard/>
     }
-
     return <div>
 
     </div>

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {monthByName} from "./MonthArray.jsx"
 import {yearByName} from "./MonthArray.jsx";
-import saveAEvent from "./MySavedEvents.jsx";
+import MySavedEvents from "./MySavedEvents.jsx";
 
 
 export default function () {
@@ -69,9 +69,9 @@ export default function () {
         </div>
 
         <h4>Your planned events:</h4>
+        <MySavedEvents/>
 
-        //todo: Fix needed: This function call renders the button on the calender page aswell
-        <div>{saveAEvent()}</div>
+
     </>
 }
 console.log(yearByName[1].currentYear)
