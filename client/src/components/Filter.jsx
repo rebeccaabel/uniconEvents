@@ -1,4 +1,4 @@
-import {useRef, useState} from "react";
+import { useRef, useState } from "react";
 import Card from "./EventCard";
 import {
     sortBetweenTwoDates,
@@ -55,55 +55,49 @@ export default function () {
     }
 
     return <>
-        <h1>Filter by date</h1>
-        <div className="filter-container-wrapper">
-            <div className="filter-container">
-                <div className="filter-buttons-dates">
-                    <button onClick={todayEventsFilter}>Today</button>
-                    <button onClick={tomorrowEventsFilter}>Tomorrow</button>
-                    <button onClick={thisWeekEventsFilter}>This Week</button>
-                    <button onClick={thisMonthEventsFilter}>This Month</button>
-                    <button onClick={thisYearEventsFilter}>This Year</button>
-                    <button onClick={nextYearEventsFilter}>Next Year</button>
-                    <button onClick={mostRecentEventsFilter}>Recently added events</button>
-                </div>
-              <CitiesFilter/>
+        <div className="filter-container">
+            <DatesFilter />
+            <CitiesFilter />
+            <TwoDatesFilter />
+            <button id="filter-page-search-button" onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
+        </div>
 
-                <div className="calender-container">
+        <div className="card-area-wrapper">
 
-                    <form className="date-form">
-                        <p>Please input start date</p>
-                        <input type="date" ref={startDate}/>
-                    </form>
-
-                    <form className="date-form">
-                        <p>Please input end date</p>
-                        <input type="date" ref={endDate}/>
-                    </form>
-
-                </div>
-                <div className="calender-container">
-                    <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
-                </div>
-                <div className="card-area-wrapper">
-
-                    <div className="card-area">
-                        {
-                            sortedArray.map(artist => <Card title={artist.title} text={artist.text}
-                                                            image={artist.image}/>)
-                        }
-                    </div>
-                </div>
+            <div className="card-area">
+                {
+                    sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
+                }
             </div>
         </div>
     </>
+
     function CitiesFilter() {
-        return   <div className="filter-buttons-cities">
+        return <div className="city-filters">
             <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
             <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
             <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
             <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
             <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
+        </div>
+    }
+
+    function DatesFilter() {
+        return <div className="date-filters">
+            <button onClick={todayEventsFilter}>Today</button>
+            <button onClick={tomorrowEventsFilter}>Tomorrow</button>
+            <button onClick={thisWeekEventsFilter}>This Week</button>
+            <button onClick={thisMonthEventsFilter}>This Month</button>
+            <button onClick={thisYearEventsFilter}>This Year</button>
+            <button onClick={nextYearEventsFilter}>Next Year</button>
+            <button onClick={mostRecentEventsFilter}>Recently added events</button>
+        </div>
+    }
+
+    function TwoDatesFilter() {
+        return <div className="two-dates-filter">
+        <p>Start Date:<input type="date" ref={startDate}/></p>
+        <p>End Date<input type="date" ref={endDate}/></p>
         </div>
     }
 }
