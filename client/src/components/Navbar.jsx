@@ -15,13 +15,5 @@ export default function () {
         </Link>
 
 
-        <Link to="/signUpPage">
-            <button>Sign up</button>
-        </Link>
-
-        <Link to="/login">
-            <button id="login-button">Log in</button>
-        </Link>
-
     </nav>
 }

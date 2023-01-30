@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
 
 
 * {
@@ -10,18 +9,12 @@
 
 
 #root {
-    /* background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
-    /*background-image: url("./images/Rectangle 29background2.png");*/
-
+    background-image: url("./images/Rectangle 29background2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    /*height: 100vh;*/
 
-
-    /* max-width: 1280px;
-     width: 100%;
-     height: 100%;*/
 
 }
 
@@ -41,23 +34,50 @@ header {
     height: 6em;
 }
 
+.profile-signup-login {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding-right: 1em;
+    border: 2px solid red;
+
+}
+
+.profile-signup-login button:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.profile-signup-login button {
+    margin-top: 0.6em;
+    background: transparent;
+    border: transparent;
+    font-size: 1em;
+    width: 5em;
+}
 
 #header-logo-u {
-    padding-left: 15px;
-    width: 6em;
+    width: 6rem;
+
     margin-left: 1rem;
+    border: 2px solid green;
+
 }
 
 #unicorn-events-title {
-    width: 10em;
     color: #d4bffa;
-    text-align: center;
+    margin-right: 1em;
+    border: 2px solid green;
+
 }
+
+
 
 .searchbar {
     display: flex;
     height: 3rem;
 }
+
 
 #search-bar {
     height: 43px;
@@ -82,16 +102,12 @@ header {
 
 }
 
-.searchbar-and-navbar {
-    display: flex;
-    flex-direction: row;
-}
 
 nav {
     display: flex;
     justify-content: space-around;
-    padding-left: 1em;
     margin: auto;
+    border: 2px solid orange;
 }
 
 nav button {
@@ -113,6 +129,7 @@ nav button:hover {
     border-radius: 5rem;
     margin-left: 1rem;
     border: 1px solid #232328;
+
 }
 
 #login-button {
@@ -121,6 +138,16 @@ nav button:hover {
     color: #fff;
     padding: 1px;
     width: 4em;
+
+
+}
+
+
+.searchbar-and-navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid blue;
+
 }
 
 /**************************
@@ -132,7 +159,6 @@ nav button:hover {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 3rem;
-
 }
 
 .card-area-wrapper h2 {
@@ -143,6 +169,7 @@ nav button:hover {
     /*color: #d6b8ff;*/
     color: white;
 
+
 }
 
 .card-area {
@@ -152,6 +179,8 @@ nav button:hover {
     width: auto;
     gap: 2em;
     color: white;
+    border: 2px solid green;
+
 }
 
 .card {
@@ -233,9 +262,6 @@ footer ul a {
     color: #553177;
 }
 
-
-/* formatting of profilepage */
-
 .side-navbar-wrapper {
     display: flex;
     flex-direction: column;
@@ -286,7 +312,7 @@ footer ul a {
 /**************************
         MEDIA QUERIES
 ***************************/
-
+/*
 @media (max-width: 1700px) {
     #header-logo-u {
         width: 5em;
@@ -439,8 +465,9 @@ footer ul a {
         position: relative;
         right: 3.3em;
     }
-}
+}*/
 
+/*
 @media (max-width: 375px) {
     #header-logo-u {
         width: 3em;
@@ -503,7 +530,112 @@ footer ul a {
         text-align: center;
         font-size: 1.5rem;
     }
+}
+*/
+
+@media (max-width: 1520px) {
+    .searchbar-and-navbar {
+        display: flex;
+        flex-direction: column;
+        width: 20em;
+        font-size: 0.6em;
+    }
+
+    #search-btn {
+        width: 1em;
+        padding: 1em;
+    }
+
+    .searchbar-and-navbar-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+}
+
+@media (max-width: 1065px) {
+
+    #unicorn-events-title {
+        display: none;
+    }
+
+    .searchbar-and-navbar-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+}
+
+/*
+
+@media (max-width: 430px) {
+    #header-logo-u {
+        width: 3em;
+        margin-right: 0.5em;
+        position: relative;
+        right: 1em;
+    }
+
+    #unicorn-events-title {
+        margin-right: 1em;
+        font-size: 0.8em;
+        line-height: 1;
+        display: none;
+    }
+
+    #search-bar {
+        margin-top: 1.1em;
+        width: 17em;
+        height: 1.7em;
+    }
+
+    #search-btn {
+        width: 1em;
+        padding: 1em;
+    }
+
+    nav button {
+        font-size: 0.7em;
+        margin-left: 0.4em;
+    }
+
+    nav a:nth-child(5) {
+        margin-left: 0;
+        position: relative;
+        right: 1em;
+
+    }
+
+    .searchbar-and-navbar {
+        display: flex;
+        flex-direction: column;
+        width: 30em;
+        font-size: 0.6em;
+    }
+
+    #round-login-avatar {
+        width: 1.7em;
+        margin-bottom: 1em;
+        position: relative;
+        right: 2.5em;
+    }
+
+
+    .card{
+        border: 1px solid red;
+        width: 18em
+    }
+
+    .card-area-wrapper h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
 
 
 }
+*/
 
