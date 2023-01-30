@@ -2,38 +2,54 @@
 
 //todo: Add new Date to month property, this so we can match this array with artist array?.
 // Then Convert artist date into month with string. Then see if properties match and can display saved events
-export const monthByName = [{
+const getCurrentDate = new Date()
+const getYear = new Date()
+const date = new Date(getCurrentDate.getFullYear(),0,1);
+console.log(date.setMonth(date.getMonth()))
+
+export const monthByName = [
+    {
     month: "January"
 }, {
-    month: "February"
+    month: new Date(date.setMonth(date.getMonth()+1))
 },{
-    month: "March"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "May"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "June"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "July"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "August"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "September"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "October"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "November"
+    month: new Date(date.setMonth(date.getMonth() + 1))
 },{
-    month: "December"
+    month: new Date(date.setMonth(date.getMonth() + 1))
+},{
+    month: new Date(date.setMonth(date.getMonth() + 1))
+},{
+    month: "Skipped date"
 }]
 
-export const years = [
+export const yearByName = [
     {
-     year: "2023"
+        currentYear: new Date().getFullYear()-2
+    },
+    {
+        currentYear: new Date().getFullYear()-1
+    },
+    {
+     currentYear: new Date().getFullYear()
     },  {
-        year: "2024"
+        currentYear: new Date().getFullYear()+1
     },  {
-        year: "2025"
+        currentYear: new Date().getFullYear()+2
     },  {
-        year: "2026"
+        currentYear: new Date().getFullYear()+3
     },
 ]
