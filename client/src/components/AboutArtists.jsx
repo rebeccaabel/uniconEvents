@@ -29,7 +29,7 @@ export default function () {
     ]
     return <div className="card-area-wrapper">
             <h2>About Artists</h2>
-            <div className="card-area">
+            <div className="card-area-artists">
                 {
                     artistInfo.map(artistInformation => <Artistcard  Name={artistInformation.Name} Age={artistInformation.Age} Genre={artistInformation.Genre} ArtistImage={artistInformation.ArtistImage} />)
                 }

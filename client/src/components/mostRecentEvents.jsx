@@ -21,7 +21,7 @@ export default function () {
 
     return <div className="card-area-wrapper">
         <h2>Newly Added Events</h2>
-        <div className="card-area">
+        <div className="card-area-events">
             {
                 artistsSortedByDateAdded.map(artist => <Eventcard title={artist.title} location={artist.location} date={artist.date.toLocaleString()}  image={artist.image} />)
             }
