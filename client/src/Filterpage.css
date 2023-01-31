@@ -8,56 +8,47 @@
 
 html {
     box-sizing: border-box;
-    background: linear-gradient(180deg, #232328 50%, rgba(222, 189, 189, 0) 100%);
 }
-
-.filter-container-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
 
 .filter-container {
-    border: 1px solid black;
-    padding: 5%;
-    width: 50%;
-    background-color: #6D5E76;
+    margin-top: 3rem;
+    margin-left: 3rem;
     border-radius: 1rem;
 }
-
-
 
 .filter-buttons-dates {
     display: flex;
     flex: auto;
-    gap: 5%;
+    gap: 2rem;
 
 
 }
 .filter-buttons-cities  {
     display: flex;
     flex: auto;
-    gap: 5%;
+    gap: 2rem;
 
 }
 
 .filter-buttons-dates button {
     font-size: 1rem;
-    margin-bottom: 5%;
+    margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 0.7rem;
+    width: 12em;
 }
 
 .filter-buttons-dates button:hover {
     cursor:pointer;
 }
+
 .filter-buttons-cities button {
     font-size: 1rem;
-    margin-bottom: 5%;
+    margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 0.7rem;
+    width: 12em;
+
 }
 
 .filter-buttons-cities button:hover {
@@ -66,12 +57,17 @@ html {
 
 .date-form {
     display: flex;
+    flex-direction: row;
     padding: 2rem;
     border: 1px solid red;
 }
 
-.date-form p{
+#start-date {
+    margin-right: 2rem;
+}
 
+.date-form p{
+    color: white;
 }
 
 .date-form input {
@@ -81,20 +77,14 @@ html {
     border: 1px solid blue;
 }
 
-.filter-search-button button {
-    display: flex;
-    padding: 2%;
-    color: #2e045b;
-    margin: 5% auto;
-    width: 5rem;
-    height: 2rem;
-    align-items: center;
-    border-radius: 0.5rem;
+#end-date button{
+    margin-left: 2rem;
+
 }
 
-.calender-container button:hover {
-    cursor:pointer;
-}
+/***********************
+        CARD
+***********************/
 
 .card-area-wrapper {
     display: flex;
@@ -102,7 +92,6 @@ html {
     flex-wrap: wrap;
     padding: 3rem;
 }
-
 
 .card-area {
     display: flex;
