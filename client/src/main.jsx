@@ -29,8 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'ArtistHub'} element={<ArtistHub/>}/>
 
-            </Route>
-            )
+                    </Route>
+                )
             )
         }/>
 
