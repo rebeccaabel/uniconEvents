@@ -5,7 +5,6 @@ import Searchbar from "../components/Searchbar.jsx";
 
 export default function () {
     return <>
-        <Searchbar/>
         <AboutArtists/>
     </>
 

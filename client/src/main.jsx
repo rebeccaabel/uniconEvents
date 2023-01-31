@@ -30,8 +30,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                       <Route path={'sectionpage'} element={<Sectionpage/>}/>
 
-            </Route>
-            )
+                    </Route>
+                )
             )
         }/>
 

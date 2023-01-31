@@ -27,11 +27,7 @@ html {
     border-radius: 1rem;
 }
 
-h1 {
-    text-align: center;
-    padding-top: 5%;
-    color: #d4bffa;
-}
+
 
 .filter-buttons-dates {
     display: flex;
@@ -67,20 +63,24 @@ h1 {
     cursor:pointer;
 }
 
-.calender-container {
-    display: block;
+.date-form {
+    display: flex;
+    padding: 2rem;
+    border: 1px solid red;
 }
 
-.calender-container input {
+.date-form p{
+
+}
+
+.date-form input {
     width: 10rem;
     height: 2rem;
     border-radius: 0.2rem;
-}
-.calender-container p {
-    padding-top: 4%;
+    border: 1px solid blue;
 }
 
-.calender-container button {
+.filter-search-button button {
     display: flex;
     padding: 2%;
     color: #2e045b;
