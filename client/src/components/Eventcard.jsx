@@ -1,5 +1,5 @@
 import {artists} from "./artistArray.jsx";
-import {saveAnEvent} from "./MySavedEvents"
+import {SaveAnEvent} from "./MySavedEvents"
 export default function ({title, text, image, id}) {
 
     return <>
@@ -7,7 +7,7 @@ export default function ({title, text, image, id}) {
             <h3>{title}</h3>
             <p>{text}</p>
             <p>{id}</p>
-            <button id={id} onClick={() => {saveAnEvent(id)} }>Save Event</button>
+            <button id={id} onClick={() => {SaveAnEvent(id)} }>Save Event</button>
         </div>
     </>
 }

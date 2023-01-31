@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import {monthByName} from "./MonthArray.jsx"
 import {yearByName} from "./MonthArray.jsx";
-import SavedEventCard from "./SavedEventCard.jsx";
+import {SaveAnEvent} from "./MySavedEvents.jsx";
+import {artists} from "./artistArray.jsx";
+import Eventcard from "./Eventcard.jsx";
 
 
 
@@ -16,7 +18,6 @@ export default function () {
     }
     const displayMonth = () => {
         setMonth(month + 1)
-
         if(month === 11) {
 
             setYear(year +1)
@@ -32,6 +33,17 @@ export default function () {
         if(month < 1) {
             setYear(year -1)
             setMonth(month = 10)
+        }
+    }
+
+
+  function Trying(id){
+      SaveAnEvent(id)
+        console.log(SaveAnEvent(id)) //Returns undefined
+        for (let i = 0; i<artists.length; i++) {
+            if(artists[i].wishList = true && artists[0].date.getMonth() === month) {
+                return  artists.map(savedEvent => <Eventcard title={savedEvent.title} date={savedEvent.date.toLocaleString()} image={savedEvent.image} />)
+            }
         }
     }
 
@@ -55,19 +67,25 @@ export default function () {
 
         <div className={"my-events"}>
 
-
         <h3>{monthIndex.month.toLocaleString("en-US", {month:"long"})}</h3>
 
         </div>
 
         <h4>Your planned events:</h4>
         <div>
-            <SavedEventCard/>
+            <SaveAnEvent/>
+            <Trying/>
         </div>
 
     </>
+
 }
-console.log(<SavedEventCard/>)
+/* Olika kort
+ <SavedEventCard/>
+            <ShowSavedEvent/>
+ */
+
+
 
 
 

@@ -4,8 +4,6 @@
 // Then Convert artist date into month with string. Then see if properties match and can display saved events
 const getCurrentDate = new Date()
 const date = new Date(getCurrentDate.getFullYear(),0,1);
-console.log(date.setMonth(date.getMonth()))
-
 export const monthByName = [
     {
     month: "January"
