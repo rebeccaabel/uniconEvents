@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Asap', sans-serif;
 }
 
 html {
@@ -46,7 +46,7 @@ html {
 
 .filter-buttons-cities button {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
     padding: 0.5rem;
     border-radius: 0.7rem;
     width: 12em;
@@ -66,6 +66,7 @@ html {
 #start-date {
     margin-right: 2rem;
 }
+
 
 .date-form p{
     color: white;
