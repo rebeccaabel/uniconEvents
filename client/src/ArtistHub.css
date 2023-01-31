@@ -61,6 +61,7 @@
 .google-maps{
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .google-maps iframe{
