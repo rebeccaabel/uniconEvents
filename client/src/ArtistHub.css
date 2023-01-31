@@ -1,12 +1,21 @@
-.artist-image{
+.artist-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, 0.90);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 1%;
+}
+
+.artist-image, #title{
     display: flex;
     justify-content: center;
 }
 
-#image{
+.artist-image > img{
     width: 25rem;
     margin-top: 2rem;
-    
 }
 
 .description{
@@ -20,24 +29,32 @@
 }
 
 .artist-list{
-
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
 }
 
 .location{
-
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
 }
 
 .ticket{
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
 }
 
 @media screen and (max-width: 480px){
 
-    #image{
+    .artist-image > img{
         width: 15rem;
     }
 
-    .description h1{
+    .description > h1{
         font-size: 1.3rem;
     }
 

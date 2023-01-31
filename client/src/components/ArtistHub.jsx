@@ -1,22 +1,22 @@
 import "../ArtistHub.css"
-import {artists} from "./artistArray.jsx";
-import {Link} from "react-router-dom";
+import { artists } from "./artistArray.jsx";
+import { Link } from "react-router-dom";
 
 
 export default function () {
 
-    let month = artists[0].date.toLocaleString('en-US',{month: 'long'});
-    let day = artists[0].date.toLocaleString('en-US',{day: '2-digit'});
+    let month = artists[0].date.toLocaleString('en-US', { month: 'long' });
+    let day = artists[0].date.toLocaleString('en-US', { day: '2-digit' });
     let fullYear = artists[0].date.getFullYear();
 
-    return<div className="artist-info-wrapper">
+    return <div className="artist-info-wrapper">
 
         <div>
             <h1 id="title">{artists[0].title}</h1>
         </div>
 
         <div className="artist-image">
-            <img id="image" src={artists[0].image}/>
+            <img src={artists[0].image}/>
         </div>
 
         <div className="description">
@@ -34,17 +34,17 @@ export default function () {
             </p>
         </div>
 
-        <div id="artist-list">
+        <div className="artist-list">
             <h1>Artists Present</h1>
         </div>
 
-        <div id="location">
-            <h1>Date: <p>{fullYear}{month}{day}</p></h1>
+        <div className="location">
+            <h1>Date: {fullYear}{month}{day}</h1>
             <h1>Location: {artists[0].location}</h1>
-            <h1>Tickets Remaining: {artists[0].availableSeats} / {artists[0].totalSeats}</h1>
         </div>
 
-        <div id="ticket">
+        <div className="ticket">
+            <h1>Tickets Remaining: {artists[0].availableSeats} / {artists[0].totalSeats}</h1>
             <h1>Price</h1>
             <Link to={'/Paymentpage'}><button> Buy Ticket/s </button></Link>
         </div>
@@ -52,4 +52,3 @@ export default function () {
     </div>
 
 }
-
