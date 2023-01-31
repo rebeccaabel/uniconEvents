@@ -1,178 +1,132 @@
 import { useRef, useState } from "react";
 import Card from "./EventCard";
-import {
-    sortBetweenTwoDates,
-    sortByLocation,
-    sortByMostRecentAdded,
-    sortIfNextYear,
-    sortIfThisMonth,
-    sortIfThisWeek,
-    sortIfThisYear,
-    sortIfToday,
-    sortIfTomorrow
-} from "./artistArrayFunctions";
+import { sortByMostRecentAdded } from "./artistArrayFunctions";
 import { artists } from "./artistArray";
 
-
 export default function () {
-    
+
     let [sortedArray, setFilter] = useState([])
     let startDate = useRef(null)
     let endDate = useRef(null)
-    let todayFilter = false
-    let tomorrow = false
-    let thisWeek = false
-    let thisMonth = false
-    let thisYear = false
-    let nextYear = false
+    let cityButtonDataArray = [
+        {
+            buttonName: "Malmö",
+            isOn: false,
+            index: 0
+        }, {
+            buttonName: "Stockholm",
+            isOn: false,
+            index: 1
+        }, {
+            buttonName: "Göteborg",
+            isOn: false,
+            index: 2
+        }, {
+            buttonName: "Borås",
+            isOn: false,
+            index: 3
+        }, {
+            buttonName: "Skövde",
+            isOn: false,
+            index: 4
+        }
+    ]
+    let dateButtonDataArray = [
+        {
+            buttonName: 'Today',
+            isOn: false,
+            index: 0,
+        }, {
+            buttonName: 'Tomorrow',
+            isOn: false,
+            index: 1,
+        }, {
+            buttonName: 'Within 7 Days',
+            isOn: false,
+            index: 2,
+        }, {
+            buttonName: 'This Month',
+            isOn: false,
+            index: 3,
+        }, {
+            buttonName: 'This Year',
+            isOn: false,
+            index: 4,
+        }, {
+            buttonName: 'Next Year',
+            isOn: false,
+            index: 5,
+        }
+    ]
 
     function filterArray() {
-        let tempArray = artists
-        let returnArray = tempArray
+        let tempArray = artists.map(a => { return { ...a } })
+        let returnArray = []
         const today = new Date()
+        let isToday = dateButtonDataArray[0].isOn
+        let isTomorrow = dateButtonDataArray[1].isOn
+        let isThisWeek = dateButtonDataArray[2].isOn
+        let isThisMonth = dateButtonDataArray[3].isOn
+        let isThisYear = dateButtonDataArray[4].isOn
+        let isNextYear = dateButtonDataArray[5].isOn
+        for (let i = 0; i < artists.length; i++) {
+            if (isToday &&
+                artists[i].date.getDate() !== today.getDate() ||
+                artists[i].date.getMonth() !== today.getMonth() ||
+                artists[i].date.getFullYear() !== today.getFullYear()
 
-        for (let i = 0; i < tempArray.length; i++) {
-            if (todayFilter &&
-                tempArray[i].date.getDate() == today.getDate() &&
-                tempArray[i].date.getMonth() == today.getMonth() &&
-                tempArray[i].date.getFullYear() == today.getFullYear()
-                
             ) {
-                returnArray = tempArray.splice(i, 1)
+                tempArray.splice(i, 1, "deleted")
+                console.log(tempArray)
+                
             }
 
-        if (tomorrow) {
+            if (isTomorrow &&
+                artists[i].date.getDate() == today.getDate()+1 &&
+                artists[i].date.getMonth() == today.getMonth() &&
+                artists[i].date.getFullYear() == today.getFullYear()) {
 
+            }
+
+            if (isThisWeek &&
+                artists[i].date.getDate() == today.getDate()+7 &&
+                artists[i].date.getMonth() == today.getMonth() &&
+                artists[i].date.getFullYear() == today.getFullYear()) {
+
+            }
+
+            if (isThisMonth &&
+                artists[i].date.getMonth() == today.getMonth() &&
+                artists[i].date.getFullYear() == today.getFullYear()) {
+
+            }
+
+            if (isThisYear &&
+                artists[i].date.getFullYear() == today.getFullYear()) {
+
+
+            }
+
+            if (isNextYear &&
+                artists[i].date.getFullYear() == today.getFullYear()) {
+                    returnArray = (artists.splice(i, 1))
+                    tempArray.splice(i, 1)
+            }
         }
-
-        if (thisWeek) {
-
-        }
-
-        if (thisMonth &&
-            tempArray[i].date.getMonth() == today.getMonth() &&
-            tempArray[i].date.getFullYear() == today.getFullYear()
-            ) {
-            returnArray = tempArray.splice(i, 1)
-        }
-        
-        
-
-        if (thisYear) {
-
-        }
-
-        if (nextYear) {
-
-        }
+        return setFilter(tempArray)
     }
-    console.log(todayFilter)
-    console.log(tempArray.length)
-    return setFilter(returnArray)
-}
     function mostRecentEventsFilter() {
         setFilter(sortedArray = sortByMostRecentAdded)
     }
 
-    function todayEventsFilter() {
-        setFilter(sortedArray = sortIfToday)
-    }
-
-    function tomorrowEventsFilter() {
-        setFilter(sortedArray = sortIfTomorrow)
-    }
-
-    function thisWeekEventsFilter() {
-        setFilter(sortedArray = sortIfThisWeek)
-    }
-
-    function thisMonthEventsFilter() {
-        setFilter(sortedArray = sortIfThisMonth)
-    }
-
-    function thisYearEventsFilter() {
-        setFilter(sortedArray = sortIfThisYear)
-    }
-
-    function nextYearEventsFilter() {
-        setFilter(sortedArray = sortIfNextYear)
-    }
-
-    function locationFilter(input) {
-        setFilter(sortedArray = sortByLocation(input))
-    }
-
-    function sortBetweenTwoDatesFilter(input1, input2) {
-        setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
-    }
-
-    
-    function handleButtonColor(input) {
-        if(input.style.backgroundColor == "black")
-        {input.style.backgroundColor = "white"}
-    }
-
-    return <>
-        <EventFilter/>
-        <div className="card-area-wrapper">
-        <DisplayResults/>
-        </div>
-    </>
-
-    function EventFilter() {
-        return <div className="filter-container">
-        <DatesFilter />
-        <CitiesFilter />
-        <TwoDatesFilter />
-        <SearchButton />
-    </div>
-    }
-
     function DisplayResults() {
-    return <div id="filterwrapper-card-area">
+        return <div id="filterwrapper-card-area">
             <div className="card-area">
                 {
                     sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
                 }
             </div>
-            </div>
-    }
-
-    function CitiesFilter() {
-        return <div className="city-filters">
-            <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
-            <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
-            <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
-            <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
-            <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
         </div>
-    }
-
-    function DatesFilter() {
-        return <div className="date-filters">
-            <button onClick={e => e.target.style.backgroundColor="purple"}>Today</button>
-            <button>Tomorrow</button>
-            <button onClick={thisWeekEventsFilter}>This Week</button>
-            <button onClick={() => {if (!thisMonth){thisMonth = true} else {thisMonth = false}}}>This Month</button>
-            <button onClick={thisYearEventsFilter}>This Year</button>
-            <button onClick={nextYearEventsFilter}>Next Year</button>
-            <button onClick={mostRecentEventsFilter}>Recently added events</button>
-            <DateButton/>
-            <DateButton/>
-            <DateButton/>
-        </div>
-    }
-
-    function DateButton() {
-        const [active, setActive] = useState(false);
-        const handleClick = () => {
-            setActive(!active);
-          };
-          
-        return <button
-        onClick={handleClick}
-        style={{ backgroundColor: active ? "gray" : "black" }}
-      />
     }
 
     function TwoDatesFilter() {
@@ -183,8 +137,67 @@ export default function () {
     }
 
     function SearchButton() {
-        return <button id="filter-page-search-button" onClick={() => {filterArray()}}>Search</button>
+        return <button id="filter-page-search-button" onClick={() => { filterArray() }}>Search</button>
     }
+
+    function CityButton({ type, index }) {
+        const [active, setActive] = useState(false);
+        const handleClick = () => {
+            setActive(!active);
+            if (active) {
+                { cityButtonDataArray[index].isOn = false; }
+            } else { cityButtonDataArray[index].isOn = true };
+        };
+        return <button
+            onClick={() => { handleClick(); }}
+            style={{ backgroundColor: active ? "gray" : "black" }}
+        >{type}</button>
+    }
+
+    function CityButtonGroup() {
+        return <div className="city-filters">
+            {cityButtonDataArray.map(buttons => <CityButton type={buttons.buttonName} index={buttons.index}></CityButton>)}
+        </div>
+    }
+
+    function DateButton({ type, index }) {
+        const [active, setActive] = useState(false);
+        const handleClick = () => {
+            setActive(!active);
+            if (active) {
+                { dateButtonDataArray[index].isOn = false; }
+            } else { dateButtonDataArray[index].isOn = true };
+        };
+        return <button
+            onClick={() => { handleClick(); }}
+            style={{ backgroundColor: active ? "gray" : "black" }}
+        >{type}</button>
+    }
+
+    function DateButtonGroup() {
+        return <div className="date-filters">
+            {dateButtonDataArray.map(buttons => <DateButton type={buttons.buttonName} index={buttons.index}></DateButton>)}
+            <button onClick={mostRecentEventsFilter}>Recently added events</button>
+        </div>
+    }
+
+
+
+    function EventFilter() {
+        return <div className="filter-container">
+            <DateButtonGroup />
+            <CityButtonGroup />
+            <TwoDatesFilter />
+            <SearchButton />
+        </div>
+    }
+
+    return <>
+        <EventFilter />
+        <div className="card-area-wrapper">
+            <DisplayResults />
+        </div>
+    </>
 }
 
 /* sortBetweenTwoDatesFilter(startDate, endDate) */
