@@ -1,3 +1,4 @@
+
 export default function ({ArtistImage,Name,Age,Genre}) {
     return <div>
         <div className="artist-card"  alt='artist picture' style={{backgroundImage:`url(${ArtistImage})`}}>

@@ -38,14 +38,13 @@ header {
 
 .header-logo-title{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-
 }
 
 .header-logo-title img{
-width: 100px;
+    width: 100px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 
@@ -210,6 +209,16 @@ nav button:hover {
     border-top-right-radius: 2rem;
 }
 
+.artist-card-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    gap: 2em;
+    color: #000000;
+
+}
+
 .about-artist-text {
     text-align: left;
     background-color: azure;
@@ -257,28 +266,35 @@ footer ul a {
     color: #553177;
 }
 
+/***********************
+        PROFILE PAGE
+***********************/
+
 .side-navbar-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .side-navbar {
     display: flex;
-    justify-content: left;
-    width: 5rem;
-    background-color: #D7AFF6;
-
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    width: 6rem;
+    border: 2px solid red;
 }
 
-.side-navbar-info {
+
+.contact-information {
+    border: 2px solid blue;
     display: flex;
-    justify-content: center;
-    background-color: #D7AFF6;
+    flex-direction: column;
+    color: white;
 }
 
 .contact-information input {
     display: flex;
-    flex-direction: column;
     margin: 1rem;
 }
 

@@ -76,7 +76,9 @@ export default function () {
                         <div id='end-date'>
                             <p>End date</p>
                             <input type="date" ref={endDate}/>
-                            <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
+                            <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>
+                                <i className="fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </div>
                     </form>
 

@@ -20,6 +20,7 @@ html {
     display: flex;
     flex: auto;
     gap: 2rem;
+    margin-left: 2rem;
 
 
 }
@@ -27,6 +28,7 @@ html {
     display: flex;
     flex: auto;
     gap: 2rem;
+    margin-left: 2rem;
 
 }
 
@@ -59,7 +61,6 @@ html {
     display: flex;
     flex-direction: row;
     padding: 2rem;
-    border: 1px solid red;
 }
 
 #start-date {
@@ -74,11 +75,13 @@ html {
     width: 10rem;
     height: 2rem;
     border-radius: 0.2rem;
-    border: 1px solid blue;
 }
 
 #end-date button{
     margin-left: 2rem;
+    width: 2rem;
+    border-radius: 5rem;
+    font-size: 1rem;
 
 }
 
@@ -99,3 +102,7 @@ html {
     justify-content: space-around;
     gap: 2em;
 }
+
+/***********************
+        FOOTER
+***********************/
