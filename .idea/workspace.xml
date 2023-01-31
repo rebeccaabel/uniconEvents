@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/MyCalender.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/MyCalender.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MonthArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MonthArray.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArray.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/todayEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/todayEvents.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="08718784-2e30-4dd7-b4f7-2e2bc133701e" name="Changes" comment="" />
+      <changelist id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="" />
       <created>1674814413948</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -57,6 +58,7 @@
       <workItem from="1674919202643" duration="7922000" />
       <workItem from="1675003001619" duration="23719000" />
       <workItem from="1675063378119" duration="11397000" />
+      <workItem from="1675151250204" duration="10592000" />
     </task>
     <servers />
   </component>

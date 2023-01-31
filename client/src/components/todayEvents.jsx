@@ -23,7 +23,7 @@ export default function () {
         <h2>Todays Events</h2>
         <div className="card-area">
             {
-                artistsSortedByToday.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
+                artistsSortedByToday.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} id={artist.id}/>)
             }
         </div>
     </div> 

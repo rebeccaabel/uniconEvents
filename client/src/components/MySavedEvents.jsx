@@ -1,21 +1,30 @@
 import {artists} from "./artistArray.jsx";
 import React from "react";
+import SavedEventCard from "./SavedEventCard.jsx";
 
+let savedEventsArray = []
 
+export function saveAnEvent(id) {
 
-export default function () {
-    return <div>
-        <ShowSavedEvent/>
-    </div>
+    console.log({id})
+    for (let i = 0; i < artists.length; i++) {
+        if (id === artists[i].id) {
+            let savedArtist = artists[i].wishList = true
+            console.log(artists[i].wishList)
 
-
-    function ShowSavedEvent() {
-        for (let i = 0; i < artists.length; i++) {
-                if (artists[i].wishList = true){
-                  console.log("saved")
-            } else {console.log("not saved")}
+            if (savedArtist) {
+                savedEventsArray.push(artists[i])
+               ShowSavedEvent()
+            }
         }
-
     }
 }
+export function ShowSavedEvent() {
+    return <div>
+        {
+            savedEventsArray.map(savedEvent => <SavedEventCard image={savedEvent.image} title={savedEvent.title}
+                                                            date={savedEvent.date}/>)
+        }
+    </div>
 
+}

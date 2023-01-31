@@ -21,7 +21,7 @@ export default function () {
         <h2>Newly Added Events</h2>
         <div className="card-area">
             {
-                artistsSortedByDateAdded.map(artist => <Eventcard title={artist.title} text={artist.text} image={artist.image} />)
+                artistsSortedByDateAdded.map(artist => <Eventcard title={artist.title} text={artist.text} image={artist.image} id={artist.id} />)
             }
         </div>
     </div>

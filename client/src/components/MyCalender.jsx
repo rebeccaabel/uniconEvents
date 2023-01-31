@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import {monthByName} from "./MonthArray.jsx"
 import {yearByName} from "./MonthArray.jsx";
+import SavedEventCard from "./SavedEventCard.jsx";
+
 
 
 export default function () {
@@ -27,15 +29,10 @@ export default function () {
     let yearIndex = yearByName[year]
     const displayPrevMonth = () => {
         setMonth(month - 1)
-
-    if(yearIndex.currentYear < yearIndex.currentYear[0]){
-        console.log("test")
-    }
         if(month < 1) {
             setYear(year -1)
             setMonth(month = 10)
         }
-
     }
 
     return <>
@@ -64,12 +61,13 @@ export default function () {
         </div>
 
         <h4>Your planned events:</h4>
-
-
+        <div>
+            <SavedEventCard/>
+        </div>
 
     </>
 }
-console.log(yearByName[1].currentYear)
+console.log(<SavedEventCard/>)
 
 
 

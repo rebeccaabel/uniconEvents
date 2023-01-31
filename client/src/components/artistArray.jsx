@@ -10,6 +10,7 @@ export const artists = [
         availableSeats: 200,
         isBought: false,
         wishList: false,
+        id: 1
 
     },
     {
@@ -23,6 +24,7 @@ export const artists = [
         availableSeats: 150,
         isBought: false,
         wishList: false,
+        id: 2
     },
     {
         title: "Kayne West",
@@ -35,6 +37,7 @@ export const artists = [
         availableSeats: 205,
         isBought: false,
         wishList: false,
+        id: 3
     },
     {
         title: "Kimberly Amethyst",
@@ -47,6 +50,7 @@ export const artists = [
         availableSeats: 2005,
         isBought: false,
         wishList: false,
+        id: 4
     },
     {
         title: "Eminem",
@@ -59,9 +63,10 @@ export const artists = [
         availableSeats: 250,
         isBought: false,
         wishList: false,
+        id: 5
     },
     {
-        title: "Kimberly Amethyst",
+        title: "Nirvana",
         text: `Mushrooms are surprisingly similar in taste and texture to meat when cooked, and this mushroom veggie burger recipe may just surprise you with how tasty it is. While mushrooms provide plenty of flavor and texture, the addition of pinto beans makes this recipe high in fiber and protein too. `,
         image: 'https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHNpbmdlcnN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
         dateAdded: new Date("2023/01/23"),
@@ -71,6 +76,7 @@ export const artists = [
         availableSeats: 120,
         isBought: false,
         wishList: false,
+        id: 6
     },
     {
         title: "Madonna",
@@ -83,6 +89,7 @@ export const artists = [
         availableSeats: 125,
         isBought: false,
         wishList: false,
+        id: 7
     },
     {
         title: "Bob Dylan",
@@ -95,6 +102,7 @@ export const artists = [
         availableSeats: 200,
         isBought: false,
         wishList: false,
+        id: 8
     },
     {
         title: "Rihanna",
@@ -107,6 +115,7 @@ export const artists = [
         availableSeats: 200,
         isBought: false,
         wishList: false,
+        id: 9
     },
     {
         title: "Elton John",
@@ -119,5 +128,6 @@ export const artists = [
         availableSeats: 200,
         isBought: false,
         wishList: false,
+        id: 10
     }
 ]
