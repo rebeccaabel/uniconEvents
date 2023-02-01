@@ -10,7 +10,7 @@ export function SavedCard ({ event}) {
     return <>
         <div className="card" style={{backgroundImage: `url(${event.image})`}}>
             <h3>{event.title}</h3>
-            <p>{event.text}</p>
+            <h3>{event.time}</h3>
             <p>{event.id}</p>
         </div>
     </>

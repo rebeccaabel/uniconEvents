@@ -1,9 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {monthByName} from "./MonthArray.jsx"
-import {yearByName} from "./MonthArray.jsx";
-import {SaveAnEvent, wishlist, idArray, SavedCard} from "./MySavedEvents.jsx";
-import {artists} from "./artistArray.jsx";
-import Eventcard from "./Eventcard.jsx";
+import {wishlist, SavedCard} from "./MySavedEvents.jsx";
 
 
 export default function () {
@@ -14,18 +10,19 @@ export default function () {
         setFilteredEvents(wishlist.filter(artist => artist.date.getMonth() === date.getMonth() && artist.date.getFullYear() === date.getFullYear()))
     }, [date])
 
-    // noinspection JSCheckFunctionSignatures
+
     return <>
         <Calendar/>
-        <h4>{date.getFullYear()}</h4>
+
         <MyEvents/>
     </>
 
     function MyEvents() {
         return <div className={"my-events"}>
             <h3>{date.toLocaleString("en-GB", {month: "long"})}</h3>
+            <h4>{date.getFullYear()}</h4>
             <h4>Your planned events:</h4>
-            <div>
+            <div className={"saved-card"}>
                 {filteredEvents.map(details => <SavedCard event={details}/>)}
             </div>
         </div>
@@ -50,7 +47,6 @@ export default function () {
     function handleChange(e) {
         setDate(new Date(date.setFullYear(e.target.value)))
     }
-
     function incrementMonth() {
         if (date.getMonth() + 1 === 11) {
             date.setFullYear(date.getFullYear() + 1)
@@ -72,10 +68,6 @@ export default function () {
     }
 
 }
-/* Olika kort
- <SavedEventCard/>
-            <ShowSavedEvent/>
- */
 
 
 

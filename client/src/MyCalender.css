@@ -35,11 +35,22 @@ select option {
     color: pink;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
-h4 {
+.my-events h3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.my-events h4 {
     color: pink;
     display: flex;
     justify-content: center;
+}
+.saved-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 p{
@@ -47,4 +58,9 @@ p{
     display: flex;
     justify-content: center;
     margin: 1em;
+}
+.save-event{
+    display: flex;
+    margin-bottom: 8em;
+    padding: 1em;
 }
