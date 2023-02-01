@@ -39,7 +39,7 @@ header {
     flex-direction: row;
     margin-left: auto;
     padding-right: 1em;
-
+    border: 2px solid red;
 
 }
 
@@ -60,14 +60,14 @@ header {
     width: 6rem;
 
     margin-left: 1rem;
-
+    border: 2px solid green;
 
 }
 
 #unicorn-events-title {
     color: #d4bffa;
     margin-right: 1em;
-
+    border: 2px solid green;
 
 }
 
@@ -107,7 +107,7 @@ nav {
     display: flex;
     justify-content: space-around;
     margin: auto;
-
+    border: 2px solid orange;
 }
 
 nav button {
@@ -146,7 +146,7 @@ nav button:hover {
 .searchbar-and-navbar-wrapper {
     display: flex;
     flex-direction: row;
-
+    border: 2px solid blue;
 
 }
 
@@ -172,35 +172,71 @@ nav button:hover {
 
 }
 
-.card-area {
+.card-area-artists {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: auto;
     gap: 2em;
-    color: white;
+
+}
+
+
+.card-area-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    gap: 2em;
 
 
 }
+
+.card h3, p {
+    margin-left: 1rem;
+
+
+}
+
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
+    justify-content: flex-end;
+    align-items: flex-start;
     border-radius: 2em;
     width: 350px;
     height: 200px;
+
+
+
 }
+
+
+
+.event-card-details {
+
+    background: linear-gradient(to top, rgba(133, 131, 131, 0.34), rgba(42, 39, 39, 0.93));
+    color: rgba(255, 255, 255, 0.77);
+    border-radius: 0 0.5em 0 2em;
+    padding-right:1em ;
+
+}
+
+
 
 .card:hover {
     cursor: pointer;
 }
 
-.card p {
-    display: none;
+.card-area img {
+    max-width: 100%;
+    height: auto;
+
 }
+
+
+
 
 
 .artist-card {

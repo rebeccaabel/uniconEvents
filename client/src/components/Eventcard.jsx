@@ -1,11 +1,16 @@
-import {SaveAnEvent} from "./MySavedEvents"
-export default function ({title, text, image, id}) {
+
+
+export default function ({title, image, location, date}) {
+
     return <>
-        <div className="card" style={{backgroundImage: `url(${image})`}}>
-            <h3>{title}</h3>
-            <p>{text}</p>
-            <p>{id}</p>
-            <button className={"save-event"} id={id} onClick={() => {SaveAnEvent(id)} }>Save Event</button>
+        <div className="card"  alt='artist picture' style={{backgroundImage:`url(${image})`}}>
+            <div className="event-card-details">
+
+        <h3 >{title}</h3>
+            <p>{location}</p>
+            <p>{date}</p>
+
+            </div>
         </div>
     </>
 

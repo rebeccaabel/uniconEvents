@@ -10,7 +10,8 @@ import Profilepage from "./pages/Profilepage.jsx";
 import Paymentpage from "./pages/Paymentpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
-import MyCalender from "./components/MyCalender.jsx";
+import ArtistHub from "./pages/ArtistHubPage.jsx";
+import {GlobalProvider} from "./components/GlobalContext.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -24,15 +25,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'filterpage'} element={<Filterpage/>}/>
                         <Route path={'profile'} element={<Profilepage/>}>
                             <Route path={'settings'} element={<UserSettings/>}/>
-                            <Route path={'MyCalender'} element={<MyCalender/>}/>
                         </Route>
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
+                        <Route path={'ArtistHub'} element={<ArtistHub/>}/>
 
                     </Route>
                 )
             )
         }/>
-
     </React.StrictMode>,
 )
