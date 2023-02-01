@@ -1,11 +1,9 @@
 export default function () {
-    return <div className="top-searchbar-wrapper">
+    return<form className="searchbar">
+                <input id="search-bar" type='text' placeholder='search'/>
+                    <button className="fas fa-search btn" id="search-btn"></button>
+             </form>
 
-    <form className="top-searchbar">
-        <input type="text" placeholder="Search for an event.." />
-        <button>
-            <i className="fa-solid fa-magnifying-glass"></i>
-        </button></form>
 
-    </div>
 }
+
