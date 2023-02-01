@@ -1,10 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {wishlist, SavedCard} from "./MySavedEvents.jsx";
-
+import GlobalContext from "./GlobalContext.jsx";
 
 export default function () {
     const [date, setDate] = useState(new Date(Date.now()))
     const [filteredEvents, setFilteredEvents] = useState(wishlist)
+    const {concerts} = useContext(GlobalContext)
+
 
     useEffect(() => {
         setFilteredEvents(wishlist.filter(artist => artist.date.getMonth() === date.getMonth() && artist.date.getFullYear() === date.getFullYear()))
@@ -24,6 +26,8 @@ export default function () {
             <h4>Your planned events:</h4>
             <div className={"saved-card"}>
                 {filteredEvents.map(details => <SavedCard event={details}/>)}
+
+                }
             </div>
         </div>
     }
@@ -48,7 +52,7 @@ export default function () {
         setDate(new Date(date.setFullYear(e.target.value)))
     }
     function incrementMonth() {
-        if (date.getMonth() + 1 === 11) {
+        if (date.getMonth() === 11) {
             date.setFullYear(date.getFullYear() + 1)
             date.setMonth(0)
         } else {
@@ -58,7 +62,7 @@ export default function () {
     }
 
     function decrementMonth() {
-        if (date.getMonth() - 1 === 0) {
+        if (date.getMonth() === 0) {
             date.setFullYear(date.getFullYear() - 1)
             date.setMonth(11)
         } else {

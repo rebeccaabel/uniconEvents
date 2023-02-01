@@ -7,7 +7,7 @@ export default function () {
             <div className='side-navbar'>
                 <div>
                     <Link to={'/profile/settings'}><button> Settings </button></Link>
-                    <Link to={'/profile/MyCalender'}><button>My calender</button></Link>
+                    <Link to={'calender'}><button>My calender</button></Link>
                 </div>
             </div>
         </div>

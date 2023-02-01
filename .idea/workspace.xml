@@ -5,65 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/example_client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/GlobalContext.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/components/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/components/Profile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/components/Tidbit.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/components/Tidbits.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/components/Welcome.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/src/main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_client/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/access-list.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/api-description.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/audio/Thee_Oh_Sees_-_Crack_In_Your_Eye_Live__KEXP.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/audio/independent state-filioque.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/audio/springtide.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/concerts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/live.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/live.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/london-concerts-september.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/scrape-bandsintown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/audio-js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/audio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/checkout-cancel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/checkout-success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/video-js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/examples/video.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/modules/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/modules/encrypt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/generic-routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/services/acl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/services/db-connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/video/Canned Heat - Rolling and a tumbling.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/video/Chris-Do.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/video/Gang of four - To hell with poverty.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/video/Mdou Moctar - Tala Tannam (Live).mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Sidenavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Sidenavbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.test" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,25 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/liina/OneDrive/Skrivbord/Projects kurs 3/unicornEvents/client/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/liina/OneDrive/Skrivbord/Projects kurs 3/unicornEvents/client/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents\client\src\components" />
