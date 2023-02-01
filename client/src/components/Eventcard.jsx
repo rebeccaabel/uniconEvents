@@ -1,8 +1,16 @@
-export default function ({title, text, image}) {
+
+
+export default function ({title, image, location, date}) {
+
     return <>
         <div className="card"  alt='artist picture' style={{backgroundImage:`url(${image})`}}>
-        <h3>{title}</h3>
-        <p>{text}</p>
+            <div className="event-card-details">
+
+        <h3 >{title}</h3>
+            <p>{location}</p>
+            <p>{date}</p>
+
+            </div>
         </div>
     </>
 }
