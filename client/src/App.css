@@ -5,9 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
-
+    box-sizing: border-box
 }
 
 
@@ -18,10 +16,10 @@
     background-attachment: fixed;
     background-color: black  ;
     font-family: 'Asap', sans-serif;
-    /*height: 100vh;*/
 
 
 }
+
 
 /***********************
         HEADER
@@ -34,7 +32,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     background-color: white;
     height: 10em;
 }
@@ -84,12 +81,10 @@ header {
     display: flex;
     flex-direction: row;
     max-width:100%;
-
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
     margin: auto;
 }
 
@@ -98,7 +93,13 @@ nav button {
     background: transparent;
     border: transparent;
     font-size: 1em;
-    width: 8em;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+nav a:link{
+    text-decoration: none;
 }
 
 
@@ -248,7 +249,7 @@ nav button:hover {
     border-top-right-radius: 2rem;
 }
 
-.artist-card-area {
+.card-area-artists {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -259,12 +260,16 @@ nav button:hover {
 }
 
 .about-artist-text {
-    text-align: left;
-    background-color: azure;
+    background-color: white;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     padding-left: 2rem;
     padding-top: 2rem;
+}
+
+.about-artist-text h3 {
+    padding-left: 0.8rem;
+    padding-bottom: 0.5rem;
 }
 
 .artist-details {
@@ -273,14 +278,24 @@ nav button:hover {
     width: 200px;
 }
 
+.artist-details:hover{
+    cursor: pointer;
+}
+
 /**************************
             FOOTER
 ***************************/
 
 
 footer {
-    height: 5rem;
+
+    min-width: 100%;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+
+
+    height: 5rem;
     background-color: white;
 
 }
@@ -322,7 +337,6 @@ footer ul a {
     margin-top: 2rem;
     background-color: white;
     width: 6rem;
-    border: 2px solid red;
 }
 
 
@@ -365,233 +379,15 @@ footer ul a {
 /**************************
         MEDIA QUERIES
 ***************************/
-/*
-@media (max-width: 1700px) {
-    #header-logo-u {
-        width: 5em;
-    }
 
-    #unicorn-events-title {
-        font-size: 1.6em;
-    }
-
-    #round-login-avatar {
-        width: 3rem;
-        margin-left: 1em;
-    }
-}
-
-
-@media (max-width: 1530px) {
-    #header-logo-u {
-        width: 4.6em;
-    }
-
-    #unicorn-events-title {
-        font-size: 1.8em;
-        line-height: 1;
-    }
-
-    nav {
-        margin: auto;
-    }
-
-    #round-login-avatar {
-        width: 3rem;
-        margin-right: 1em;
-    }
-}
-
-@media (max-width: 1490px) {
-    #header-logo-u {
-        width: 4.5em;
-    }
-
-    #unicorn-events-title {
-        font-size: 1.6em;
-        line-height: 1;
-    }
-
-    nav {
-        margin: auto;
-    }
-
-    #round-login-avatar {
-        width: 2.8em;
-        margin-right: 1em;
-    }
-}
-
-@media (max-width: 1200px) {
-    #header-logo-u {
-        width: 4.3em;
-        margin: 1em;
-    }
-
-    #unicorn-events-title {
-        margin-right: 1em;
-        font-size: 1.2em;
-        line-height: 1;
-    }
-
-    #search-bar {
-        margin-top: 1em;
-        width: 38em;
-        height: 2em;
-    }
-
-    #search-btn {
-        height: 2em;
-        margin-top: 1.1em;
-    }
-
-    nav button {
-        margin-left: 3.2em;
-    }
-
-    nav a:nth-child(5) {
-        margin-left: 3em;
-        position: relative;
-        left: 2.5em;
-
-    }
-
+ @media (max-width: 1520px) {
     .searchbar-and-navbar {
         display: flex;
-        flex-direction: column;
-        width: 60em;
-        font-size: 0.8em;
-    }
-
-    #round-login-avatar {
-        width: 2.2em;
-        margin-bottom: 1em;
-        position: relative;
-        right: 3.3em;
-    }
-}
-
-@media (max-width: 950px) {
-    #header-logo-u {
-        width: 4.3em;
-        margin: 1em;
-    }
-
-    #unicorn-events-title {
-        margin-right: 1em;
-        font-size: 1.2em;
-        line-height: 1;
-    }
-
-    #search-bar {
-        margin-top: 1em;
-        width: 38em;
-        height: 2em;
-    }
-
-    #search-btn {
-        height: 2em;
-        margin-top: 1.1em;
-    }
-
-    nav button {
-        margin-left: 3.2em;
-    }
-
-    nav a:nth-child(5) {
-        margin-left: 3em;
-        position: relative;
-        left: 0.5em;
-
-    }
-
-    .searchbar-and-navbar {
-        display: flex;
-        flex-direction: column;
-        width: 60em;
-        font-size: 0.8em;
-    }
-
-    #round-login-avatar {
-        width: 2.2em;
-        margin-bottom: 1em;
-        position: relative;
-        right: 3.3em;
-    }
-}*/
-
-/*
-@media (max-width: 375px) {
-    #header-logo-u {
-        width: 3em;
-        margin-right: 0.5em;
-        position: relative;
-        right: 1em;
-    }
-
-    #unicorn-events-title {
-        margin-right: 1em;
-        font-size: 0.8em;
-        line-height: 1;
-        display: none;
-    }
-
-    #search-bar {
-        margin-top: 1.1em;
-        width: 17em;
-        height: 1.7em;
-    }
-
-    #search-btn {
-        width: 1em;
-        padding: 1em;
-    }
-
-    nav button {
-        font-size: 0.7em;
-        margin-left: 0.4em;
-    }
-
-    nav a:nth-child(5) {
-        margin-left: 0;
-        position: relative;
-        right: 1em;
-
-    }
-
-    .searchbar-and-navbar {
-        display: flex;
-        flex-direction: column;
-        width: 30em;
-        font-size: 0.6em;
-    }
-
-    #round-login-avatar {
-        width: 1.7em;
-        margin-bottom: 1em;
-        position: relative;
-        right: 2.5em;
-    }
-
-
-.card{
-    border: 1px solid red;
-    width: 18em
-}
-
-    .card-area-wrapper h2 {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-}
-*/
-
-@media (max-width: 1520px) {
-    .searchbar-and-navbar {
-        display: flex;
+        align-items: center;
         flex-direction: column;
         width: 20em;
         font-size: 0.6em;
+
     }
 
     #search-btn {
@@ -601,6 +397,8 @@ footer ul a {
 
     .searchbar-and-navbar-wrapper {
         display: flex;
+        align-items: center;
+        justify-content: space-around;
         flex-direction: column;
         margin-left: 2.5rem;
         margin-right: 2.5rem;
@@ -610,6 +408,7 @@ footer ul a {
 
 @media (max-width: 1180px) {
 
+
     #unicorn-events-title {
         display: none;
     }
@@ -619,80 +418,58 @@ footer ul a {
         flex-direction: column;
         margin-left: 2.5rem;
         margin-right: 2.5rem;
+        width: 50vw;
     }
 
-}
-
-@media(max-width: 1040px){
-
-}
-
-/*
-
-@media (max-width: 430px) {
-    #header-logo-u {
-        width: 3em;
-        margin-right: 0.5em;
-        position: relative;
-        right: 1em;
-    }
-
-    #unicorn-events-title {
-        margin-right: 1em;
-        font-size: 0.8em;
-        line-height: 1;
+    .header-logo-title h1{
         display: none;
     }
 
-    #search-bar {
-        margin-top: 1.1em;
-        width: 17em;
-        height: 1.7em;
-    }
-
-    #search-btn {
-        width: 1em;
-        padding: 1em;
-    }
-
-    nav button {
-        font-size: 0.7em;
-        margin-left: 0.4em;
-    }
-
-    nav a:nth-child(5) {
-        margin-left: 0;
-        position: relative;
-        right: 1em;
-
-    }
-
-    .searchbar-and-navbar {
-        display: flex;
-        flex-direction: column;
-        width: 30em;
-        font-size: 0.6em;
-    }
-
-    #round-login-avatar {
-        width: 1.7em;
-        margin-bottom: 1em;
-        position: relative;
-        right: 2.5em;
-    }
 
 
-    .card{
-        border: 1px solid red;
-        width: 18em
-    }
-
-    .card-area-wrapper h2 {
-        text-align: center;
-        font-size: 1.5rem;
-    }
 
 
 }
-*/
+
+@media(max-width: 1050px){
+    .header-logo-title{
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 920px) {
+    .searchbar{
+
+    }
+}
+
+@media(max-width: 800px) {
+    .searchbar{
+        width:auto;
+    }
+
+   #round-login-avatar{
+        visibility: hidden;
+    }
+
+    .profile-signup-login{
+        margin-top: 3em;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .profile-signup-login{
+        margin-top: 6em;
+        flex-direction: column;
+        padding-right: 0px;
+        align-items: center;
+
+    }
+
+
+    .card-area-artists{
+        width: 17.5em;
+    }
+}
 
