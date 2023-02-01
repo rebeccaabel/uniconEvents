@@ -1,15 +1,19 @@
 #outer-div {
     display: flex;
     flex-direction: column;
-    padding: 5%;
-    background-image: linear-gradient(to right, #090d2c, #ffffff);
-    border-radius: 0.3rem;
+    padding: 3%;
+   /* background-image: linear-gradient(to right, #090d2c, #ffffff);*/
+    border-radius: 0.5rem;
     width: 50%;
     height: 50%;
     margin: 5%;
 }
 
 #outer-div1 {
+    background-image: url("./images/Rectangle 29background2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,17 +28,12 @@ div {
     margin: 2%;
     text-align: center;
     border-radius: 0.5rem;
-    border: 1px solid #0f1133;
+    border: 1px solid #522a2a;
 }
 
-#stage-area {
 
-}
-#standing-area {
-
-}
 #seated-area {
-display: flex;
+    display: flex;
     flex-direction: column;
     padding: 1%;
 }
@@ -45,11 +44,11 @@ button {
     border-radius: 0.4rem;
 }
 
-.black-btn  {
+.black-btn {
     background-color: #efb8b8;
 }
 
-.white-btn  {
+.white-btn {
     background-color: white;
 }
 

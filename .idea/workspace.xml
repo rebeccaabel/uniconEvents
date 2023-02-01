@@ -7,9 +7,14 @@
     <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Sectionpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Sectionpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PriceCalculation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PriceCalculation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Seat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Seat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/todayEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/todayEvents.jsx" afterDir="false" />
     </list>
@@ -44,7 +49,7 @@
       <workItem from="1674919202643" duration="7922000" />
       <workItem from="1675003001619" duration="23719000" />
       <workItem from="1675063378119" duration="11397000" />
-      <workItem from="1675153673956" duration="16862000" />
+      <workItem from="1675153673956" duration="18751000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,5 @@
-
 import {artists} from "../components/Artistarray.jsx"
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 export default function () {
 
@@ -8,9 +7,10 @@ export default function () {
     let seats = [];
     let chosenSeats = [];
 
-    for (let i =1; i<numberOfSeats; i++) {
+    for (let i = 1; i < numberOfSeats; i++) {
         seats.push(ClickBtn(i));
     }
+
     function ClickBtn(input) {
         const [active, setActive] = useState(false);
         const handleClick = () => {
@@ -18,20 +18,27 @@ export default function () {
         };
         const checkSeat = () => {
 
-            for (let i=0; i<seats.length; i++) {
+            for (let i = 0; i < seats.length; i++) {
 
-                if(seats[i].props.className === "black-btn") {
+                if (seats[i].props.className === "black-btn") {
                     chosenSeats.push(seats[i].props.value);
                     console.log(chosenSeats)
                 }
             }
         }
 
-        return <button value={input} onClick={() => {checkSeat(); handleClick()}} className={active ? "black-btn" : "white-btn"}>{input}</button>
+        return <button value={input} onClick={() => {
+            checkSeat();
+            handleClick()
+        }} className={active ? "black-btn" : "white-btn"}>{input}</button>
     }
- return <>
-     <div>
-     {seats}
-     </div>
- </>
+
+    return <>
+        <div id="seated-area">
+            <h4>This is the seated area. Please choose your preferred seats.</h4>
+            <div>
+                {seats}
+            </div>
+        </div>
+    </>
 }
