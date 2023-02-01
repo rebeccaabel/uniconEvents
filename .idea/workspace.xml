@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MonthArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MonthArray.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/RandomComponent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SavedEventCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArray.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <workItem from="1675063378119" duration="11397000" />
       <workItem from="1675151250204" duration="10909000" />
       <workItem from="1675165724970" duration="16769000" />
-      <workItem from="1675236173049" duration="4707000" />
+      <workItem from="1675236173049" duration="7127000" />
     </task>
     <servers />
   </component>

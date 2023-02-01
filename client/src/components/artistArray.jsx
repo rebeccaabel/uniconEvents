@@ -5,7 +5,7 @@ export const artists = [
         image: 'https://images.unsplash.com/photo-1521337706264-a414f153a5ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNpbmdlcnN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
         dateAdded: new Date("2023/01/19"),
         location: "Stockholm",
-        date: new Date("2023/06/20"),
+        date: new Date(2023,6,20),
         totalSeats: 200,
         availableSeats: 200,
         isBought: false,
