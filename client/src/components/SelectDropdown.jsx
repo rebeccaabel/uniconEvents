@@ -1,13 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState, useContext, createContext} from 'react';
 import ReactDOM from 'react-dom/client';
 import {useRef} from "react"
 
-
+export const SelectedDataContext = React.createContext("");
 export default function () {
 
     const [value, setMyValue] = useState("0");
-
+    /*useEffect(() => {
+        window.localStorage.setItem("valueFromSelect", value)
+    }, [value])*/
     return <>
+        <SelectedDataContext.Provider value={value}>
         <div id="standing-area">
             <h2> 👯 This is the standing area 👯</h2>
             <label>Choose number of tickets </label>
@@ -23,5 +26,6 @@ export default function () {
             </select>
             <p>{value}</p>
         </div>
+        </SelectedDataContext.Provider>
         </>
         }

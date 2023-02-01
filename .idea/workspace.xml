@@ -6,17 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Sectionpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Sectionpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DisplayDetailsPricing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/DisplayDetailsPricing.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/PriceCalculation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PriceCalculation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Seat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Seat.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/todayEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/todayEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +24,13 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="08718784-2e30-4dd7-b4f7-2e2bc133701e" name="Changes" comment="" />
@@ -49,7 +45,7 @@
       <workItem from="1674919202643" duration="7922000" />
       <workItem from="1675003001619" duration="23719000" />
       <workItem from="1675063378119" duration="11397000" />
-      <workItem from="1675153673956" duration="18751000" />
+      <workItem from="1675153673956" duration="25907000" />
     </task>
     <servers />
   </component>

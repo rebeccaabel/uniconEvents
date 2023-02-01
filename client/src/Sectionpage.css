@@ -1,12 +1,12 @@
 #outer-div {
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 1%;
    /* background-image: linear-gradient(to right, #090d2c, #ffffff);*/
     border-radius: 0.5rem;
     width: 50%;
     height: 50%;
-    margin: 5%;
+    margin: 2%;
 }
 
 #outer-div1 {
@@ -19,16 +19,19 @@
     align-items: center;
 }
 
+/*
 div {
     background-image: linear-gradient(to right, #e6bffa, #ffffff);
 }
-
+*/
 #outer-div div {
-    padding: 2%;
-    margin: 2%;
+    padding: 3%;
+    margin: 3%;
     text-align: center;
     border-radius: 0.5rem;
     border: 1px solid #522a2a;
+ /*   background-image: linear-gradient(to right, #e6bffa, #ffffff);*/
+    background-color: rgba(255, 255, 255, 0.26);
 }
 
 
@@ -52,9 +55,13 @@ button {
     background-color: white;
 }
 
-
 @media screen and (max-width: 800px) {
     #outer-div {
         width: 99%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #seated-area div button {
+        font-size: 0.1rem;
     }
 }

@@ -7,7 +7,7 @@ export default function () {
             <p>You have chosen  amount of tickets for the seated area.</p>
             <p>You have chosen xx tickets for the standing area</p>
             <p>The price of your tickets will be: <PriceCalculation/> kr</p>
-            <Link to={"./Paymentpage.jsx"}>
+            <Link to={"/Paymentpage"}>
                 <button>Proceed to payment</button>
             </Link>
         </div>
