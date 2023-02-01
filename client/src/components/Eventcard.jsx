@@ -1,7 +1,6 @@
 import {artists} from "./artistArray.jsx";
 import {SaveAnEvent} from "./MySavedEvents"
 export default function ({title, text, image, id}) {
-
     return <>
         <div className="card" style={{backgroundImage: `url(${image})`}}>
             <h3>{title}</h3>
@@ -10,6 +9,8 @@ export default function ({title, text, image, id}) {
             <button id={id} onClick={() => {SaveAnEvent(id)} }>Save Event</button>
         </div>
     </>
+
+
 }
 
 

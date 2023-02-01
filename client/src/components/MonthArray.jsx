@@ -6,7 +6,7 @@ const getCurrentDate = new Date()
 const date = new Date(getCurrentDate.getFullYear(),0,1);
 export const monthByName = [
     {
-    month: "January"
+    month: new Date(date.setMonth(date.getMonth()+0))
 }, {
     month: new Date(date.setMonth(date.getMonth()+1))
 },{

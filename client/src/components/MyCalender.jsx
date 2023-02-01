@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {monthByName} from "./MonthArray.jsx"
 import {yearByName} from "./MonthArray.jsx";
-import {SaveAnEvent} from "./MySavedEvents.jsx";
+import {SaveAnEvent, savedEventsArray, idArray} from "./MySavedEvents.jsx";
 import {artists} from "./artistArray.jsx";
 import Eventcard from "./Eventcard.jsx";
 
@@ -9,9 +9,9 @@ import Eventcard from "./Eventcard.jsx";
 
 export default function () {
     let months = new Date().getMonth()
+
     const [year, setYear] = useState(2)
     let [month, setMonth] = useState(months)
-
     const handleChange = (e) => {
        setYear(e.target.value);
 
@@ -37,13 +37,23 @@ export default function () {
     }
 
 
-  function Trying(id){
-      SaveAnEvent(id)
-        console.log(SaveAnEvent(id)) //Returns undefined
+  function Trying(){
+        let checkYear = new Date().getFullYear()
         for (let i = 0; i<artists.length; i++) {
-            if(artists[i].wishList = true && artists[0].date.getMonth() === month) {
-                return  artists.map(savedEvent => <Eventcard title={savedEvent.title} date={savedEvent.date.toLocaleString()} image={savedEvent.image} />)
+
+            if(artists[i].wishList = true) {
+                if(artists[i].date.getMonth() === month) {
+                    if(artists[i].date.getFullYear() === checkYear) {
+                     if(artists[i].id = idArray)
+                        {
+                            return savedEventsArray.map(savedEvent => <Eventcard title={savedEvent.title} date={savedEvent.date.toLocaleString()} image={savedEvent.image} />)
+                        }
+                    }
+                }
             }
+
+
+
         }
     }
 
