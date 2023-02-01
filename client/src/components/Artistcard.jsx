@@ -1,4 +1,4 @@
-import Button from "../components/ButtonToSectionPage.jsx";
+import Button from "../components/TicketButton.jsx";
 
 export default function ({ArtistImage,Name,Age,Genre}) {
     return <div>
