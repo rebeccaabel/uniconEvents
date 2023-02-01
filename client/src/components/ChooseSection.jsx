@@ -4,6 +4,10 @@ import Price from "../Components/PriceCalculation.jsx"
 import Dropdown from "../Components/SelectDropdown.jsx"
 
 export default function () {
+
+    function RecieveValue(props) {
+        return <div>{props.number}</div>
+    }
     return <>
         <div id="outer-div1">
             <div id="outer-div">

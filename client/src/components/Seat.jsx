@@ -11,7 +11,6 @@ export default function () {
     for (let i =1; i<numberOfSeats; i++) {
         seats.push(ClickBtn(i));
     }
-
     function ClickBtn(input) {
         const [active, setActive] = useState(false);
         const handleClick = () => {
@@ -23,9 +22,9 @@ export default function () {
 
                 if(seats[i].props.className === "black-btn") {
                     chosenSeats.push(seats[i].props.value);
+                    console.log(chosenSeats)
                 }
             }
-            console.log(chosenSeats);
         }
 
         return <button value={input} onClick={() => {checkSeat(); handleClick()}} className={active ? "black-btn" : "white-btn"}>{input}</button>
