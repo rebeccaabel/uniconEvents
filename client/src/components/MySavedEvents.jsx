@@ -1,24 +1,17 @@
 import {artists} from "./artistArray.jsx";
-export const savedEventsArray = []
-export let idArray = []
+export const wishlist = []
+export const idArray = []
 export function SaveAnEvent(id) {
-    for (let i = 0; i < artists.length; i++) {
-        if (id === artists[i].id) {
-            idArray.push(id)
-            savedEventsArray.push(artists[i])
-            console.log(idArray)
-            artists[i].wishList = true
-            console.log(artists[i].wishList)
-        }
-    }
+    const artist = artists.find(artist=>artist.id===id)
+    wishlist.push(artist)
 }
 
-export function SavedCard ({title, text, image, id}) {
+export function SavedCard ({ event}) {
     return <>
-        <div className="card" style={{backgroundImage: `url(${image})`}}>
-            <h3>{title}</h3>
-            <p>{text}</p>
-            <p>{id}</p>
+        <div className="card" style={{backgroundImage: `url(${event.image})`}}>
+            <h3>{event.title}</h3>
+            <p>{event.text}</p>
+            <p>{event.id}</p>
         </div>
     </>
 
