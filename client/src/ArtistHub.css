@@ -1,0 +1,121 @@
+.artist-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, 0.80);
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 1%;
+}
+
+#title{
+    margin-top: 1rem;
+}
+
+.artist-image, #title{
+    display: flex;
+    justify-content: center;
+}
+
+.artist-image > img{
+    width: 25rem;
+    margin-top: 1rem;
+}
+
+.description{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.present-artist-list{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.location{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+.ticket{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticket button{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, white, gray);
+    font-size: 1.2rem;
+}
+
+.google-maps{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.google-maps iframe{
+    width: 500px;
+    height: 310px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1520px){
+    .artist-info-wrapper{
+        margin-left: 15%;
+        margin-right: 15%;    
+    }
+}
+
+@media screen and (max-width: 1065){
+    .artist-info-wrapper{
+        margin-left: 10%;
+        margin-right: 10%;    
+    }
+}
+
+@media screen and (max-width: 900px){
+    .artist-image > img{
+        width: 15rem;
+    }
+
+    .google-maps iframe{
+        width: 350px;
+        height: 310px;
+        border-radius: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+
+    .artist-info-wrapper{
+        margin-left: 0%;
+        margin-right: 0%;    
+    }
+
+    .artist-image > img{
+        width: 15rem;
+    }
+
+    h2{
+        font-size: medium;
+    }
+
+    .description{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
