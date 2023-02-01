@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import Seat from "../Components/Seat.jsx"
 import Dropdown from "../Components/SelectDropdown.jsx"
-import DisplayDetailsPricing from "../Components/DisplayDetailsPricing.jsx"
 import StageArea from "../Components/StageArea.jsx"
 
 export default function () {
@@ -12,7 +11,6 @@ export default function () {
                 <StageArea/>
                 <Dropdown/>
                 <Seat/>
-                <DisplayDetailsPricing/>
             </div>
         </div>
     </>

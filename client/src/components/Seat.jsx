@@ -1,5 +1,6 @@
 import {artists} from "../components/Artistarray.jsx"
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 
 export default function () {
 
@@ -39,6 +40,9 @@ export default function () {
             <div>
                 {seats}
             </div>
+            <Link to={"/Paymentpage"}>
+                <button id="Proceed-Payment-button">Proceed to payment</button>
+            </Link>
         </div>
     </>
 }
