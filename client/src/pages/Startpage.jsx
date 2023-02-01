@@ -6,7 +6,6 @@ import TodayEvents from "../components/todayEvents.jsx";
 
 export default function () {
     return <>
-        <Searchbar/>
         <TodayEvents/>
         <PopularEvents/>
         <MostRecentEvents/>
