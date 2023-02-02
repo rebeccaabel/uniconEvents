@@ -60,7 +60,7 @@ export default function () {
     ]
 
     function filterArray() {
-        let tempArray = artists.map(a => { return { ...a } })
+        
         let returnArray = []
         const today = new Date()
         let isToday = dateButtonDataArray[0].isOn
@@ -70,50 +70,53 @@ export default function () {
         let isThisYear = dateButtonDataArray[4].isOn
         let isNextYear = dateButtonDataArray[5].isOn
         for (let i = 0; i < artists.length; i++) {
+            let tempArray = artists.map(a => { return { ...a } })
             if (isToday &&
-                artists[i].date.getDate() !== today.getDate() ||
-                artists[i].date.getMonth() !== today.getMonth() ||
-                artists[i].date.getFullYear() !== today.getFullYear()
-
-            ) {
-                tempArray.splice(i, 1, "deleted")
-                console.log(tempArray)
-                
+                artists[i].date.getDate() == today.getDate() &&
+                artists[i].date.getMonth() == today.getMonth() &&
+                artists[i].date.getFullYear() == today.getFullYear()
+                ) {
+                returnArray.push(tempArray[i])
+                console.log(startDate)
+                console.log(endDate)
             }
 
-            if (isTomorrow &&
+            else if (isTomorrow &&
                 artists[i].date.getDate() == today.getDate()+1 &&
                 artists[i].date.getMonth() == today.getMonth() &&
-                artists[i].date.getFullYear() == today.getFullYear()) {
-
+                artists[i].date.getFullYear() == today.getFullYear()
+                ) {
+                returnArray.push(tempArray[i])
             }
 
-            if (isThisWeek &&
+            else if (isThisWeek &&
                 artists[i].date.getDate() == today.getDate()+7 &&
                 artists[i].date.getMonth() == today.getMonth() &&
-                artists[i].date.getFullYear() == today.getFullYear()) {
-
+                artists[i].date.getFullYear() == today.getFullYear()
+                ) {
+                returnArray.push(tempArray[i])
             }
 
-            if (isThisMonth &&
+            else if (isThisMonth &&
                 artists[i].date.getMonth() == today.getMonth() &&
-                artists[i].date.getFullYear() == today.getFullYear()) {
-
+                artists[i].date.getFullYear() == today.getFullYear()
+                ) {
+                returnArray.push(tempArray[i])
             }
 
-            if (isThisYear &&
-                artists[i].date.getFullYear() == today.getFullYear()) {
-
-
+            else if (isThisYear &&
+                artists[i].date.getFullYear() == today.getFullYear()
+                ) {
+                returnArray.push(tempArray[i])
             }
 
             if (isNextYear &&
-                artists[i].date.getFullYear() == today.getFullYear()) {
-                    returnArray = (artists.splice(i, 1))
-                    tempArray.splice(i, 1)
+                artists[i].date.getFullYear() == today.getFullYear()+1
+                ) {      
+                returnArray.push(tempArray[i])        
             }
         }
-        return setFilter(tempArray)
+        return setFilter(returnArray)
     }
     function mostRecentEventsFilter() {
         setFilter(sortedArray = sortByMostRecentAdded)
