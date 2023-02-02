@@ -1,3 +1,5 @@
+import Button from "../components/TicketButton.jsx";
+
 export default function ({ArtistImage,Name,Age,Genre}) {
     return <div>
         <div className="artist-card"  alt='artist picture' style={{backgroundImage:`url(${ArtistImage})`}}>
@@ -15,6 +17,8 @@ export default function ({ArtistImage,Name,Age,Genre}) {
                     ut labore et dolore magna aliqua."</p>
             </details>
             
+            <Button/>
+
         </div>
 
     </div>
