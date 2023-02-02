@@ -4,9 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1a597b-fab6-4510-8005-91554d44ba72" name="Changes" comment="">
+    <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/example_client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/GlobalContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/components/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/components/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/components/Tidbit.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/components/Tidbits.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/components/Welcome.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/src/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_client/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/access-list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api-description.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/audio/Thee_Oh_Sees_-_Crack_In_Your_Eye_Live__KEXP.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/audio/independent state-filioque.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/audio/springtide.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/concerts.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/live.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/live.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/london-concerts-september.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/scrape-bandsintown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/audio-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/audio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/checkout-cancel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/checkout-success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/video-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/examples/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/encrypt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/generic-routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/services/acl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/services/db-connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/video/Canned Heat - Rolling and a tumbling.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/video/Chris-Do.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/video/Gang of four - To hell with poverty.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/video/Mdou Moctar - Tala Tannam (Live).mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.test" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,19 +80,45 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectId" id="2L8j9fktzxORXnaCIgurCtYUMU0" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/liina/OneDrive/Skrivbord/Projects kurs 3/unicornEvents/client/src/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents\client\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="08718784-2e30-4dd7-b4f7-2e2bc133701e" name="Changes" comment="" />
+      <changelist id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="" />
       <created>1674814413948</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -47,7 +130,8 @@
       <workItem from="1674919202643" duration="7922000" />
       <workItem from="1675003001619" duration="23719000" />
       <workItem from="1675063378119" duration="11397000" />
-      <workItem from="1675153673956" duration="25907000" />
+      <workItem from="1675259457604" duration="1249000" />
+      <workItem from="1675260736246" duration="101000" />
     </task>
     <servers />
   </component>

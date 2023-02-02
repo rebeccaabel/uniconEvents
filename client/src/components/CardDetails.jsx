@@ -20,4 +20,10 @@ export default function () {
         </div>
     </div>
 
+
+
+
+    async function asyncCall() {
+
+    }
 }
