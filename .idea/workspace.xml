@@ -9,8 +9,7 @@
       <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Sidenavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Sidenavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
