@@ -2,16 +2,15 @@ import GlobalContext from "./GlobalContext.jsx";
 import {useContext, useEffect, useState} from "react";
 import {SavedCard} from "./MySavedEvents.jsx";
 export const wishlist = []
-export default function ({name, image, location,datum,id}) {
+export default function ({name, image, location,date,id}) {
     const {concerts} = useContext(GlobalContext)
 
-    function handleClick(id){
+    function handleClick(){
         console.log(concerts.id)
-        /*const artist = concerts.find(artist=> artist.id === id)*/
         concerts.id = true;
-        wishlist.push({concerts:name, concert:datum})
-        console.log({concerts:id})
+        wishlist.push({date:date, name:name,image:image})
         console.log(wishlist)
+        console.log({wishlist:date})
     }
 
     return <>
@@ -19,8 +18,8 @@ export default function ({name, image, location,datum,id}) {
             <div className="event-card-details">
              <h3 >{name}</h3>
             <p>{location}</p>
-            <p>{datum}</p>
-                <button className={"save-event"} key={id} onClick={() => {handleClick({concerts:id})} }>Save Event</button>
+            <p>{date}</p>
+                <button className={"save-event"} onClick={() => {handleClick()} }>Save Event</button>
             </div>
         </div>
     </>

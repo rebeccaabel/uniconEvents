@@ -11,7 +11,7 @@ export default function () {
         <div className="card-area-events" >
 
         {
-            concerts.slice(0,10).map(artist => <Eventcard name={artist.name} location={artist.venue} date={artist.datum.toLocaleString()}  image={artist.image} id={artist.id}/>)
+            concerts.slice(0,10).map(artist => <Eventcard name={artist.name} location={artist.venue} date={artist.date.toLocaleString()}  image={artist.image} id={artist.id}/>)
         }
         </div>
     </div>

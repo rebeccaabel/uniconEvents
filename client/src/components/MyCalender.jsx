@@ -1,17 +1,16 @@
-import React, {useContext, useEffect, useState} from 'react'
-import {SavedCard} from "./MySavedEvents.jsx";
-import {wishlist} from "./Eventcard.jsx"
-import GlobalContext from "./GlobalContext.jsx";
+import React, {useEffect, useState} from 'react'
+import Eventcard, {wishlist} from "./Eventcard.jsx"
+
 
 export default function () {
     const [date, setDate] = useState(new Date(Date.now()))
     const [filteredEvents, setFilteredEvents] = useState(wishlist)
-    const {concerts} = useContext(GlobalContext)
-    console.log(concerts.map(details => <SavedCard event={details}/>))
 
     useEffect(() => {
-        setFilteredEvents(wishlist.filter(artist => artist.date.getMonth() === date.getMonth() && artist.date.getFullYear() === date.getFullYear()))
-    }, [date])
+        setFilteredEvents(wishlist)
+
+    }, [])
+
 
     return <>
         <Calendar/>
@@ -25,7 +24,8 @@ export default function () {
             <h4>Your planned events:</h4>
             <div className={"saved-card"}>
                 {
-                    filteredEvents.map(details => <SavedCard event={details}/>)}
+                    filteredEvents.map(artist =><Eventcard date={artist.date} image={artist.image} name={artist.name} location={artist.venue}/>)
+
                 }
             </div>
         </div>
