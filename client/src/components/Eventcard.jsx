@@ -8,7 +8,7 @@ export default function ({name, image, location,date,id}) {
     function handleClick(){
         console.log(concerts.id)
         concerts.id = true;
-        wishlist.push({date:date, name:name,image:image})
+        wishlist.push({image:image, name:name,date:date})
         console.log(wishlist)
         console.log({wishlist:date})
     }

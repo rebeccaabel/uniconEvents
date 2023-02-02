@@ -8,7 +8,8 @@ export default function () {
 
     useEffect(() => {
         setFilteredEvents(wishlist)
-
+       const findDate = wishlist.find(getDate => getDate.date === date)
+        console.log(findDate)
     }, [])
 
 
