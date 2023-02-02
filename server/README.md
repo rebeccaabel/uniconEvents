@@ -1,1 +1,0 @@
-# live-fanatic-backend
