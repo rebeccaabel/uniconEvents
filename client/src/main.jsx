@@ -10,6 +10,8 @@ import Profilepage from "./pages/Profilepage.jsx";
 import Paymentpage from "./pages/Paymentpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
+import ArtistHub from "./pages/ArtistHubPage.jsx";
+import {GlobalProvider} from "./components/GlobalContext.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -26,11 +28,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         </Route>
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
+                        <Route path={'ArtistHub'} element={<ArtistHub/>}/>
 
                     </Route>
                 )
             )
         }/>
-
     </React.StrictMode>,
 )

@@ -11,7 +11,7 @@ export default function () {
 
             <div className="event-details">
                 <h1> Event Details</h1>
-                <p>{artists[0].title}</p>
+                <p>{}</p>
                 <p>{artists[0].location}</p>
                 <p>{artists[0].date.toLocaleDateString('sv-SE')}</p>
 
@@ -38,4 +38,10 @@ export default function () {
         </div>
     </div>
 
+
+
+
+    async function asyncCall() {
+
+    }
 }
