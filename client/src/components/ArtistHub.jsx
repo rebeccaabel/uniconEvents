@@ -1,6 +1,7 @@
 import "../ArtistHub.css"
 import { artists } from "./artistArray.jsx";
 import { Link } from "react-router-dom";
+import Button from "../components/TicketButton.jsx";
 
 
 export default function () {
@@ -41,7 +42,7 @@ export default function () {
         <div className="ticket">
             <h2>Tickets Remaining: {artists[0].availableSeats} / {artists[0].totalSeats}</h2>
             <h2>Price: {artists[0].pricePerTicket} </h2>
-            <Link to={'/Paymentpage'}><button> Buy Ticket </button></Link>
+            <Button/>
         </div>
 
         <div className="google-maps">
