@@ -8,7 +8,9 @@ export default function () {
 
     useEffect(() => {
         setFilteredEvents(wishlist)
+
     }, [])
+
 
     return <>
         <Calendar/>
@@ -40,15 +42,16 @@ export default function () {
             <button className="next-month" onClick={incrementMonth}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
     }
+
     function PrintArtist(){
-            let getNewDate = wishlist.map(parseDate => parseDate.datum)
-            console.log(getNewDate)
-            let fetchDate = new Date(getNewDate.toString())
-            console.log(fetchDate) //Only logs out 1 artist. IF more; logs out invalid date and NAN
-            console.log(fetchDate.getMonth()) //Logs out artist month in 0-11
-            console.log(fetchDate.getFullYear()) //Logs out artist year
-            if(fetchDate.getMonth() === date.getMonth() && fetchDate.getFullYear() === date.getFullYear()){
-                console.log("fucking parsed it?")
+        let getNewDate = wishlist.map(parseDate => parseDate.datum)
+        console.log(getNewDate)
+        let compareDate = new Date(getNewDate.toString())
+        //console.log(compareDate) //Only logs out 1 artist. IF more; logs out invalid date and NAN
+        //console.log(compareDate.getMonth()) //Logs out artist month in 0-11
+        //console.log(compareDate.getFullYear()) //Logs out artist year
+        if(compareDate.getMonth() === date.getMonth() && compareDate.getFullYear() === date.getFullYear()){
+            console.log("fucking parsed it?")
                 return filteredEvents.map(artist =><Eventcard datum={artist.datum} image={artist.image} name={artist.name} location={artist.venue}/>)
             }
     }

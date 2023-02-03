@@ -5,12 +5,6 @@ export const wishlist = []
 export default function ({name, image, location,datum,id}) {
     const {concerts} = useContext(GlobalContext)
     const [saved, setSaved] = useState(false)
-    function handleClick(){
-        setSaved(!saved)
-        console.log({concerts:id=true})
-        wishlist.push({name:name, datum:datum, venue:location, image:image})
-        console.log(wishlist)
-    }
     return <>
         <div className="card"  alt='artist picture' style={{backgroundImage:`url(${image})`}}>
             <div className="event-card-details">
@@ -21,6 +15,11 @@ export default function ({name, image, location,datum,id}) {
             </div>
         </div>
     </>
+    function handleClick(){
+        setSaved(!saved)
+        console.log({concerts:id=true})
+        wishlist.push({name:name, datum:datum, venue:location, image:image})
+    }
 }
 
 
