@@ -95,6 +95,7 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 3rem;
+    background-color: transparent;
 }
 
 .card-area {

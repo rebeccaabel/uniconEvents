@@ -161,6 +161,7 @@ nav button:hover {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 3rem;
+    background-color: transparent;
 }
 
 .card-area-wrapper h2 {
@@ -191,6 +192,7 @@ nav button:hover {
     justify-content: space-around;
     width: auto;
     gap: 2em;
+    background-color: transparent;
 
 
 }
@@ -247,7 +249,6 @@ nav button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
     width: 350px;
     height: 200px;
     border-top-left-radius: 2rem;
@@ -261,6 +262,7 @@ nav button:hover {
     width: auto;
     gap: 2em;
     color: #000000;
+    background-color: transparent;
 
 }
 
