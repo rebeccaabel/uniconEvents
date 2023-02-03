@@ -2,17 +2,21 @@ import "../ArtistHub.css"
 import { artists } from "./artistArray.jsx";
 import { Link } from "react-router-dom";
 import Button from "../components/TicketButton.jsx";
+import GlobalContext from "./GlobalContext.jsx";
+import { useContext } from "react";
+import Eventcard from "../components/Eventcard.jsx";
 
 
 export default function () {
 
     let { fullYear, month, day } = GetDate();
+    const {concerts} = useContext(GlobalContext)
 
 
     return <div className="artist-info-wrapper">
-
+        <Eventcard/>
         <div>
-            <h1 id="title">{artists[0].title}</h1>
+            <h1 id="title">{concerts.name}</h1>
         </div>
 
         <div className="artist-image">
@@ -28,6 +32,7 @@ export default function () {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur ratione magnam praesentium dolorum id, dignissimos aperiam voluptates vitae cumque amet at corporis, aliquam voluptas fugit laboriosam ducimus provident nemo impedit.
                 </p>
             </p>
+            <p></p>
         </div>
 
         <div className="present-artist-list">
