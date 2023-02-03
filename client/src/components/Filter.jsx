@@ -1,10 +1,12 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import Card from "./EventCard";
 import { sortByMostRecentAdded } from "./artistArrayFunctions";
 import { artists } from "./artistArray";
+import GlobalContext from "./GlobalContext";
+
 
 export default function () {
-
+    const { concerts } = useContext(GlobalContext)
     let [sortedArray, setFilter] = useState([])
     let startDate = useRef(null)
     let endDate = useRef(null)
@@ -60,73 +62,73 @@ export default function () {
     ]
 
     function filterArray() {
-        
-        let returnArray = []
         const today = new Date()
+        let returnArray = []
         let isToday = dateButtonDataArray[0].isOn
         let isTomorrow = dateButtonDataArray[1].isOn
         let isThisWeek = dateButtonDataArray[2].isOn
         let isThisMonth = dateButtonDataArray[3].isOn
         let isThisYear = dateButtonDataArray[4].isOn
         let isNextYear = dateButtonDataArray[5].isOn
-        for (let i = 0; i < artists.length; i++) {
-            let tempArray = artists.map(a => { return { ...a } })
-            if (isToday &&
-                artists[i].date.getDate() == today.getDate() &&
-                artists[i].date.getMonth() == today.getMonth() &&
-                artists[i].date.getFullYear() == today.getFullYear()
-                ) {
-                returnArray.push(tempArray[i])
-                console.log(startDate)
-                console.log(endDate)
-            }
-
-            else if (isTomorrow &&
-                artists[i].date.getDate() == today.getDate()+1 &&
-                artists[i].date.getMonth() == today.getMonth() &&
-                artists[i].date.getFullYear() == today.getFullYear()
-                ) {
-                returnArray.push(tempArray[i])
-            }
-
-            else if (isThisWeek &&
-                artists[i].date.getDate() == today.getDate()+7 &&
-                artists[i].date.getMonth() == today.getMonth() &&
-                artists[i].date.getFullYear() == today.getFullYear()
-                ) {
-                returnArray.push(tempArray[i])
-            }
-
-            else if (isThisMonth &&
-                artists[i].date.getMonth() == today.getMonth() &&
-                artists[i].date.getFullYear() == today.getFullYear()
-                ) {
-                returnArray.push(tempArray[i])
-            }
-
-            else if (isThisYear &&
-                artists[i].date.getFullYear() == today.getFullYear()
-                ) {
-                returnArray.push(tempArray[i])
-            }
-
-            if (isNextYear &&
-                artists[i].date.getFullYear() == today.getFullYear()+1
-                ) {      
-                returnArray.push(tempArray[i])        
-            }
+        console.log(concerts[0].datum)
+        for (let i = concerts.length - 1; i > -1; i--){
+            const eventDate = new Date(concerts[i].datum)
+        if (isToday &&
+            eventDate.getDate() == today.getDate() &&
+            eventDate.getMonth() == today.getMonth() &&
+            eventDate.getFullYear() == today.getFullYear()
+        ) {
+            returnArray.push(concerts[i])
         }
-        return setFilter(returnArray)
+
+        else if (isTomorrow &&
+            eventDate.getDate() == today.getDate() + 1 &&
+            eventDate.getMonth() == today.getMonth() &&
+            eventDate.getFullYear() == today.getFullYear()
+        ) {
+            returnArray.push(concerts[i])
+        }
+
+        else if (isThisWeek &&
+            eventDate.getDate() == today.getDate() + 7 &&
+            eventDate.getMonth() == today.getMonth() &&
+            eventDate.getFullYear() == today.getFullYear()
+        ) {
+            returnArray.push(concerts[i])
+        }
+
+        else if (isThisMonth &&
+            eventDate.getMonth() == today.getMonth() &&
+            eventDate.getFullYear() == today.getFullYear()
+        ) {
+            returnArray.push(concerts[i])
+        }
+
+        else if (isThisYear &&
+            eventDate.getFullYear() == today.getFullYear()
+        ) {
+            returnArray.push(concerts[i])
+        }
+
+        if (isNextYear &&
+            eventDate.getFullYear() == today.getFullYear() + 1
+        ) {
+            returnArray.push(concerts[i])
+        }
     }
+    return setFilter(sortedArray = returnArray)
+}
+
     function mostRecentEventsFilter() {
         setFilter(sortedArray = sortByMostRecentAdded)
     }
 
     function DisplayResults() {
+        console.log(sortedArray)
         return <div id="filterwrapper-card-area">
             <div className="card-area">
                 {
-                    sortedArray.map(artist => <Card title={artist.title} text={artist.text} image={artist.image} />)
+                    sortedArray.map(artist => <Card title={artist.name} venue={artist.venue} image={artist.image} />)
                 }
             </div>
         </div>
