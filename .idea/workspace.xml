@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +77,7 @@
       <workItem from="1675063378119" duration="11397000" />
       <workItem from="1675259457604" duration="1249000" />
       <workItem from="1675260736246" duration="101000" />
+      <workItem from="1675407251835" duration="13375000" />
     </task>
     <servers />
   </component>

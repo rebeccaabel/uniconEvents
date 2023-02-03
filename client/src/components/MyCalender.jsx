@@ -8,10 +8,12 @@ export default function () {
 
     useEffect(() => {
         setFilteredEvents(wishlist)
-       const findDate = wishlist.find(getDate => getDate.date === date)
-        console.log(findDate)
-    }, [])
+       let findDate = wishlist.map(getDate => getDate.datum)
+        console.log(findDate.sort().toLocaleString())
+        /*let testDate = getNewDate.getDate()
+        console.log(testDate.toString())*/
 
+    }, [])
 
     return <>
         <Calendar/>
@@ -24,14 +26,10 @@ export default function () {
             <h4>{date.getFullYear()}</h4>
             <h4>Your planned events:</h4>
             <div className={"saved-card"}>
-                {
-                    filteredEvents.map(artist =><Eventcard date={artist.date} image={artist.image} name={artist.name} location={artist.venue}/>)
-
-                }
+                <PrintArtist/>
             </div>
         </div>
     }
-
     function Calendar() {
         return <div className={"calender"}>
             <select className={"years"} value={date.getFullYear()} onChange={handleChange}>
@@ -47,7 +45,16 @@ export default function () {
             <button className="next-month" onClick={incrementMonth}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
     }
-
+    function PrintArtist(){
+            let getNewDate = wishlist.map(getDate => new Date(getDate.datum))
+            const fetchDate = new Date(getNewDate.toString())
+            console.log(fetchDate.getMonth()) //Logs out artist month in 0-11
+        console.log(fetchDate.getFullYear()) //Logs out artist year
+            if(fetchDate.getMonth() === date.getMonth() && fetchDate.getFullYear() === date.getFullYear()){
+                console.log("fucking parsed it?")
+                return filteredEvents.map(artist =><Eventcard date={artist.date} image={artist.image} name={artist.name} location={artist.venue}/>)
+            }
+    }
     function handleChange(e) {
         setDate(new Date(date.setFullYear(e.target.value)))
     }
