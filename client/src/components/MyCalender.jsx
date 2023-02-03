@@ -8,11 +8,6 @@ export default function () {
 
     useEffect(() => {
         setFilteredEvents(wishlist)
-       let findDate = wishlist.map(getDate => getDate.datum)
-        console.log(findDate.sort().toLocaleString())
-        /*let testDate = getNewDate.getDate()
-        console.log(testDate.toString())*/
-
     }, [])
 
     return <>
@@ -46,13 +41,15 @@ export default function () {
         </div>
     }
     function PrintArtist(){
-            let getNewDate = wishlist.map(getDate => new Date(getDate.datum))
-            const fetchDate = new Date(getNewDate.toString())
+            let getNewDate = wishlist.map(parseDate => parseDate.datum)
+            console.log(getNewDate)
+            let fetchDate = new Date(getNewDate.toString())
+            console.log(fetchDate) //Only logs out 1 artist. IF more; logs out invalid date and NAN
             console.log(fetchDate.getMonth()) //Logs out artist month in 0-11
-        console.log(fetchDate.getFullYear()) //Logs out artist year
+            console.log(fetchDate.getFullYear()) //Logs out artist year
             if(fetchDate.getMonth() === date.getMonth() && fetchDate.getFullYear() === date.getFullYear()){
                 console.log("fucking parsed it?")
-                return filteredEvents.map(artist =><Eventcard date={artist.date} image={artist.image} name={artist.name} location={artist.venue}/>)
+                return filteredEvents.map(artist =><Eventcard datum={artist.datum} image={artist.image} name={artist.name} location={artist.venue}/>)
             }
     }
     function handleChange(e) {
