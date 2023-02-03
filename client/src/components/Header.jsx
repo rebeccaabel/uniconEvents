@@ -7,9 +7,10 @@ import Searchbar from "./Searchbar.jsx";
 
 export default function () {
     return <header>
-
-            <img id="header-logo-u" src={LogoHeader} alt="u-logo"/>
-            <h1 id='unicorn-events-title'>Unicorn Events</h1>
+        <div className="header-logo-title">
+            <img src={LogoHeader} alt="u-logo"/>
+            <h1 >Unicorn Events</h1>
+        </div>
 
 
         <div className="searchbar-and-navbar-wrapper">
