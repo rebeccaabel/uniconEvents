@@ -12,7 +12,8 @@ import Loginpage from "./pages/Loginpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
 import ArtistHub from "./pages/ArtistHubPage.jsx";
-import {GlobalProvider} from "./components/GlobalContext.jsx";
+import CreateAccountpage from "./pages/RegisterPage.jsx";
+import RegisterPage from "./pages/RegisterPage.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -31,6 +32,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'ArtistHub'} element={<ArtistHub/>}/>
                         <Route path={'login'} element={<Loginpage/>}/>
+                        <Route path={'register'} element={<RegisterPage/>}/>
 
                     </Route>
                 )

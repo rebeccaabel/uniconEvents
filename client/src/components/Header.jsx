@@ -26,7 +26,7 @@ export default function () {
     <div className="profile-signup-login">
 
 
-        <Link to="/signUpPage">
+        <Link to="/register">
             <button>Sign up</button>
         </Link>
 

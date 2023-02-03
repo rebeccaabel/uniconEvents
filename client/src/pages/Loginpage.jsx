@@ -1,9 +1,8 @@
-import LoginBox from "../components/LoginBox.jsx";
-
+import Login from "../components/Login.jsx";
 
 export default function () {
 
     return <>
-        <LoginBox/>
+        <Login/>
     </>
         }
