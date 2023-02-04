@@ -47,9 +47,8 @@ export default function () {
         let getNewDate = wishlist.map(parseDate => parseDate.datum)
         console.log(getNewDate)
         let compareDate = new Date(getNewDate.toString())
-        //console.log(compareDate) //Only logs out 1 artist. IF more; logs out invalid date and NAN
-        //console.log(compareDate.getMonth()) //Logs out artist month in 0-11
-        //console.log(compareDate.getFullYear()) //Logs out artist year
+        console.log(compareDate.getMonth()) // If more than one: logs out NAN. Prop cus of the data being a long string?
+        
         if(compareDate.getMonth() === date.getMonth() && compareDate.getFullYear() === date.getFullYear()){
             console.log("fucking parsed it?")
                 return filteredEvents.map(artist =><Eventcard datum={artist.datum} image={artist.image} name={artist.name} location={artist.venue}/>)
