@@ -7,6 +7,11 @@ export default function () {
             <div className='side-navbar'>
                 <div>
                     <Link to={'/profile/settings'}><button> Settings </button></Link>
+                    <button> kalender </button>
+                    <button> mMy events </button>
+                    <button> My tickets</button>
+                    <button> Change password </button>
+
                 </div>
             </div>
         </div>

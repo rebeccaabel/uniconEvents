@@ -1,35 +1,52 @@
-.filter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    
-    width: auto;
-    height: auto;
-    border: 1px solid black;
-    background-color: white;
-    border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 3em;
-    border: 0;
-    margin-top: -2rem;
-}
-
-.date-filters, .city-filters {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0.5em;
-}
-
-.date-filters button, .city-filters button {
-
-    border-radius: 0.7rem;
-    background-color: black;
-    color: whitesmoke;
+/*@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+* {
     margin: 0;
-    padding: 0.5em;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
 }
 
-.date-filters button::selection, .city-filters button::selection {
-    border: inset;
+html {
+    box-sizing: border-box;
+}
+
+.filter-container {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    border-radius: 1rem;
+}
+
+
+
+.filter-buttons-dates {
+    display: flex;
+    flex: auto;
+    gap: 5%;
+
+
+}
+.filter-buttons-cities  {
+    display: flex;
+    flex: auto;
+    gap: 5%;
+
+}
+
+.filter-buttons-dates button {
+    font-size: 1rem;
+    margin-bottom: 5%;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.filter-buttons-dates button:hover {
+    cursor:pointer;
+}
+.filter-buttons-cities button {
+    font-size: 1rem;
+    margin-bottom: 5%;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
 }
 
 .date-filters button:hover, .city-filters button:hover  {
@@ -38,29 +55,52 @@
 
 .two-dates-filter {
     display: flex;
-    justify-content: center;
-    gap: 5em;
-    margin: 0.5em;
+    padding: 2rem;
+    border: 1px solid red;
 }
 
-.two-dates-filter input, .two-dates-filter p{
-    border-top-left-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    background-color: black;
-    color: whitesmoke;
+
+.date-form p{
+
 }
-.two-dates-filter input {
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 0;
+
+.date-form input {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    border: 1px solid blue;
 }
-#filter-page-search-button {
-    width: 10%;
-    align-self: center;
-    background-color: black;
-    color: whitesmoke;
-    margin: 0.5em;
+
+.filter-search-button button {
+    display: flex;
+    padding: 2%;
+    color: #2e045b;
+    margin: 5% auto;
+    width: 5rem;
+    height: 2rem;
+    align-items: center;
+    border-radius: 0.5rem;
 }
-#filterwrapper-card-area {
-    min-height: 55vh;
+
+.calender-container button:hover {
+    cursor:pointer;
 }
+
+.card-area-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+
+.card-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+/***********************
+        FOOTER
+***********************/

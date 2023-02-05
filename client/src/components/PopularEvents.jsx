@@ -9,7 +9,7 @@ export default function () {
         <h2>Popular events</h2>
         <div className="card-area-events" >
         {
-            concerts.slice(0,10).map(artist => <Eventcard title={artist.name} location={artist.venue} date={artist.date.toLocaleString()}  image={artist.image}/>)
+            concerts.slice(0,40).map(artist => <Eventcard title={artist.name} location={artist.venue} date={artist.date.toLocaleString()}  image={artist.image}/>)
         }
         </div>
     </div>

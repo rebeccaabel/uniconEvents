@@ -8,6 +8,7 @@ import Artistpage from "./pages/Artistpage.jsx";
 import Filterpage from "./pages/Filterpage.jsx";
 import Profilepage from "./pages/Profilepage.jsx";
 import Paymentpage from "./pages/Paymentpage.jsx";
+import Loginpage from "./pages/Loginpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
 import ArtistHub from "./pages/ArtistHubPage.jsx";
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'ArtistHub'} element={<ArtistHub/>}/>
+                        <Route path={'login'} element={<Loginpage/>}/>
 
                     </Route>
                 )
