@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/DisplayDetailsPricing.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/PriceCalculation.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Seat.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/StageArea.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/images/Section.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/Sectionpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CalculatePricePaymentpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CalculatePricePaymentpage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Tidbit.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Tidbits.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistArray.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" afterDir="false" />
     </list>
     <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />

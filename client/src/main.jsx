@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Router} from "react-router-dom";
+import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom";
 import Startpage from './pages/Startpage.jsx'
 import Artistpage from "./pages/Artistpage.jsx";
 import Filterpage from "./pages/Filterpage.jsx";
@@ -11,8 +11,8 @@ import Loginpage from "./pages/Loginpage.jsx";
 import UserSettings from "./components/UserSettings.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
 import ArtistHub from "./pages/ArtistHubPage.jsx";
-import {GlobalProvider} from "./components/GlobalContext.jsx";
 import Sectionpage from "./pages/Sectionpage.jsx";
+import RegisterPage from "./pages/RegisterPage.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -31,6 +31,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'ArtistHub'} element={<ArtistHub/>}/>
 						<Route path={'sectionpage'} element={<Sectionpage/>}/>
+                        <Route path={'login'} element={<Loginpage/>}/>
+                        <Route path={'register'} element={<RegisterPage/>}/>
 
                     </Route>
                 )
