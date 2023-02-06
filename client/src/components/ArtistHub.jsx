@@ -3,25 +3,33 @@ import { artists } from "./artistArray.jsx";
 import { Link } from "react-router-dom";
 import Button from "../components/TicketButton.jsx";
 import GlobalContext from "./GlobalContext.jsx";
-import { useContext } from "react";
-import Eventcard from "../components/Eventcard.jsx";
+import { useState, useEffect } from "react";
+import Eventcard, {artistHubArray} from "../components/Eventcard.jsx";
 
 
 export default function () {
 
     let { fullYear, month, day } = GetDate();
-    const {concerts} = useContext(GlobalContext)
+    const [artist, setArtist] = useState(artistHubArray);
+    useEffect(()=> {
+        setArtist(artistHubArray)
+    }, [])
 
-
+    console.log(artistHubArray);
     return <div className="artist-info-wrapper">
-        <Eventcard/>
         <div>
-            <h1 id="title">{concerts.name}</h1>
+            <h1 id="title">{toString(artistHubArray.length) -1 .name}</h1>
         </div>
 
         <div className="artist-image">
             <img src={artists[0].image} />
         </div>
+
+        <div>
+            {
+            artist.map(newArtist => <Eventcard name={newArtist.name} location={newArtist.venue} datum={newArtist.datum.toLocaleString()} id={newArtist.id}  image={newArtist.image}/>)
+            }
+            </div>
 
         <div className="description">
             <p>Here is where some information about the event are present.
@@ -62,5 +70,9 @@ export default function () {
         let month = artists[0].date.toLocaleString('en-US', { month: '2-digit' });
         let day = artists[0].date.toLocaleString('en-US', { day: '2-digit' });
         return { fullYear, month, day };
+    }
+
+    function MyFunction() {
+
     }
 }
