@@ -7,15 +7,14 @@ export default function () {
     const {submitLogin} = useContext(GlobalContext)
 
 
-    const handleSubmit = (event) => {
+    const fetchUser = (event) => {
         event.preventDefault()
         submitLogin(email,password)
     }
 
-
     return <>
         <h1 style={{color:"white"}}>{'Log in'}</h1>
-        <form action="javascript:void(0)" onSubmit={handleSubmit}>
+        <form action="javascript:void(0)" onSubmit={fetchUser}>
             <label htmlFor='Email'>Email:</label>
             <input value={email}  onChange={event => setEmail(event.target.value)} type='email' placeholder='Email' id='email' name='email' />
             <label htmlFor='Password'>Password:</label>
@@ -26,9 +25,6 @@ export default function () {
        <Link to="/register">
            <button>Don't have an account? Register here</button>
        </Link>
-
-
-
     </>
 }
 

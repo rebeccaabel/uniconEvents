@@ -35,7 +35,6 @@ export default function () {
     </header>
 
     function HeaderButton() {
-        console.log(auth)
         if (auth.loggedIn) return <Link to="/signout">
             <button id="login-button">Log out</button>
         </Link>
