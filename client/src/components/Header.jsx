@@ -34,7 +34,15 @@ export default function () {
             <Link to="/login">
                 <button id="login-button">Log in</button>
             </Link>
-            <Link to="profile"><img id="round-login-avatar" alt="avatar-logo" src={profile2} /></Link>
+
+
+           {condition ?
+            <Link to="profile">
+                <img style={{display: "block"}}
+                     id="round-login-avatar"
+                     alt="avatar-logo" src={profile2} />
+            </Link> : null
+           }
 
         </div>
     </header>

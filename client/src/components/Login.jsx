@@ -14,7 +14,7 @@ export default function () {
 
     return <>
         <h1 style={{color:"white"}}>Log in</h1>
-        <form onSubmit={handleSubmit}>
+        <form action="javascript:void(0)" onSubmit={handleSubmit}>
             <label htmlFor='Email'>Email:</label>
             <input value={email}  onChange={event => setEmail(event.target.value)} type='email' placeholder='Email' id='email' name='email' />
             <label htmlFor='Password'>Password:</label>
