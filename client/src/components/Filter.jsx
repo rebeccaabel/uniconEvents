@@ -38,19 +38,11 @@ export default function () {
             }else if (selectedVenue &&
                 cloneConcerts[i].venue !== selectedVenue){
                 cloneConcerts.splice(i,1)
-            }/* 
-            
-            ************START WORKING ON THIS************
-            *****NEED TO REVERSE THE OUTCOME AND*********
-            ********CHECK IF THE STARTDATE AND***********
-            ***********ENDDATE VARIABLES HAVE************
-            *****************ANY INPUT*******************
-            else if (startDate && endDate &&
-                cloneConcerts[i].date.getTime() > startDate.getTime() &
-                cloneConcerts[i].date.getTime() < endDate.getTime()) {
+            }/*else if (startDate && endDate &&
+                cloneConcerts[i].date.getTime() !> startDate.getTime() &
+                cloneConcerts[i].date.getTime() !< endDate.getTime()) {
                 cloneConcerts.splice(i,1) 
-        }
-        */
+        }*/
         }
         return setSortedArray(sortedArray = cloneConcerts)
     }
