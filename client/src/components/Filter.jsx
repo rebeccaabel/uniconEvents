@@ -1,16 +1,5 @@
 import {useRef, useState} from "react";
 import Card from "./EventCard";
-import {
-    sortBetweenTwoDates,
-    sortByLocation,
-    sortByMostRecentAdded,
-    sortIfNextYear,
-    sortIfThisMonth,
-    sortIfThisWeek,
-    sortIfThisYear,
-    sortIfToday,
-    sortIfTomorrow
-} from "./artistArrayFunctions";
 
 
 export default function () {
@@ -18,7 +7,7 @@ export default function () {
     let startDate = useRef(null)
     let endDate = useRef(null)
 
-    function mostRecentEventsFilter() {
+    /* function mostRecentEventsFilter() {
         setFilter(sortedArray = sortByMostRecentAdded)
     }
 
@@ -53,17 +42,11 @@ export default function () {
     function sortBetweenTwoDatesFilter(input1, input2) {
         setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
     }
-
+ */
     return <>
             <div className="filter-container">
                 <div className="filter-buttons-dates">
-                    <button onClick={todayEventsFilter}>Today</button>
-                    <button onClick={tomorrowEventsFilter}>Tomorrow</button>
-                    <button onClick={thisWeekEventsFilter}>This Week</button>
-                    <button onClick={thisMonthEventsFilter}>This Month</button>
-                    <button onClick={thisYearEventsFilter}>This Year</button>
-                    <button onClick={nextYearEventsFilter}>Next Year</button>
-                    <button onClick={mostRecentEventsFilter}>Recently added events</button>
+
                 </div>
               <CitiesFilter/>
 
@@ -76,7 +59,7 @@ export default function () {
                         <div id='end-date'>
                             <p>End date</p>
                             <input type="date" ref={endDate}/>
-                            <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>
+                            <button>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </div>
