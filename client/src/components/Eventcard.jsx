@@ -1,9 +1,11 @@
 import GlobalContext from "./GlobalContext.jsx";
 import {useContext,useState} from "react";
-import {SavedCard} from "./MySavedEvents.jsx";
-export const wishlist = []
+
+
 export default function ({name, image, location,datum,id}) {
     const {concerts} = useContext(GlobalContext)
+    const {wishlists} = useContext(GlobalContext)
+    console.log(wishlists)
     const [saved, setSaved] = useState(false)
     return <>
         <div className="card"  alt='artist picture' style={{backgroundImage:`url(${image})`}}>
@@ -17,8 +19,8 @@ export default function ({name, image, location,datum,id}) {
     </>
     function handleClick(){
         setSaved(!saved)
-        console.log({concerts:id=true})
-        wishlist.push({name:name, datum:datum, venue:location, image:image})
+        wishlists.push({name:name, datum:new Date(datum).getMonth(),year:new Date(datum).getFullYear(), venue:location, image:image})
+        console.log(wishlists)
     }
 }
 

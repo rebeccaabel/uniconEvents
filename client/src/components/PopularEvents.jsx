@@ -1,11 +1,10 @@
 import Eventcard from "./Eventcard.jsx";
-import { artists } from "./artistArray.jsx";
 import {useContext} from "react";
 import GlobalContext from "./GlobalContext.jsx";
-import {SavedCard} from "./MySavedEvents.jsx";
 
 export default function () {
     const {concerts} = useContext(GlobalContext)
+
     return <div className="card-area-wrapper">
         <h2>Popular events</h2>
         <div className="card-area-events" >

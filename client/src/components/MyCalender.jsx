@@ -1,13 +1,16 @@
-import React, {useEffect, useState} from 'react'
-import Eventcard, {wishlist} from "./Eventcard.jsx"
+import React, {useContext, useEffect, useState} from 'react'
+import Eventcard from "./Eventcard.jsx"
+import GlobalContext from "./GlobalContext.jsx";
+
 
 
 export default function () {
+    const {wishlists} = useContext(GlobalContext)
     const [date, setDate] = useState(new Date(Date.now()))
-    const [filteredEvents, setFilteredEvents] = useState(wishlist)
+    const [filteredEvents, setFilteredEvents] = useState(wishlists)
 
     useEffect(() => {
-        setFilteredEvents(wishlist)
+        setFilteredEvents(wishlists)
 
     }, [])
 
@@ -44,15 +47,23 @@ export default function () {
     }
 
     function PrintArtist(){
-        let getNewDate = wishlist.map(parseDate => parseDate.datum)
-        console.log(getNewDate)
-        let compareDate = new Date(getNewDate.toString())
-        console.log(compareDate.getMonth()) // If more than one: logs out NAN. Prop cus of the data being a long string?
-        
-        if(compareDate.getMonth() === date.getMonth() && compareDate.getFullYear() === date.getFullYear()){
-            console.log("fucking parsed it?")
-                return filteredEvents.map(artist =><Eventcard datum={artist.datum} image={artist.image} name={artist.name} location={artist.venue}/>)
+         let getMonth = wishlists.map(findMonth => findMonth.datum)
+        let getYear = wishlists.map(findYear => findYear.year)
+        for(let i = 0; i<wishlists.length; i++) {
+            if (getMonth[i] === date.getMonth() && getYear[i] === date.getFullYear()) {
+                return filteredEvents.map(artist => <Eventcard datum={artist.datum} image={artist.image} name={artist.name} location={artist.venue}/>)
+                                                               
             }
+        }
+
+        console.log(date.getFullYear())
+
+        //console.log(compareDate) // If more than one: logs out NAN. Prop cus of the data being a long string?
+
+
+
+
+
     }
     function handleChange(e) {
         setDate(new Date(date.setFullYear(e.target.value)))

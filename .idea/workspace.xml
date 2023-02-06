@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MySavedEvents.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -61,6 +65,23 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,11 +101,28 @@
       <workItem from="1675259457604" duration="1249000" />
       <workItem from="1675260736246" duration="101000" />
       <workItem from="1675407251835" duration="26848000" />
-      <workItem from="1675501986808" duration="438000" />
+      <workItem from="1675501986808" duration="591000" />
+      <workItem from="1675588674355" duration="97000" />
+      <workItem from="1675669767040" duration="407000" />
+      <workItem from="1675670186111" duration="1233000" />
+      <workItem from="1675671436579" duration="145000" />
+      <workItem from="1675671588312" duration="375000" />
+      <workItem from="1675671970284" duration="6222000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

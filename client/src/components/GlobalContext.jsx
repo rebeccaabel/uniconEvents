@@ -9,6 +9,7 @@ export const GlobalProvider = ({ children }) => {
     const [tidbits, setTidbits] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [concerts, setConcerts] = useState([])
+    const [wishlists, setWishlists] = useState([])
 
     // useEffect to run methods upon load
     useEffect(() => {
@@ -79,7 +80,11 @@ export const GlobalProvider = ({ children }) => {
                 concerts,
                 isLoading,
                 submitLogin,
-                logout
+                logout,
+
+
+
+                wishlists
             }}
         >
             {children}
