@@ -1,7 +1,9 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
+import GlobalContext from "./GlobalContext.jsx";
 
 export default function ({name, image, location,datum}) {
-    const [card, setCard] = useState(true)
+    const {wishlists} = useContext(GlobalContext)
+    const [card, setCard] = useState(wishlists)
     return <>
         {card &&( <div className="card" style={{backgroundImage: `url(${image})`}}>
 
@@ -15,6 +17,10 @@ export default function ({name, image, location,datum}) {
         </div> )}
     </>
     function RemoveCard(){
-        setCard((removed) => !removed)
+        for (let i = 0; i<wishlists.length; i++){
+            wishlists.splice(i)
+            setCard(false)
+        }
+
     }
 }

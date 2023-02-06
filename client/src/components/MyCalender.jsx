@@ -1,5 +1,4 @@
 import React, {useContext, useEffect, useState} from 'react'
-import Eventcard from "./Eventcard.jsx"
 import GlobalContext from "./GlobalContext.jsx";
 import SavedCard from "./SavedCard.jsx";
 
@@ -12,7 +11,6 @@ export default function () {
         setFilteredEvents(wishlists)
 
     }, [])
-
 
     return <>
         <Calendar/>
