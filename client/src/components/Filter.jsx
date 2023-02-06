@@ -1,16 +1,5 @@
 import {useRef, useState} from "react";
 import Card from "./EventCard";
-import {
-    sortBetweenTwoDates,
-    sortByLocation,
-    sortByMostRecentAdded,
-    sortIfNextYear,
-    sortIfThisMonth,
-    sortIfThisWeek,
-    sortIfThisYear,
-    sortIfToday,
-    sortIfTomorrow
-} from "./artistArrayFunctions";
 
 
 export default function () {
@@ -18,7 +7,7 @@ export default function () {
     let startDate = useRef(null)
     let endDate = useRef(null)
 
-    function mostRecentEventsFilter() {
+    /* function mostRecentEventsFilter() {
         setFilter(sortedArray = sortByMostRecentAdded)
     }
 
@@ -53,36 +42,35 @@ export default function () {
     function sortBetweenTwoDatesFilter(input1, input2) {
         setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
     }
-
+ */
     return <>
-        <h1>Filter by date</h1>
-        <div className="filter-container-wrapper">
             <div className="filter-container">
                 <div className="filter-buttons-dates">
-                    <button onClick={todayEventsFilter}>Today</button>
-                    <button onClick={tomorrowEventsFilter}>Tomorrow</button>
-                    <button onClick={thisWeekEventsFilter}>This Week</button>
-                    <button onClick={thisMonthEventsFilter}>This Month</button>
-                    <button onClick={thisYearEventsFilter}>This Year</button>
-                    <button onClick={nextYearEventsFilter}>Next Year</button>
-                    <button onClick={mostRecentEventsFilter}>Recently added events</button>
+
                 </div>
               <CitiesFilter/>
 
 
                     <form className="date-form">
-                        <p>start date</p>
-                        <input type="date" ref={startDate}/>
-
-                        <p>end date</p>
-                        <input type="date" ref={endDate}/>
+                        <div id='start-date'>
+                            <p>Start date</p>
+                            <input type="date" ref={startDate}/>
+                        </div>
+                        <div id='end-date'>
+                            <p>End date</p>
+                            <input type="date" ref={endDate}/>
+                            <button>
+                                <i className="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
                     </form>
 
-                <div className="filter-search-button">
-                    <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
-                </div>
-                <div className="card-area-wrapper">
 
+
+
+
+
+                <div className="card-area-wrapper">
                     <div className="card-area">
                         {
                             sortedArray.map(artist => <Card title={artist.title} text={artist.text}
@@ -91,7 +79,6 @@ export default function () {
                     </div>
                 </div>
             </div>
-        </div>
     </>
     function CitiesFilter() {
         return   <div className="filter-buttons-cities">

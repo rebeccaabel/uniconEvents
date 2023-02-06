@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CalculatePricePaymentpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CalculatePricePaymentpage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Seat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Seat.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/live.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/live.db" afterDir="false" />
     </list>
+    <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/choose-seats" />
+        <entry key="$PROJECT_DIR$" value="main-database" />
       </map>
     </option>
   </component>
@@ -108,15 +105,7 @@
       <workItem from="1675063378119" duration="11397000" />
       <workItem from="1675259457604" duration="1249000" />
       <workItem from="1675260736246" duration="101000" />
-      <workItem from="1675323987491" duration="19352000" />
-      <workItem from="1675354254028" duration="609000" />
-      <workItem from="1675355106244" duration="988000" />
-      <workItem from="1675356137099" duration="269000" />
-      <workItem from="1675411849017" duration="726000" />
-      <workItem from="1675512524597" duration="2901000" />
-      <workItem from="1675669658396" duration="6261000" />
-      <workItem from="1675678563106" duration="1037000" />
-      <workItem from="1675679805100" duration="33000" />
+      <workItem from="1675413376568" duration="472000" />
     </task>
     <servers />
   </component>

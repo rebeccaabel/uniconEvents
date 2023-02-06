@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 export default function () {
     return <nav>
         <Link to="/">
-            <button>Home</button>
+            <button id='home-button'>Home</button>
         </Link>
 
         <Link to="/artists">
@@ -13,7 +13,5 @@ export default function () {
         <Link to="/filterpage">
             <button>Advanced search</button>
         </Link>
-
-
     </nav>
 }
