@@ -1,7 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import Card from "./EventCard";
 import GlobalContext from "./GlobalContext";
-import "../styles/Dropdown.css"
 import Dropdown from "./FilterDropdown";
 
 export default function () {
@@ -9,15 +8,15 @@ export default function () {
     let [sortedArray, setSortedArray] = useState([])
     const [selectedVenue, setSelectedVenue] = useState(null)
     const [selectedBand, setSelectedBand] = useState(null)
+    const currentDate = new Date().toJSON().slice(0, 10);
     const startDate = useRef(null)
     const endDate = useRef(null)
-    
     const venueOptions = concerts.map(a => a.venue)
-    let uniqueVenueOptions = venueOptions.filter((c, index) => {
+    const uniqueVenueOptions = venueOptions.filter((c, index) => {
         return venueOptions.indexOf(c) === index
     })
     const bandOptions = concerts.map(a => a.name)
-    let uniqueBandOptions = bandOptions.filter((c, index) => {
+    const uniqueBandOptions = bandOptions.filter((c, index) => {
         return bandOptions.indexOf(c) === index
     })
 
@@ -29,9 +28,9 @@ export default function () {
     }
 
     function filterArray() {
-        const today = new Date("SEP 17 - 07:00")
-        let cloneConcerts = [...concerts]
-
+        const cloneConcerts = [...concerts]
+        
+        console.log(cloneConcerts[500].date.getTime())
         for (let i = cloneConcerts.length - 1; i >= 0; i--) {
             if (selectedBand &&
                 cloneConcerts[i].name !== selectedBand) {
@@ -46,7 +45,7 @@ export default function () {
             ********CHECK IF THE STARTDATE AND***********
             ***********ENDDATE VARIABLES HAVE************
             *****************ANY INPUT*******************
-            else if (
+            else if (startDate && endDate &&
                 cloneConcerts[i].date.getTime() > startDate.getTime() &
                 cloneConcerts[i].date.getTime() < endDate.getTime()) {
                 cloneConcerts.splice(i,1) 
@@ -54,14 +53,6 @@ export default function () {
         */
         }
         return setSortedArray(sortedArray = cloneConcerts)
-    }
-
-    function mostRecentEventsFilter() {
-        let cloneConcerts = [...concerts]
-        cloneConcerts.sort((a, b) => {
-            return b.id - a.id
-        })
-        setFilter(sortedArray = cloneConcerts.slice(0, 10))
     }
 
     function DisplayResults() {
@@ -76,8 +67,8 @@ export default function () {
 
     function TwoDatesFilter() {
         return <div className="two-dates-filter">
-            <p>Start Date:<input type="date" ref={startDate} /></p>
-            <p>End Date<input type="date" ref={endDate} /></p>
+            <p>Start Date:<input type="date" min={currentDate} defaultValue={currentDate} ref={startDate} /></p>
+            <p>End Date<input type="date" min={currentDate} defaultValue={currentDate} ref={endDate} /></p>
         </div>
     }
 
@@ -85,17 +76,16 @@ export default function () {
         return <button id="filter-page-search-button" onClick={() => { filterArray() }}>Search</button>
     }
 
-    function EventFilter() {
-        return <div className="filter-container">
+   
+ 
+    return <>
+       
+        <div className="filter-container">
             <Dropdown isSearchable placeHolder="Select Venue..." options={uniqueVenueOptions} selection={selectVenue} />
             <Dropdown isSearchable placeHolder="Select Band..." options={uniqueBandOptions} selection={selectBand}/>
             <TwoDatesFilter />
             <SearchButton />
         </div>
-    }
- 
-    return <>
-        <EventFilter />
         <div className="card-area-wrapper">
             <DisplayResults />
         </div>

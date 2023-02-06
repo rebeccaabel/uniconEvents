@@ -6,14 +6,12 @@ export const GlobalProvider = ({ children }) => {
 
     // useState for all variables
     const [auth, setAuth] = useState({loggedIn:false})
-    const [tidbits, setTidbits] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [concerts, setConcerts] = useState([])
 
     // useEffect to run methods upon load
     useEffect(() => {
         void checkAuth()
-        void loadTidbits()
         void loadConcerts()
     }, []);
 
@@ -53,15 +51,6 @@ export const GlobalProvider = ({ children }) => {
         setAuth({loggedIn:false})
     }
 
-    const loadTidbits = async () => {
-        setIsLoading(true)
-        const response = await fetch("/rest/tidbits")
-        const result = await response.json()
-        console.log(result)
-        setTidbits(result)
-        setIsLoading(false)
-    }
-
     const loadConcerts = async () => {
         setIsLoading(true)
         const response = await fetch("/rest/concerts")
@@ -75,11 +64,10 @@ export const GlobalProvider = ({ children }) => {
         <GlobalContext.Provider
             value={{
                 auth,
-                tidbits,
                 concerts,
                 isLoading,
                 submitLogin,
-                logout
+                logout,
             }}
         >
             {children}

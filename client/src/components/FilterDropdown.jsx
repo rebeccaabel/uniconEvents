@@ -11,7 +11,7 @@ const Icon = () => {
 
 const Dropdown = ({ placeHolder, options, isSearchable, selection }) => {
     const [showMenu, setShowMenu] = useState(false)
-    const [selectedValue, setSelectedValue] = useState(null)
+    const [selectedValue, setSelectedValue] = useState(placeHolder)
     const [searchValue, setSearchValue] = useState("");
     const searchRef = useRef();
 
@@ -47,17 +47,16 @@ const Dropdown = ({ placeHolder, options, isSearchable, selection }) => {
         setShowMenu(!showMenu);
     }
 
-    const getDisplay = () => {
+     const getDisplay = () => {
         if (selectedValue) {
             return selectedValue
         }
-        return placeHolder;
-    }
+        return selectedValue;
+    } 
 
     const onItemClick = (option) => {
-        setSelectedValue(option);
+        setSelectedValue(option)
         selection(option);
-    
     }
 
     return (
@@ -73,7 +72,7 @@ const Dropdown = ({ placeHolder, options, isSearchable, selection }) => {
                         {getOptions().map((option) => (
                             <div
                                 key={option}
-                                onClick={() => {onItemClick(option)}}
+                                onClick={() => { onItemClick(option) }}
                                 className={'dropdown-item ${isSelected(option) && "selected"}'}>
                                 {option}
                             </div>
@@ -81,11 +80,11 @@ const Dropdown = ({ placeHolder, options, isSearchable, selection }) => {
                     </div>)}
 
                 <div className="dropdown-selected-value">{getDisplay()}</div>
-             
-                    <div className="dropdown-tool">
-                        <Icon />
-                    </div>
-                
+
+                <div className="dropdown-tool">
+                    <Icon />
+                </div>
+
             </div>
         </div>
     );
