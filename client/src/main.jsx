@@ -12,6 +12,7 @@ import UserSettings from "./components/UserSettings.jsx";
 import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
 import ArtistHub from "./pages/ArtistHubPage.jsx";
 import {GlobalProvider} from "./components/GlobalContext.jsx";
+import Sectionpage from "./pages/Sectionpage.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -29,7 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'ArtistHub'} element={<ArtistHub/>}/>
-                        <Route path={'login'} element={<Loginpage/>}/>
+						<Route path={'sectionpage'} element={<Sectionpage/>}/>
 
                     </Route>
                 )
