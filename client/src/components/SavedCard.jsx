@@ -1,4 +1,3 @@
-import {useContext, useState} from "react";
 export default function ({name, image, location,datum}) {
     return <>
         <div className="card" alt='artist picture' style={{backgroundImage: `url(${image})`}}>
@@ -9,4 +8,5 @@ export default function ({name, image, location,datum}) {
             </div>
         </div>
     </>
+
 }
