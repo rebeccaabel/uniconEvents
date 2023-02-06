@@ -8,7 +8,7 @@ import Tidbits from "../components/Tidbits.jsx";
 export default function () {
     return <>
         <TodayEvents/>
-        <PopularEvents/>
+        <PopularEvents />
         <MostRecentEvents/>
         <Tidbits/>
     </>

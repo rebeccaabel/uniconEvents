@@ -1,8 +1,6 @@
 import Eventcard from "./Eventcard.jsx";
-import { artists } from "./artistArray.jsx";
 import {useContext} from "react";
 import GlobalContext from "./GlobalContext.jsx";
-import {Link} from "react-router-dom";
 
 export default function () {
     const {concerts} = useContext(GlobalContext)
