@@ -29,8 +29,7 @@ export default function () {
 
     function filterArray() {
         const cloneConcerts = [...concerts]
-        
-        console.log(cloneConcerts[500].date.getTime())
+
         for (let i = cloneConcerts.length - 1; i >= 0; i--) {
             if (selectedBand &&
                 cloneConcerts[i].name !== selectedBand) {
