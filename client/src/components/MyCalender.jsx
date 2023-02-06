@@ -1,8 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react'
 import Eventcard from "./Eventcard.jsx"
 import GlobalContext from "./GlobalContext.jsx";
-
-
+import SavedCard from "./SavedCard.jsx";
 
 export default function () {
     const {wishlists} = useContext(GlobalContext)
@@ -47,22 +46,14 @@ export default function () {
     }
 
     function PrintArtist(){
-         let getMonth = wishlists.map(findMonth => findMonth.month)
+     
+        let getMonth = wishlists.map(findMonth => findMonth.month)
         let getYear = wishlists.map(findYear => findYear.year)
         for(let i = 0; i<wishlists.length; i++) {
             if (getMonth[i] === date.getMonth() && getYear[i] === date.getFullYear()) {
-                return filteredEvents.map(artist => <Eventcard datum={artist.datum.toString()} image={artist.image} name={artist.name} location={artist.venue}/>)
+                return filteredEvents.map(artist => <SavedCard datum={artist.datum.toString()} image={artist.image} name={artist.name} location={artist.venue}/>)
             }
         }
-
-        console.log(date.getFullYear())
-
-        //console.log(compareDate) // If more than one: logs out NAN. Prop cus of the data being a long string?
-
-
-
-
-
     }
     function handleChange(e) {
         setDate(new Date(date.setFullYear(e.target.value)))
