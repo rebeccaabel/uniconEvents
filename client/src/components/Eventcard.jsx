@@ -3,21 +3,21 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 
-export const wishlist = []
-export const artistHubArray = []
-export default function ({ name, image, location, datum, id }) {
+export default function ({details}) {
 
-    const { concerts } = useContext(GlobalContext);
+
+    const { concerts, artistInfo } = useContext(GlobalContext);
     const [saved, setSaved] = useState(false)
     const [showEvent, setShowEvent] = useState(false)
+    const {name, image, datum, venue, id} = details
 
 
     return <>
-        <Link to="/ArtistHub">
+        <Link to={`/ArtistHub/${id}`}>
             <div className="card" alt='artist picture' onClick={() => { artistHubInfo() }} style={{ backgroundImage: `url(${image})` }}>
                 <div className="event-card-details">
                     <h3>{name}</h3>
-                    <p>{location}</p>
+                    <p>{venue}</p>
                     <p>{datum}</p>
                     <button className={"save-event"} onClick={() => {
                         handleClick()
@@ -28,21 +28,19 @@ export default function ({ name, image, location, datum, id }) {
         </Link>
     </>
 
-    // function handleClick() {
-    //     setSaved(!saved)
-    //     console.log({ concerts: id = true })
-    //     wishlist.push({ name: name, datum: datum, venue: location, image: image })
-    //     console.log(wishlist)
-    // }
+     function handleClick() {
+         setSaved(!saved)
+         wishlist.push({ name: name, datum: datum, venue: location, image: image })
+         console.log(wishlist)
+     }
 
     function artistHubInfo() {
         setShowEvent(!showEvent)
-        artistHubArray.push({ name: name, datum: datum, venue: location, image: image })
+        artistInfo.push({ name: name, datum: datum, venue: location, image: image })
 
-        console.log({ concerts: id = true })
         console.log({ concerts: id }, { concerts: name })
 
-        console.log(artistHubArray);
+        console.log(artistInfo);
     }
         
 }
