@@ -1,5 +1,5 @@
 import {artists} from "../components/Artistarray.jsx"
-import React, {useState} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import {Link} from "react-router-dom";
 
 export default function () {
@@ -18,14 +18,14 @@ export default function () {
             setActive(!active);
         };
         const checkSeat = () => {
-
             for (let i = 0; i < seats.length; i++) {
 
                 if (seats[i].props.className === "black-btn") {
                     chosenSeats.push(seats[i].props.value);
-                    console.log(chosenSeats)
                 }
+
             }
+            console.log(chosenSeats);
         }
 
         return <button value={input} onClick={() => {
