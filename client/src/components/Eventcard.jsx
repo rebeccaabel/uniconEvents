@@ -19,7 +19,7 @@ export default function ({name, image, location,datum,id}) {
     </>
     function handleClick(){
         setSaved(!saved)
-        wishlists.push({name:name, datum:new Date(datum).getMonth(),year:new Date(datum).getFullYear(), venue:location, image:image})
+        wishlists.push({name:name, datum:new Date(datum).toDateString(), month:new Date(datum).getMonth(),year:new Date(datum).getFullYear(), venue:location, image:image})
         console.log(wishlists)
     }
 }

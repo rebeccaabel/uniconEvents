@@ -47,12 +47,11 @@ export default function () {
     }
 
     function PrintArtist(){
-         let getMonth = wishlists.map(findMonth => findMonth.datum)
+         let getMonth = wishlists.map(findMonth => findMonth.month)
         let getYear = wishlists.map(findYear => findYear.year)
         for(let i = 0; i<wishlists.length; i++) {
             if (getMonth[i] === date.getMonth() && getYear[i] === date.getFullYear()) {
-                return filteredEvents.map(artist => <Eventcard datum={artist.datum} image={artist.image} name={artist.name} location={artist.venue}/>)
-                                                               
+                return filteredEvents.map(artist => <Eventcard datum={artist.datum.toString()} image={artist.image} name={artist.name} location={artist.venue}/>)
             }
         }
 
