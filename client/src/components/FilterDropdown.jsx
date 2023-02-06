@@ -56,7 +56,8 @@ const Dropdown = ({ placeHolder, options, isSearchable, selection }) => {
 
     const onItemClick = (option) => {
         setSelectedValue(option);
-        selection(option)
+        selection(option);
+    
     }
 
     return (
@@ -80,11 +81,11 @@ const Dropdown = ({ placeHolder, options, isSearchable, selection }) => {
                     </div>)}
 
                 <div className="dropdown-selected-value">{getDisplay()}</div>
-                <div className="dropdown-tools">
+             
                     <div className="dropdown-tool">
                         <Icon />
                     </div>
-                </div>
+                
             </div>
         </div>
     );
