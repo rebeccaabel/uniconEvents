@@ -93,7 +93,7 @@ export default function () {
             <SearchButton />
         </div>
     }
-
+ 
     return <>
         <EventFilter />
         <div className="card-area-wrapper">
