@@ -1,4 +1,3 @@
-import {artists} from "./artistArray.jsx";
 import {Link} from "react-router-dom";
 import DisplayArtistCardPayment from "../components/DisplayArtistCardPayment";
 import CalculatePricePaymentpage from "../components/CalculatePricePaymentpage.jsx";
