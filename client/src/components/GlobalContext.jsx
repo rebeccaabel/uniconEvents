@@ -79,7 +79,7 @@ export const GlobalProvider = ({ children }) => {
                 concerts,
                 isLoading,
                 submitLogin,
-                logout
+                logout,
             }}
         >
             {children}
