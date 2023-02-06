@@ -1,12 +1,14 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import {Link} from "react-router-dom";
+import GlobalContext from "./GlobalContext.jsx";
 export default function () {
     const [email, setEmail] = useState("");
     const[password, setPassword] = useState("")
+    const {submitLogin} = useContext(GlobalContext)
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(email)
+        submitLogin(email,password)
     }
 
 

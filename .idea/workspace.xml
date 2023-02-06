@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/LoginBox.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Loginpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Loginpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/database/live.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/live.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/login.js" afterDir="false" />
     </list>
     <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +64,45 @@
       <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents" />
     </key>
   </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,6 +123,7 @@
       <workItem from="1675413376568" duration="472000" />
       <workItem from="1675417167890" duration="5162000" />
       <workItem from="1675425840327" duration="8027000" />
+      <workItem from="1675676490331" duration="1533000" />
     </task>
     <servers />
   </component>

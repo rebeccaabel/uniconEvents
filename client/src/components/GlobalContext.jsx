@@ -29,6 +29,18 @@ export const GlobalProvider = ({ children }) => {
         setIsLoading(false)
     }
 
+    const register = async(email,password) => {
+        setIsLoading(true)
+        const response = await fetch("/rest/users", {
+            method: "post",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({email, password})
+        })
+        const result = await response.json()
+        console.log(result)
+        setIsLoading(false)
+    }
+
     const submitLogin = async (email, password) => {
         setIsLoading(true)
         const response = await fetch("/rest/login", {
@@ -79,7 +91,8 @@ export const GlobalProvider = ({ children }) => {
                 concerts,
                 isLoading,
                 submitLogin,
-                logout
+                logout,
+                register
             }}
         >
             {children}
