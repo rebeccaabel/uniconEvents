@@ -1,9 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 
 const GlobalContext = createContext(null);
-
 export const GlobalProvider = ({ children }) => {
-
 
     // useState for all variables
     const [auth, setAuth] = useState({loggedIn:false})
@@ -63,8 +61,6 @@ export const GlobalProvider = ({ children }) => {
         setConcerts(result)
         setIsLoading(false)
     }
-
-
 
 
     return (
