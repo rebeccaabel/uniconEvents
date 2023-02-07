@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     padding: 1%;
-   /* background-image: linear-gradient(to right, #090d2c, #ffffff);*/
     border-radius: 0.5rem;
     width: 50%;
     height: 50%;
@@ -18,11 +17,7 @@
     justify-content: center;
     align-items: center;
 }
-/*
-div {
-    background-image: linear-gradient(to right, #e6bffa, #ffffff);
-}
-*/
+
 #outer-div div {
     padding: 3%;
     margin: 3%;

@@ -2,19 +2,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(200, 200, 200, 0.80);
     margin-left: 25%;
     margin-right: 25%;
     border-radius: 1%;
+
+
 }
 
 #title{
-    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    color:white;
+    font-size: 3rem;
 }
 
 .artist-image, #title{
     display: flex;
     justify-content: center;
+
 }
 
 .artist-image > img{
@@ -24,12 +31,14 @@
 
 .description{
     display: flex;
+    color:white;
     margin: 5%;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     font-size: 1.2rem;
     text-align: justify;
+
 }
 
 .present-artist-list{
@@ -43,12 +52,15 @@
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid black;
+    color:white;
+
 }
 
 .ticket{
     display: flex;
     align-items: center;
     flex-direction: column;
+    color:white;
 }
 
 .ticket button{
@@ -56,6 +68,7 @@
     border-radius: 5px;
     background: linear-gradient(to bottom, white, gray);
     font-size: 1.2rem;
+    margin: 1rem;
 }
 
 .google-maps{
@@ -73,14 +86,14 @@
 @media screen and (max-width: 1520px){
     .artist-info-wrapper{
         margin-left: 15%;
-        margin-right: 15%;    
+        margin-right: 15%;
     }
 }
 
 @media screen and (max-width: 1065){
     .artist-info-wrapper{
         margin-left: 10%;
-        margin-right: 10%;    
+        margin-right: 10%;
     }
 }
 
@@ -94,14 +107,20 @@
         height: 310px;
         border-radius: 5px;
     }
-    
+
 }
 
 @media screen and (max-width: 600px){
 
     .artist-info-wrapper{
         margin-left: 0%;
-        margin-right: 0%;    
+        margin-right: 0%;
+    }
+    #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem;
     }
 
     .artist-image > img{
@@ -117,5 +136,5 @@
         margin-left: 10%;
         margin-right: 10%;
     }
-    
+
 }
