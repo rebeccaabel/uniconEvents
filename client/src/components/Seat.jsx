@@ -1,12 +1,13 @@
-import {artists} from "../components/Artistarray.jsx"
-import React, {useState, useEffect, useContext} from "react";
+import {artists} from "./artistArray.jsx"
+import {useState, useContext} from "react";
 import {Link} from "react-router-dom";
+import GlobalContext from "./GlobalContext.jsx";
 
 export default function () {
-
+    const {chosenSeats, setChosenSeats} = useContext(GlobalContext)
     let numberOfSeats = artists[0].totalSeats + 1;
-    let seats = [];
-    let chosenSeats = [];
+    let seats = []
+
 
     for (let i = 1; i < numberOfSeats; i++) {
         seats.push(ClickBtn(i));
@@ -20,17 +21,22 @@ export default function () {
         const checkSeat = () => {
             for (let i = 0; i < seats.length; i++) {
 
-                if (seats[i].props.className === "black-btn") {
-                    chosenSeats.push(seats[i].props.value);
+            if (seats[i].props.className === "black-btn" && !chosenSeats.includes(seats[i].props.value)) {
+                    setChosenSeats([...chosenSeats,seats[i].props.value])
+                //console.log(chosenSeats);
                 }
 
+            else if (seats[i].props.className === "black-btn" && chosenSeats.includes(seats[i].props.value)) {
+                setChosenSeats([...chosenSeats, chosenSeats.filter(chosenSeats => chosenSeats.includes(seats[i].props.value))])
+                //console.log(chosenSeats[i].props.className)
+                }
             }
             console.log(chosenSeats);
         }
 
         return <button value={input} onClick={() => {
-            checkSeat();
-            handleClick()
+            handleClick();
+            checkSeat()
         }} className={active ? "black-btn" : "white-btn"}>{input}</button>
     }
 

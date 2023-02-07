@@ -17,24 +17,25 @@ import Sectionpage from "./pages/Sectionpage.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <RouterProvider router={
-            createBrowserRouter(
-                createRoutesFromElements(
-                    <Route path={'/'} element={<App/>}>
-                        <Route index element={<Startpage/>}/>
-                        <Route path={'artists'} element={<Artistpage/>}/>
-                        <Route path={'filterpage'} element={<Filterpage/>}/>
-                        <Route path={'profile'} element={<Profilepage/>}>
-                            <Route path={'settings'} element={<UserSettings/>}/>
+        <GlobalProvider>
+            <RouterProvider router={
+                createBrowserRouter(
+                    createRoutesFromElements(
+                        <Route path={'/'} element={<App/>}>
+                            <Route index element={<Startpage/>}/>
+                            <Route path={'sectionpage'} element={<Sectionpage/>}/>
+                            <Route path={'artists'} element={<Artistpage/>}/>
+                            <Route path={'filterpage'} element={<Filterpage/>}/>
+                            <Route path={'profile'} element={<Profilepage/>}>
+                                <Route path={'settings'} element={<UserSettings/>}/>
+                            </Route>
+                            <Route path={'paymentpage'} element={<Paymentpage/>}/>
+                            <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
+                            <Route path={'ArtistHub'} element={<ArtistHub/>}/>
                         </Route>
-                        <Route path={'paymentpage'} element={<Paymentpage/>}/>
-                        <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
-                        <Route path={'ArtistHub'} element={<ArtistHub/>}/>
-						<Route path={'sectionpage'} element={<Sectionpage/>}/>
-
-                    </Route>
+                    )
                 )
-            )
-        }/>
+            }/>
+        </GlobalProvider>
     </React.StrictMode>,
 )

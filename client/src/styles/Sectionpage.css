@@ -18,7 +18,6 @@
     justify-content: center;
     align-items: center;
 }
-
 /*
 div {
     background-image: linear-gradient(to right, #e6bffa, #ffffff);
@@ -31,16 +30,16 @@ div {
     border-radius: 0.5rem;
     border: 2px solid #46464f;
     box-shadow: 0px 0px 10px 2px rgb(94, 35, 35);
- /*   background-image: linear-gradient(to right, #e6bffa, #ffffff);*/
     background-color: rgba(255, 255, 255, 0.6);
 }
-
 
 #seated-area {
     display: flex;
     flex-direction: column;
     padding: 1%;
 }
+
+
 
 button {
     margin: 0.08rem;
@@ -73,5 +72,8 @@ a button:hover {
 @media screen and (max-width: 600px) {
     #seated-area div button {
         font-size: 0.2rem;
+    }
+    #stage-area {
+        font-size: 0.5rem;
     }
 }

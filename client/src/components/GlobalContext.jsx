@@ -8,6 +8,8 @@ export const GlobalProvider = ({ children }) => {
     const [auth, setAuth] = useState({loggedIn:false})
     const [isLoading, setIsLoading] = useState(true)
     const [concerts, setConcerts] = useState([])
+    const [chosenSeats, setChosenSeats] = useState([])
+    const [standingTickets, setStandingTickets] = useState([])
 
     // useEffect to run methods upon load
     useEffect(() => {
@@ -68,6 +70,10 @@ export const GlobalProvider = ({ children }) => {
                 isLoading,
                 submitLogin,
                 logout,
+                standingTickets,
+                setStandingTickets,
+                chosenSeats,
+                setChosenSeats
             }}
         >
             {children}

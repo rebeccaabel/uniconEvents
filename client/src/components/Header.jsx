@@ -25,8 +25,6 @@ export default function () {
         </div>
 
         <div className="profile-signup-login">
-
-
             <Link to="/signUpPage">
                 <button>Sign up</button>
             </Link>
