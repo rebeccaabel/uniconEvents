@@ -1,7 +1,7 @@
 import {useContext, useState} from "react";
 import GlobalContext from "./GlobalContext.jsx";
 
-export default function ({name, image, location,datum}) {
+export default function ({name, image, location,datum, id}) {
     const {wishlists} = useContext(GlobalContext)
     const [card, setCard] = useState(wishlists)
     return <>
@@ -18,7 +18,7 @@ export default function ({name, image, location,datum}) {
     </>
     function RemoveCard(){
         for (let i = 0; i<wishlists.length; i++){
-            wishlists.splice(i)
+            setCard(wishlists.splice(i,1))
             setCard(false)
         }
 

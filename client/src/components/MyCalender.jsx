@@ -30,7 +30,6 @@ export default function () {
     function Calendar() {
         return <div className={"calender"}>
             <select className={"years"} value={date.getFullYear()} onChange={handleChange}>
-                <option value={"none"}>Choose</option>
                 <option value={"2021"}>2021</option>
                 <option value={"2022"}>2022</option>
                 <option value={"2023"}>2023</option>
