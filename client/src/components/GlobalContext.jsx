@@ -4,10 +4,12 @@ const GlobalContext = createContext(null);
 
 export const GlobalProvider = ({ children }) => {
 
+
     // useState for all variables
     const [auth, setAuth] = useState({loggedIn:false})
     const [isLoading, setIsLoading] = useState(true)
     const [concerts, setConcerts] = useState([])
+    const [artistInfo, setArtistInfo] = useState([])
 
     // useEffect to run methods upon load
     useEffect(() => {
@@ -59,6 +61,9 @@ export const GlobalProvider = ({ children }) => {
         setConcerts(result)
         setIsLoading(false)
     }
+
+
+
 
     return (
         <GlobalContext.Provider

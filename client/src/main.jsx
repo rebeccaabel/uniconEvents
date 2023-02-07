@@ -29,8 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         </Route>
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
-                        <Route path={'ArtistHub'} element={<ArtistHub/>}/>
-						<Route path={'sectionpage'} element={<Sectionpage/>}/>
+                        <Route path={'ArtistHub/:id'} element={<ArtistHub/>}/>
+                        <Route path={'login'} element={<Loginpage/>}/>
 
                     </Route>
                 )
