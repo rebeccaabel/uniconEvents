@@ -1,5 +1,4 @@
 import Eventcard from "./Eventcard.jsx";
-import { artists } from "./artistArray.jsx";
 import {useContext} from "react";
 import GlobalContext from "./GlobalContext.jsx";
 
@@ -9,8 +8,7 @@ export default function () {
         <h2>Popular events</h2>
         <div className="card-area-events" >
         {
-            concerts.slice(0,40).map(artist => <Eventcard title={artist.name} location={artist.venue} date={artist.date.toLocaleString()}  image={artist.image}/>)
-        }
+            concerts.slice(0,100).map(concert => <Eventcard details={concert}/>)        }
         </div>
     </div>
 
