@@ -27,6 +27,30 @@ export const GlobalProvider = ({ children }) => {
         setIsLoading(false)
     }
 
+    const getPassword = async (password) => {
+        setIsLoading(true)
+        const response = await fetch("/rest/users/password", {
+            method: "get",
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({password})
+        })
+        const result = await response.json()
+        console.log(result)
+        setIsLoading(false)
+    }
+    const updatePassword = async (password) => {
+        setIsLoading(true)
+        const response = await fetch("/rest/users/password", {
+            method: "put",
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({password})
+        })
+        const result = await response.json()
+        console.log(result)
+        setIsLoading(false)
+    }
+
+
     const register = async(email,password) => {
         setIsLoading(true)
         const response = await fetch("/rest/users", {
@@ -63,6 +87,7 @@ export const GlobalProvider = ({ children }) => {
         setAuth({loggedIn:false})
     }
 
+
     const loadConcerts = async () => {
         setIsLoading(true)
         const response = await fetch("/rest/concerts")
@@ -80,7 +105,9 @@ export const GlobalProvider = ({ children }) => {
                 isLoading,
                 submitLogin,
                 logout,
-                register
+                register,
+                updatePassword,
+                getPassword
             }}
         >
             {children}

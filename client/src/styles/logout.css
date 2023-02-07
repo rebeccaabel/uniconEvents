@@ -1,0 +1,13 @@
+
+.logout-container {
+    background: linear-gradient(to right, #FF9B9B, #FF7C7C);
+    color: white;
+    padding: 40px;
+    height: 500px;
+    text-align: center;
+}
+
+.logout-container h4{
+    font-size: 3rem;
+    font-weight: bold;
+}

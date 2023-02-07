@@ -1,39 +1,32 @@
-import {useEffect, useState} from "react";
-
-
-export function clearInput() {
-    let getValue = document.getElementsByTagName("input");
-    for (let i = 0; i < getValue.length; i++) {
-        console.log(getValue[i].value); // logs out the string value
-
-        if (getValue[i].type === "text") {
-            getValue[i].value = ""
-        }
-    }
-
-}
-
+import {useContext, useEffect, useState} from "react";
+import GlobalContext from "./GlobalContext.jsx";
 
 export default function () {
-    const [name, setName] = useState('')
-    const [surname, setSurname] = useState('')
-    const [password, setPassword] = useState('')
+    const [currentPassword, setCurrentPassword] = useState("")
+    const [newPassword, setNewPassword] = useState("")
 
-    return <div className='contact-information'>
-        <h2>Contact Information</h2>
-        <div className="updated-settings"></div>
-        <input onChange={(event) => setName(event.target.value)} placeholder="Name" value={name}/>
-        <input onChange={(event) => setSurname(event.target.value)} placeholder="Surname" value={surname}/>
-        <input placeholder="E-mail"/>
-        <input onChange={(event) => setPassword(event.target.value)} placeholder="Password" value={password}/>
-        <button onClick={submit} className="update-button">Save</button>
-    </div>
+    const {updatePassword, getPassword} = useContext(GlobalContext)
 
-    function submit() {
-        //todo: implement push updated user info to server
 
+    const changePassword = (event) => {
+        event.preventDefault()
+        getPassword(currentPassword)
+        updatePassword(newPassword)
     }
 
+        console.log(getPassword)
+
+    console.log(updatePassword)
+
+    return <div className='contact-information'>
+        <h2>Change password</h2>
+        <form onSubmit={changePassword}>
+            <input  value={currentPassword}  onChange={event => setCurrentPassword(event.target.value)} placeholder="Old Password" type='password' name='password'/>
+            <input  value={newPassword}  onChange={event => setNewPassword(event.target.value)} placeholder="New Password" type='password' name='password'/>
+            <input type='submit' name='submit' value='Change Password'/>
+        </form>
+
+    </div>
 
 }
 

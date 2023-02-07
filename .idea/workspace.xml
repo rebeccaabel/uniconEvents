@@ -6,12 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Logout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/LogOutButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/LogOutButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/live.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/live.db" afterDir="false" />
     </list>
-    <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
+    <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="">
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/LogOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/LogOutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/loginpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/loginpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/registerpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/registerpage.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +31,18 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/client/src/components/Login.jsx">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="5" changelist="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" />
+        <range start1="5" end1="6" start2="7" end2="8" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
+        <range start1="11" end1="12" start2="13" end2="14" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
+        <range start1="15" end1="23" start2="17" end2="26" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
+        <range start1="24" end1="27" start2="27" end2="32" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
+        <range start1="28" end1="28" start2="33" end2="34" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -118,6 +138,7 @@
       <workItem from="1675687029009" duration="2067000" />
       <workItem from="1675751257501" duration="568000" />
       <workItem from="1675757884705" duration="4546000" />
+      <workItem from="1675766009767" duration="10984000" />
     </task>
     <servers />
   </component>
