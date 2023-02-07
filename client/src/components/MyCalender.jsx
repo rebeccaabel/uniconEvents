@@ -11,7 +11,7 @@ export default function () {
         setFilteredEvents(wishlists)
 
     }, [])
-    console.log(date)
+
 
     return <>
         <Calendar/>

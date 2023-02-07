@@ -6,8 +6,7 @@ export default function ({name, image, location, datum, id}) {
 
 
     const {wishlists} = useContext(GlobalContext)
-    const [card, setCard] = useState(true)
-    console.log(wishlists)
+    const [card, setCard] = useState(...wishlists)
     return <>
 
         {(card && <div className="card" style={{backgroundImage: `url(${image})`}}>
@@ -17,22 +16,32 @@ export default function ({name, image, location, datum, id}) {
             <p>{datum}</p>
             <p>{id}</p>
             <SaveButton/>
-            
         </div> )}
     </>
 
 
  function SaveButton(){
 
-        return <button className={"save-event"} onClick={RemoveCard}
+        return <button className={"save-event"} onClick={()=> {handleDelete()}}
                        style={{color:"red"}}><i className="fa-solid fa-heart"></i></button>
 
     }
-function RemoveCard() {
-  wishlists.splice({wishlists:id},1)
-    setCard(false)
-  }
-}
+
+    function handleDelete() {
+
+   wishlists.splice({wishlists:id},1)
+       setCard(false)
+     }; 
+    }
+
+
+
+
+
+
+
+
+
 
 
 

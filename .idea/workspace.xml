@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/MyCalender.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/MyCalender.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/SavedCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SavedCard.jsx" afterDir="false" />
     </list>
     <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
@@ -102,7 +99,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="08718784-2e30-4dd7-b4f7-2e2bc133701e" name="Changes" comment="" />
+      <changelist id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="" />
       <created>1674814413948</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -118,6 +115,10 @@
       <workItem from="1675260736246" duration="101000" />
       <workItem from="1675413376568" duration="472000" />
       <workItem from="1675694166647" duration="140000" />
+      <workItem from="1675785202926" duration="394000" />
+      <workItem from="1675789484623" duration="605000" />
+      <workItem from="1675791404512" duration="980000" />
+      <workItem from="1675799525722" duration="4999000" />
     </task>
     <servers />
   </component>
