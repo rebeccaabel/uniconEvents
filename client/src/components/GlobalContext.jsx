@@ -73,7 +73,6 @@ export const GlobalProvider = ({ children }) => {
                 isLoading,
                 submitLogin,
                 logout,
-                artistInfo
             }}
         >
             {children}

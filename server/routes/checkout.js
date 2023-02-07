@@ -51,17 +51,17 @@ module.exports = function(server, db, host){
         mode: "payment",
         // Set a success and cancel URL we will send customers to
         // They are complete urls
-        success_url: host + '/examples/checkout-success.html', // these should be example_client routes in the react app
+        success_url: host + '/examples/checkout-success.html', // these should be client routes in the react app
         cancel_url: host + '/examples/checkout-cancel.html',
       })
       // save current checkout session to user session, so we can check result after
       req.session.checkoutSession = checkoutSession
       // send user to stripe process,
       // note that you will have to handle the result of the payment after that process,
-      // when the user returns to our example_client
+      // when the user returns to our client
       res.json({ url: checkoutSession.url })
     } catch (e) {
-      // If there is an error send it to the example_client
+      // If there is an error send it to the client
       res.status(500).json({ error: e.message })
     }
   })
