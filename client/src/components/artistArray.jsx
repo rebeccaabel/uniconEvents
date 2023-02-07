@@ -11,7 +11,7 @@ export const artists = [
         availableSeats: 200,
         isBought: false,
         wishList: false,
-        id: 1
+        pricePerTicket: 500,
 
     },
     {

@@ -15,7 +15,7 @@ export default function ({name, image, location,datum,id}) {
             <p>{datum}</p>
             <SaveButton/>
             </div>
-        </div>
+        </Link>
     </>
 
     function SaveButton(){

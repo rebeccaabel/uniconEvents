@@ -1,105 +1,86 @@
-import {useRef, useState} from "react";
+import { useContext, useRef, useState } from "react";
 import Card from "./EventCard";
-import {
-    sortBetweenTwoDates,
-    sortByLocation,
-    sortByMostRecentAdded,
-    sortIfNextYear,
-    sortIfThisMonth,
-    sortIfThisWeek,
-    sortIfThisYear,
-    sortIfToday,
-    sortIfTomorrow
-} from "./artistArrayFunctions";
-
+import GlobalContext from "./GlobalContext";
+import Dropdown from "./FilterDropdown";
 
 export default function () {
-    let [sortedArray, setFilter] = useState([])
-    let startDate = useRef(null)
-    let endDate = useRef(null)
+    const { concerts } = useContext(GlobalContext)
+    let [sortedArray, setSortedArray] = useState([])
+    const [selectedVenue, setSelectedVenue] = useState(null)
+    const [selectedBand, setSelectedBand] = useState(null)
+    const currentDate = new Date().toJSON().slice(0, 10);
+    const startDate = useRef(null)
+    const endDate = useRef(null)
+    const venueOptions = concerts.map(a => a.venue)
+    const uniqueVenueOptions = venueOptions.filter((c, index) => {
+        return venueOptions.indexOf(c) === index
+    })
+    const bandOptions = concerts.map(a => a.name)
+    const uniqueBandOptions = bandOptions.filter((c, index) => {
+        return bandOptions.indexOf(c) === index
+    })
 
-    function mostRecentEventsFilter() {
-        setFilter(sortedArray = sortByMostRecentAdded)
+    const selectBand = (band) => {
+        setSelectedBand(band)
+    }
+    const selectVenue = (venue) => {
+        setSelectedVenue(venue)
     }
 
-    function todayEventsFilter() {
-        setFilter(sortedArray = sortIfToday)
+    function filterArray() {
+        const cloneConcerts = [...concerts]
+
+        for (let i = cloneConcerts.length - 1; i >= 0; i--) {
+            if (selectedBand &&
+                cloneConcerts[i].name !== selectedBand) {
+                cloneConcerts.splice(i,1)
+            }else if (selectedVenue &&
+                cloneConcerts[i].venue !== selectedVenue){
+                cloneConcerts.splice(i,1)
+            }/*else if (startDate && endDate &&
+                cloneConcerts[i].date.getTime() !> startDate.getTime() &
+                cloneConcerts[i].date.getTime() !< endDate.getTime()) {
+                cloneConcerts.splice(i,1) 
+        }*/
+        }
+        return setSortedArray(sortedArray = cloneConcerts)
     }
 
-    function tomorrowEventsFilter() {
-        setFilter(sortedArray = sortIfTomorrow)
-    }
-
-    function thisWeekEventsFilter() {
-        setFilter(sortedArray = sortIfThisWeek)
-    }
-
-    function thisMonthEventsFilter() {
-        setFilter(sortedArray = sortIfThisMonth)
-    }
-
-    function thisYearEventsFilter() {
-        setFilter(sortedArray = sortIfThisYear)
-    }
-
-    function nextYearEventsFilter() {
-        setFilter(sortedArray = sortIfNextYear)
-    }
-
-    function locationFilter(input) {
-        setFilter(sortedArray = sortByLocation(input))
-    }
-
-    function sortBetweenTwoDatesFilter(input1, input2) {
-        setFilter(sortedArray = sortBetweenTwoDates(input1, input2))
-    }
-
-    return <>
-        <h1>Filter by date</h1>
-        <div className="filter-container-wrapper">
-            <div className="filter-container">
-                <div className="filter-buttons-dates">
-                    <button onClick={todayEventsFilter}>Today</button>
-                    <button onClick={tomorrowEventsFilter}>Tomorrow</button>
-                    <button onClick={thisWeekEventsFilter}>This Week</button>
-                    <button onClick={thisMonthEventsFilter}>This Month</button>
-                    <button onClick={thisYearEventsFilter}>This Year</button>
-                    <button onClick={nextYearEventsFilter}>Next Year</button>
-                    <button onClick={mostRecentEventsFilter}>Recently added events</button>
-                </div>
-              <CitiesFilter/>
-
-
-                    <form className="date-form">
-                        <p>start date</p>
-                        <input type="date" ref={startDate}/>
-
-                        <p>end date</p>
-                        <input type="date" ref={endDate}/>
-                    </form>
-
-                <div className="filter-search-button">
-                    <button onClick={() => sortBetweenTwoDatesFilter(startDate, endDate)}>Search</button>
-                </div>
-                <div className="card-area-wrapper">
-
-                    <div className="card-area">
-                        {
-                            sortedArray.map(artist => <Card title={artist.title} text={artist.text}
-                                                            image={artist.image}/>)
-                        }
-                    </div>
-                </div>
+    function DisplayResults() {
+        return <div id="filterwrapper-card-area">
+            <div className="card-area">
+                {
+                    sortedArray.map(artist => <Card title={artist.name} venue={artist.venue} image={artist.image} />)
+                }
             </div>
         </div>
-    </>
-    function CitiesFilter() {
-        return   <div className="filter-buttons-cities">
-            <button value="Malmö" onClick={e => locationFilter(e.target.value)}>Malmö</button>
-            <button value="Stockholm" onClick={e => locationFilter(e.target.value)}>Stockholm</button>
-            <button value="Göteborg" onClick={e => locationFilter(e.target.value)}>Göteborg</button>
-            <button value="Borås" onClick={e => locationFilter(e.target.value)}>Borås</button>
-            <button value="Skövde" onClick={e => locationFilter(e.target.value)}>Skövde</button>
+    }
+
+    function TwoDatesFilter() {
+        return <div className="two-dates-filter">
+            <p>Start Date:<input type="date" min={currentDate} defaultValue={currentDate} ref={startDate} /></p>
+            <p>End Date<input type="date" min={currentDate} defaultValue={currentDate} ref={endDate} /></p>
         </div>
     }
+
+    function SearchButton() {
+        return <button id="filter-page-search-button" onClick={() => { filterArray() }}>Search</button>
+    }
+
+   
+ 
+    return <>
+       
+        <div className="filter-container">
+            <Dropdown isSearchable placeHolder="Select Venue..." options={uniqueVenueOptions} selection={selectVenue} />
+            <Dropdown isSearchable placeHolder="Select Band..." options={uniqueBandOptions} selection={selectBand}/>
+            <TwoDatesFilter />
+            <SearchButton />
+        </div>
+        <div className="card-area-wrapper">
+            <DisplayResults />
+        </div>
+    </>
 }
+
+/* sortBetweenTwoDatesFilter(startDate, endDate) */
