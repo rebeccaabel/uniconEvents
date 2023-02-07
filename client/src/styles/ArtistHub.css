@@ -5,10 +5,17 @@
     margin-left: 25%;
     margin-right: 25%;
     border-radius: 1%;
+
+
 }
 
 #title{
-    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    color:white;
+    font-size: 3rem;
 }
 
 .artist-image, #title{
@@ -24,6 +31,7 @@
 
 .description{
     display: flex;
+    color:white;
     margin: 5%;
     justify-content: center;
     flex-direction: column;
@@ -44,12 +52,15 @@
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid black;
+    color:white;
+
 }
 
 .ticket{
     display: flex;
     align-items: center;
     flex-direction: column;
+    color:white;
 }
 
 .ticket button{
@@ -57,6 +68,7 @@
     border-radius: 5px;
     background: linear-gradient(to bottom, white, gray);
     font-size: 1.2rem;
+    margin: 1rem;
 }
 
 .google-maps{
@@ -103,6 +115,12 @@
     .artist-info-wrapper{
         margin-left: 0%;
         margin-right: 0%;
+    }
+    #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem;
     }
 
     .artist-image > img{

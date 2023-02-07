@@ -12,14 +12,7 @@ export default function () {
     const id = useParams().id
     const concert = concerts.find(c => c.id === parseInt(id))
 
-/*
-    let {fullYear, month, day} = GetDate();
 
-    const [artist, setArtist] = useState(artistInfo);
-    useEffect(()=> {
-        setArtist(artistInfo)
-    }, [])
-    */
 
     if (!concert) return null
     const {name, image, datum, venue} = concert
@@ -36,8 +29,7 @@ export default function () {
 
 
         <div className="description">
-            <p>Here is where some information about the event are present.
-                Here we can read in more detail what the event is all about...
+
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolor explicabo excepturi
                     numquam earum et cumque, vel omnis facilis similique quos laudantium incidunt consectetur hic maxime
                     porro aperiam corrupti non?
@@ -51,7 +43,7 @@ export default function () {
                     dolorum id, dignissimos aperiam voluptates vitae cumque amet at corporis, aliquam voluptas fugit
                     laboriosam ducimus provident nemo impedit.
                 </p>
-            </p>
+
             <p></p>
         </div>
 
@@ -75,21 +67,6 @@ export default function () {
     </div>
 
 
-    function GetDate() {
-        let fullYear = artists[0].date.getFullYear();
-        let month = artists[0].date.toLocaleString('en-US', {month: '2-digit'});
-        let day = artists[0].date.toLocaleString('en-US', {day: '2-digit'});
-        return {fullYear, month, day};
-    }
 
 }
 
-/*
-        <div>
-            {
-            artist.map(newArtist => <Eventcard name={newArtist.name} location={newArtist.venue} datum={newArtist.datum.toLocaleString()} id={newArtist.id}  image={newArtist.image}/>)
-            }
-            </div>
-
-
- */
