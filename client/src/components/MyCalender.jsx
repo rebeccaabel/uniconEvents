@@ -4,7 +4,7 @@ import SavedCard from "./SavedCard.jsx";
 
 export default function () {
     const {wishlists} = useContext(GlobalContext)
-    const [date, setDate] = useState(new Date(Date.now()))
+    const [date, setDate] = useState(new Date())
     const [filteredEvents, setFilteredEvents] = useState(wishlists)
 
     useEffect(() => {
@@ -43,12 +43,11 @@ export default function () {
     }
 
     function PrintArtist(){
-     
         let getMonth = wishlists.map(findMonth => findMonth.month)
         let getYear = wishlists.map(findYear => findYear.year)
         for(let i = 0; i<wishlists.length; i++) {
             if (getMonth[i] === date.getMonth() && getYear[i] === date.getFullYear()) {
-                return filteredEvents.map(artist => <SavedCard datum={artist.datum.toString()} image={artist.image} name={artist.name} location={artist.venue}/>)
+                return filteredEvents.map(artist => <SavedCard datum={artist.datum.toString()} image={artist.image} name={artist.name} location={artist.venue} id={artist.id}/>)
             }
         }
     }

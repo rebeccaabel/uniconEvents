@@ -11,6 +11,7 @@ export const GlobalProvider = ({ children }) => {
     const [concerts, setConcerts] = useState([])
     const [wishlists, setWishlists] = useState([])
 
+
     // useEffect to run methods upon load
     useEffect(() => {
         void checkAuth()
@@ -84,7 +85,8 @@ export const GlobalProvider = ({ children }) => {
 
 
 
-                wishlists
+                wishlists,
+                setWishlists
             }}
         >
             {children}

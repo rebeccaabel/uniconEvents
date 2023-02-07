@@ -1,26 +1,48 @@
-import {useContext, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import GlobalContext from "./GlobalContext.jsx";
 
-export default function ({name, image, location,datum, id}) {
-    const {wishlists} = useContext(GlobalContext)
-    const [card, setCard] = useState(wishlists)
-    return <>
-        {card &&( <div className="card" style={{backgroundImage: `url(${image})`}}>
 
-            <div className="event-card-details">
-                <h3>{name}</h3>
-                <p>{location}</p>
-                <p>{datum}</p>
-                    <button className={"save-event"} onClick={() => {RemoveCard()} }
-                            style={{color: "red"}}><i className="fa-solid fa-heart"></i></button>
-            </div>)
+export default function ({name, image, location, datum, id}) {
+
+
+    const {wishlists, setWishLists} = useContext(GlobalContext)
+    const [card, setCard] = useState(true)
+
+    return <>
+
+        {(card && <div className="card" style={{backgroundImage: `url(${image})`}}>
+
+            <h3>{name}</h3>
+            <p>{location}</p>
+            <p>{datum}</p>
+            <p>{id}</p>
+            <SaveButton/>
+            
         </div> )}
     </>
-    function RemoveCard(){
-        for (let i = 0; i<wishlists.length; i++){
-            setCard(wishlists.splice(i,1))
-            setCard(false)
-        }
+
+
+ function SaveButton(){
+
+        return <button className={"save-event"} onClick={RemoveCard}
+                       style={{color:"red"}}><i className="fa-solid fa-heart"></i></button>
 
     }
+function RemoveCard() {
+  wishlists.splice({wishlists:id},1)
+    setCard(false)
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
