@@ -2,6 +2,8 @@ import React from "react";
 import { artists } from "./artistArray.jsx";
 import "../styles/PaymentVerifiedTicket.css";
 
+import Map from "../components/GoogleMaps.jsx";
+
 function VerifiedCard(props) {
     return (
         <div className="verified-ticket">
@@ -19,7 +21,7 @@ function VerifiedCard(props) {
                 <p>{artists[0].date.toLocaleDateString('sv-SE')}</p>
             </div>
 
-            <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=avicciarena&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <Map/>
 
         </div>
 
