@@ -13,7 +13,5 @@ export default function () {
         <Link to="/filterpage">
             <button>Advanced search</button>
         </Link>
-
-
     </nav>
 }

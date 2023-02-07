@@ -1,4 +1,4 @@
-import "../ArtistHub.css"
+import "../styles/ArtistHub.css"
 import { artists } from "./artistArray.jsx";
 import Button from "../components/TicketButton.jsx";
 import GlobalContext from "./GlobalContext.jsx";
