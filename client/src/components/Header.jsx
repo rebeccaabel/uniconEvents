@@ -5,6 +5,7 @@ import Navbar from "./Navbar.jsx";
 import Searchbar from "./Searchbar.jsx";
 import GlobalContext from "./GlobalContext.jsx";
 import {useContext} from "react";
+import LogOutButton from "./LogOutButton.jsx";
 
 export default function () {
 
@@ -28,16 +29,16 @@ export default function () {
         </div>
 
         <div className="profile-signup-login">
-            <HeaderButton/>
+
+                <HeaderButton/>
 
             <ProfileIcon/>
         </div>
     </header>
 
     function HeaderButton() {
-        if (auth.loggedIn) return <Link to="/signout">
-            <button id="login-button">Log out</button>
-        </Link>
+        if (auth.loggedIn) return <LogOutButton/>
+
 
         else return <>
             <Link to="/register">

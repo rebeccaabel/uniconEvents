@@ -13,6 +13,7 @@ import VerifiedPaymentPage from "./pages/VerifiedPaymentPage.jsx";
 import ArtistHub from "./pages/ArtistHubPage.jsx";
 import Sectionpage from "./pages/Sectionpage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
+import LogOutPage from "./pages/LogOutPage.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 						<Route path={'sectionpage'} element={<Sectionpage/>}/>
                         <Route path={'login'} element={<Loginpage/>}/>
                         <Route path={'register'} element={<RegisterPage/>}/>
+                        <Route path={'signout'} element={<LogOutPage/>}/>
 
                     </Route>
                 )
