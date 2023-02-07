@@ -15,7 +15,7 @@ export default function ({name, image, location,datum,id}) {
             <p>{datum}</p>
             <SaveButton/>
             </div>
-        </Link>
+        </div>
     </>
 
     function SaveButton(){
@@ -27,6 +27,7 @@ export default function ({name, image, location,datum,id}) {
     function handleClick(){
         setSaved(!saved)
         wishlists.push({name:name, datum:new Date(datum).toDateString(), month:new Date(datum).getMonth(),year:new Date(datum).getFullYear(), venue:location, image:image, id:id})
+    console.log(wishlists)
     }
 }
 

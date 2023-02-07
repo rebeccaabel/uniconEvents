@@ -10,7 +10,7 @@ export const GlobalProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true)
     const [concerts, setConcerts] = useState([])
     const [artistInfo, setArtistInfo] = useState([])
-
+    const [wishlists, setWishlists] = useState([])
     // useEffect to run methods upon load
     useEffect(() => {
         void checkAuth()
@@ -73,6 +73,14 @@ export const GlobalProvider = ({ children }) => {
                 isLoading,
                 submitLogin,
                 logout,
+
+
+
+
+
+
+                wishlists,
+                setWishlists
             }}
         >
             {children}

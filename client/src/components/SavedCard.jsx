@@ -5,9 +5,9 @@ import GlobalContext from "./GlobalContext.jsx";
 export default function ({name, image, location, datum, id}) {
 
 
-    const {wishlists, setWishLists} = useContext(GlobalContext)
+    const {wishlists} = useContext(GlobalContext)
     const [card, setCard] = useState(true)
-
+    console.log(wishlists)
     return <>
 
         {(card && <div className="card" style={{backgroundImage: `url(${image})`}}>
