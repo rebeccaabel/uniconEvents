@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Router} from "react-router-dom";
+import Sectionpage from './pages/Sectionpage'
 import Startpage from './pages/Startpage.jsx'
 import Artistpage from "./pages/Artistpage.jsx";
 import Filterpage from "./pages/Filterpage.jsx";

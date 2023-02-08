@@ -10,6 +10,7 @@ export const GlobalProvider = ({ children }) => {
     const [artistInfo, setArtistInfo] = useState([])
     const [chosenSeats, setChosenSeats] = useState([])
     const [standingTickets, setStandingTickets] = useState([])
+    const [wishlists, setWishlists] = useState([])
 
     // useEffect to run methods upon load
     useEffect(() => {
@@ -74,7 +75,9 @@ export const GlobalProvider = ({ children }) => {
                 standingTickets,
                 setStandingTickets,
                 chosenSeats,
-                setChosenSeats
+                setChosenSeats,
+                wishlists,
+                setWishlists
             }}
         >
             {children}
