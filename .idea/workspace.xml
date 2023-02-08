@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/loginpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/loginpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/database/live.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/live.db" afterDir="false" />
     </list>
-    <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/logout.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/logout.css" afterDir="false" />
-    </list>
+    <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,20 +21,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/client/src/components/UserSettings.jsx">
-      <ranges>
-        <range start1="4" end1="6" start2="4" end2="5" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="7" end1="8" start2="6" end2="6" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="11" end1="11" start2="9" end2="10" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="12" end1="15" start2="11" end2="11" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="16" end1="16" start2="12" end2="14" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="21" end1="23" start2="19" end2="21" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="27" end1="28" start2="25" end2="25" changelist="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" />
-        <range start1="30" end1="31" start2="27" end2="27" changelist="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
