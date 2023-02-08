@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ArtistHub.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
     </list>
     <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,6 +120,7 @@
       <workItem from="1675789484623" duration="605000" />
       <workItem from="1675791404512" duration="980000" />
       <workItem from="1675799525722" duration="4999000" />
+      <workItem from="1675854047812" duration="75000" />
     </task>
     <servers />
   </component>

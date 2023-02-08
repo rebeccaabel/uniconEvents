@@ -102,8 +102,6 @@ export const GlobalProvider = ({ children }) => {
                 setChosenSeats,
 				register,
                 getPassword,
-                newPassword,
-                setNewPassword
                 wishlists,
                 setWishlists,
                 artistInfo,
