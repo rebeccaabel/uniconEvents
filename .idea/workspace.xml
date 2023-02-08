@@ -5,8 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/uniconEvents/FileContentIndex/e01bc6c4-8e14-4cc4-8536-51c4326599b2.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/uniconEvents/FileContentIndex/read.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/uniconEvents/v17/.wsuo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/DescriptionArtistHub.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/FilterDropdown.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/GoogleMaps.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/ImageArtistHub.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/LocationArtisthub.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/LogoHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PriceArtistHub.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Profile-login-links.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Searchbar-navbar-component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/TitleArtistHub.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/Dropdown.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/styles/GoogleMaps.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ArtistHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Artistcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Artistcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PaymentVerifiedTicket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PaymentVerifiedTicket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Seat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Seat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TicketButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TicketButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ArtistHubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ArtistHubPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/ArtistHub.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/ArtistHub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/Filterpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/Filterpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/PaymentVerifiedTicket.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/PaymentVerifiedTicket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/Sectionpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/Sectionpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/video/Canned Heat - Rolling and a tumbling.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/video/Chris-Do.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/video/Gang of four - To hell with poverty.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/video/Mdou Moctar - Tala Tannam (Live).mp4" beforeDir="false" />
     </list>
     <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +69,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="login-page" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,7 +151,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="" />
+      <changelist id="08718784-2e30-4dd7-b4f7-2e2bc133701e" name="Changes" comment="" />
       <created>1674814413948</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -115,10 +167,6 @@
       <workItem from="1675260736246" duration="101000" />
       <workItem from="1675413376568" duration="472000" />
       <workItem from="1675694166647" duration="140000" />
-      <workItem from="1675785202926" duration="394000" />
-      <workItem from="1675789484623" duration="605000" />
-      <workItem from="1675791404512" duration="980000" />
-      <workItem from="1675799525722" duration="4999000" />
     </task>
     <servers />
   </component>

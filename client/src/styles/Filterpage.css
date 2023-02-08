@@ -11,92 +11,76 @@ html {
 }
 
 .filter-container {
-    margin-top: 3rem;
-    margin-left: 3rem;
-    border-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: white;
 }
+
+
 
 .filter-buttons-dates {
     display: flex;
     flex: auto;
-    gap: 2rem;
-    margin-left: 2rem;
+    gap: 5%;
 
 
 }
 .filter-buttons-cities  {
     display: flex;
     flex: auto;
-    gap: 2rem;
-    margin-left: 2rem;
+    gap: 5%;
 
 }
 
 .filter-buttons-dates button {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5%;
     padding: 0.5rem;
     border-radius: 0.7rem;
-    width: 12em;
 }
 
 .filter-buttons-dates button:hover {
     cursor:pointer;
 }
-
 .filter-buttons-cities button {
     font-size: 1rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 5%;
     padding: 0.5rem;
     border-radius: 0.7rem;
-    width: 12em;
-
 }
 
-.filter-buttons-cities button:hover {
+.date-filters button:hover, .city-filters button:hover  {
     cursor:pointer;
 }
 
-.date-form {
+.two-dates-filter {
     display: flex;
-    flex-direction: row;
     padding: 2rem;
+
 }
 
-#start-date {
-    margin-right: 2rem;
-}
-
-
-.date-form p{
-    color: white;
-}
-
-.date-form input {
-    width: 10rem;
+.filter-search-button button {
+    display: flex;
+    padding: 2%;
+    color: #2e045b;
+    margin: 5% auto;
+    width: 5rem;
     height: 2rem;
-    border-radius: 0.2rem;
+    align-items: center;
+    border-radius: 0.5rem;
 }
 
-#end-date button{
-    margin-left: 2rem;
-    width: 2rem;
-    border-radius: 5rem;
-    font-size: 1rem;
-
+.calender-container button:hover {
+    cursor:pointer;
 }
-
-/***********************
-        CARD
-***********************/
 
 .card-area-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 3rem;
-    background-color: transparent;
 }
+
 
 .card-area {
     display: flex;

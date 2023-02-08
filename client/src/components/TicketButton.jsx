@@ -3,6 +3,6 @@ import "../styles/TicketButton.css";
 
 export default function(){
     return<>
-        <Link to={'/Paymentpage'}><button>Buy Ticket</button></Link>
+        <Link to={'/Sectionpage'}><button>Buy Ticket</button></Link>
     </>
 }

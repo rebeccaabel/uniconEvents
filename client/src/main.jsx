@@ -28,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'profile'} element={<Profilepage/>}>
                             <Route path={'settings'} element={<UserSettings/>}/>
                         </Route>
+                        <Route path={'sectionpage'} element={<Sectionpage/>}/>
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'ArtistHub'} element={<ArtistHub/>}/>
