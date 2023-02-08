@@ -1,4 +1,4 @@
-import {useContext, useEffect, useState} from "react";
+import {useContext, useState} from "react";
 import GlobalContext from "./GlobalContext.jsx";
 
 
@@ -31,7 +31,7 @@ export default function ({name, image, location, datum, id}) {
 
    wishlists.splice({wishlists:id},1)
        setCard(false)
-     }; 
+     }
     }
 
 
