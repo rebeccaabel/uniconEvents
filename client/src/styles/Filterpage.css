@@ -1,24 +1,21 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
-
 @media only screen and (max-width: 680px) {
     .filter-container {
-        border-bottom-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        background: linear-gradient(white, 5%,lightgray, 10%);
-        color: black;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .card {
+        width: 262px;
+        height: 150px;
     }
   }
 
 .filter-container {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    background: linear-gradient(white,lightgray);
+    background: linear-gradient(white 60%,lightgray);
     color: black;
     display: flex;
     flex-wrap: nowrap;
@@ -50,6 +47,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
     padding: 3rem;
     min-height: 50vh;
 }
@@ -58,7 +56,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 2em;
+    align-content: center;
+    padding: 0;
 }
 
 /***********************

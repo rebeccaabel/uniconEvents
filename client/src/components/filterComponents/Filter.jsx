@@ -47,13 +47,12 @@ export default function () {
     }
 
     function DisplayResults() {
-        return <div id="filterwrapper-card-area">
-            <div className="card-area">
+        return <div className="card-area">
                 {
                     sortedArray.map(artist => <Card title={artist.name} venue={artist.venue} image={artist.image} />)
                 }
             </div>
-        </div>
+        
     }
 
     function TwoDatesFilter() {

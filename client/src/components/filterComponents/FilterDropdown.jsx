@@ -79,7 +79,7 @@ const Dropdown = ({ placeHolder, options, isSearchable, selection }) => {
                         ))}
                     </div>)}
 
-                <div className="dropdown-selected-value">{getDisplay()}</div>
+                {getDisplay()}
 
                 <div className="dropdown-tool">
                     <Icon />
