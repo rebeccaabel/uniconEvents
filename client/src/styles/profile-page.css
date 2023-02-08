@@ -1,3 +1,37 @@
 .profile-page {
     display: flex;
 }
+
+.side-navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-navbar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    width: 6rem;
+}
+
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 10rem;
+    width: 20em;
+}
+
+.contact-information input {
+    display: flex;
+    margin: 1rem;
+}
+
+
+
+
+
+

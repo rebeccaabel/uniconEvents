@@ -12,7 +12,7 @@ export default function () {
 
 
     return <Link to="/signout">
-        <button onClick={fetchLogout}  id="login-button">Log out</button>
+        <button onClick={fetchLogout}  id="logout-button">Log out</button>
     </Link>
 
 }
