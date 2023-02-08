@@ -6,19 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Logo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profileComponents/LogOutButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/LogOutButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profileComponents/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profileComponents/Profile-login-links.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Profile-login-links.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Loginpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Loginpage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/profile-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/profile-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
     </list>
-    <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/logout.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/logout.css" afterDir="false" />
-    </list>
+    <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +143,7 @@
       <workItem from="1675789484623" duration="605000" />
       <workItem from="1675791404512" duration="980000" />
       <workItem from="1675799525722" duration="4999000" />
-      <workItem from="1675854047812" duration="5500000" />
+      <workItem from="1675854047812" duration="6605000" />
     </task>
     <servers />
   </component>

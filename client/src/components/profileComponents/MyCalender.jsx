@@ -5,7 +5,7 @@ import SavedCard from "./SavedCard.jsx";
 export default function () {
     const {wishlists} = useContext(GlobalContext)
     const [date, setDate] = useState(new Date())
-    const [filteredEvents, setFilteredEvents] = useState(wishlists)
+    const [filteredEvents, setFilteredEvents] = useState(...wishlists)
 
     useEffect(() => {
         setFilteredEvents(wishlists)
