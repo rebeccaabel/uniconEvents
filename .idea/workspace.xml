@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GlobalContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/LogOutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/LogOutPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/database/live.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/live.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UserSettings.jsx" afterDir="false" />
     </list>
     <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +17,16 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="login-page" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2L8j9fktzxORXnaCIgurCtYUMU0" />
   <component name="ProjectLevelVcsManager">
@@ -39,13 +41,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/liina/OneDrive/Skrivbord/Projects kurs 3/unicornEvents/client/src/components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -59,6 +60,7 @@
       <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents\client\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/styles" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/client" />
       <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents" />
@@ -87,6 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
       </list>
@@ -110,15 +114,11 @@
       <workItem from="1675259457604" duration="1249000" />
       <workItem from="1675260736246" duration="101000" />
       <workItem from="1675413376568" duration="472000" />
-      <workItem from="1675417167890" duration="5162000" />
-      <workItem from="1675425840327" duration="8027000" />
-      <workItem from="1675676490331" duration="1533000" />
-      <workItem from="1675678199545" duration="3458000" />
-      <workItem from="1675687029009" duration="2067000" />
-      <workItem from="1675751257501" duration="568000" />
-      <workItem from="1675757884705" duration="4546000" />
-      <workItem from="1675766009767" duration="10984000" />
-      <workItem from="1675843375177" duration="1261000" />
+      <workItem from="1675694166647" duration="140000" />
+      <workItem from="1675785202926" duration="394000" />
+      <workItem from="1675789484623" duration="605000" />
+      <workItem from="1675791404512" duration="980000" />
+      <workItem from="1675799525722" duration="4999000" />
     </task>
     <servers />
   </component>

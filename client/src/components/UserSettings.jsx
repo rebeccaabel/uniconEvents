@@ -2,7 +2,7 @@ import {useContext, useEffect, useState} from "react";
 import GlobalContext from "./GlobalContext.jsx";
 
 export default function () {
-    const [currentPassword, setCurrentPassword] = useState("")
+   /* const [currentPassword, setCurrentPassword] = useState("")
     const [newPassword, setNewPassword] = useState("")
 
     const {updatePassword, getPassword} = useContext(GlobalContext)
@@ -12,11 +12,9 @@ export default function () {
         event.preventDefault()
         getPassword(currentPassword)
         updatePassword(newPassword)
-    }
+    }*/
 
-        console.log(getPassword)
 
-    console.log(updatePassword)
 
     return <div className='contact-information'>
         <h2>Change password</h2>
