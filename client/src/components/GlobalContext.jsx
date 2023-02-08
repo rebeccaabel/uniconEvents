@@ -30,6 +30,29 @@ export const GlobalProvider = ({ children }) => {
         setIsLoading(false)
     }
 
+    const getPassword = async(id,email,password) => {
+        setIsLoading(true)
+        const response = await fetch("/rest/users/password", {
+            method: "put",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({id, email, password})
+        })
+        const result = await response.json()
+        console.log(result)
+        setIsLoading(false)
+    }
+    const register = async(email,password) => {
+        setIsLoading(true)
+        const response = await fetch("/rest/users", {
+            method: "post",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({email, password})
+        })
+        const result = await response.json()
+        console.log(result)
+        setIsLoading(false)
+    }
+
     const submitLogin = async (email, password) => {
         setIsLoading(true)
         const response = await fetch("/rest/login", {
@@ -54,6 +77,7 @@ export const GlobalProvider = ({ children }) => {
         setAuth({loggedIn:false})
     }
 
+
     const loadConcerts = async () => {
         setIsLoading(true)
         const response = await fetch("/rest/concerts")
@@ -76,6 +100,10 @@ export const GlobalProvider = ({ children }) => {
                 setStandingTickets,
                 chosenSeats,
                 setChosenSeats,
+				register,
+                getPassword,
+                newPassword,
+                setNewPassword
                 wishlists,
                 setWishlists,
                 artistInfo,

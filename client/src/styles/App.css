@@ -10,7 +10,7 @@
 
 
 #root {
-    background-image: url("./images/backgroundHorse.npg.png");
+    background-image: url("../images/backgroundHorse.npg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;

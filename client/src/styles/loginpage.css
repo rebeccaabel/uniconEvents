@@ -1,3 +1,137 @@
-div {
-    background-color: rgba(255, 255, 255, 0.44);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
 }
+
+
+
+
+.container {
+    margin: 10% auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#title-login-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+    height: 2px;
+}
+
+input {
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    width: 250px;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+}
+
+#login-page-button {
+    background-color: #E70C75;
+    border-radius: 3px;
+    color: #fff;
+    padding: 1px;
+    width: 4em;
+}
+#login-page-button:hover {
+    cursor: pointer;
+}
+
+#register-button-login-page {
+    color: white;
+}
+
+#register-button-login-page:hover {
+    cursor: pointer;
+}
+
+button{
+    appearance: none;
+    outline: 0;
+    background: none;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 18px;
+    color: black;
+}
+
+
+/*VERSION II */
+/*
+
+#title-login-page {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+input[type='email'], input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+#login-page-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#register-button-login-page {
+    margin-top: 20px;
+    background-color: lightgray;
+    color: gray;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}
+*/
+
