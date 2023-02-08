@@ -20,6 +20,7 @@ export default function ({details}) {
                     sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua."</p>
             </details>
+
             
             <Button/>
 

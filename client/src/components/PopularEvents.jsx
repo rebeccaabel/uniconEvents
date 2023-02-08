@@ -4,14 +4,15 @@ import GlobalContext from "./GlobalContext.jsx";
 
 export default function () {
     const {concerts} = useContext(GlobalContext)
+
     return <div className="card-area-wrapper">
         <h2>Popular events</h2>
         <div className="card-area-events" >
+
         {
-            concerts.slice(0,100).map(concert => <Eventcard details={concert}/>)        }
+            concerts.slice(0,10).map(artist => <Eventcard name={artist.name} location={artist.venue} datum={artist.datum} image={artist.image} id={artist.id}/>)
+        }
         </div>
     </div>
-
 }
 
-//title={artist.title} text={artist.text} image={artist.image}
