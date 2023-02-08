@@ -10,6 +10,7 @@ export const GlobalProvider = ({ children }) => {
     const [artistInfo, setArtistInfo] = useState([])
     const [chosenSeats, setChosenSeats] = useState([])
     const [standingTickets, setStandingTickets] = useState([])
+    const [newPassword, setNewPassword] = useState("")
 
     // useEffect to run methods upon load
     useEffect(() => {
@@ -29,30 +30,17 @@ export const GlobalProvider = ({ children }) => {
         setIsLoading(false)
     }
 
-    const getPassword = async (password) => {
-        setIsLoading(true)
-        const response = await fetch("/rest/users/password", {
-            method: "delete",
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({password})
-        })
-        const result = await response.json()
-        console.log(result)
-        setIsLoading(false)
-    }
-    const updatePassword = async (password) => {
+    const getPassword = async(id,email,password) => {
         setIsLoading(true)
         const response = await fetch("/rest/users/password", {
             method: "put",
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({password})
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({id, email, password})
         })
         const result = await response.json()
         console.log(result)
         setIsLoading(false)
     }
-
-
     const register = async(email,password) => {
         setIsLoading(true)
         const response = await fetch("/rest/users", {
@@ -111,7 +99,12 @@ export const GlobalProvider = ({ children }) => {
                 standingTickets,
                 setStandingTickets,
                 chosenSeats,
-                setChosenSeats
+                setChosenSeats,
+                register,
+                getPassword,
+                newPassword,
+                setNewPassword
+
             }}
         >
             {children}
