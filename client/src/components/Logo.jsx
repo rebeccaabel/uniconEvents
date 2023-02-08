@@ -5,7 +5,7 @@ export default function () {
     return <div className="header-logo-title">
         <Link to="/">
             <img src={LogoHeader} alt="u-logo" />
-            <h1 >Unicorn Events</h1>
         </Link>
+            <h1 >Unicorn Events</h1>
     </div>
 }
