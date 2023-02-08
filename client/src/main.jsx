@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                         <Route path={'artists'} element={<Artistpage/>}/>
                         <Route path={'filterpage'} element={<Filterpage/>}/>
                         <Route path={'profile'} element={<Profilepage/>}>
-                  
+
                             <Route path={'calender'} element={<MyCalender/>}/>
                         </Route>
                         <Route path={'sectionpage'} element={<Sectionpage/>}/>

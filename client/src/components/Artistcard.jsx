@@ -21,8 +21,6 @@ export default function ({details}) {
                     ut labore et dolore magna aliqua."</p>
             </details>
 
-            
-            <Button/>
 
         </div>
 

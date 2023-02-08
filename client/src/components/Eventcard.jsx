@@ -1,6 +1,7 @@
 import GlobalContext from "./GlobalContext.jsx";
 import {useContext,useState} from "react";
 import {Link} from "react-router-dom";
+import TicketButton from "./TicketButton.jsx";
 
 
 export default function ({name, image, location,datum,id}) {
@@ -9,18 +10,18 @@ export default function ({name, image, location,datum,id}) {
     const [saved, setSaved] = useState(false)
     const [showEvent, setShowEvent] = useState(false)
     return<>
-
-    <div className="card" onClick={() => { artistHubInfo() }} style={{ backgroundImage: `url(${image})` }}>
+        <div className={"whatever"}>
         <Link to={`/ArtistHub/${id}`}>
+    <div className="card" onClick={() => { artistHubInfo() }} style={{ backgroundImage: `url(${image})` }}>
         <div className="event-card-details">
              <h3 >{name}</h3>
             <p>{location}</p>
             <p>{datum}</p>
-            </div> </Link>
-        <SaveButton/>
+            </div>
         </div>
-
-
+    </Link>
+    <SaveButton/>
+        </div>
     </>
 
     function SaveButton(){
