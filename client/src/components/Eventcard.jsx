@@ -13,7 +13,7 @@ export default function ({details}) {
     <div className="card" onClick={() => { artistHubInfo() }} style={{ backgroundImage: `url(${image})` }}>
         <div className="event-card-details">
              <h3 >{name}</h3>
-            <p>{location}</p>
+            <p>{venue}</p>
             <p>{datum}</p>
             </div>
         </div>
