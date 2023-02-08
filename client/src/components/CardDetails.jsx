@@ -4,6 +4,7 @@ import CalculatePricePaymentpage from "../components/CalculatePricePaymentpage.j
 import FormPaymentDetails from "../components/FormPaymentDetails.jsx";
 
 
+
 export default function () {
 
     return <div className="payment-wrapper">
