@@ -32,7 +32,9 @@ router.post('/',
             request.session.passwordAttempts = 0
             request.session.user = user
             request.session.user.loggedIn = true
-            request.session.user.roles = user.roles.split(',') // splittar ett textfält med roller i user tabellen
+            if (user?.roles){
+                request.session.user.roles = user.roles.split(',')
+            }
             response.json({loggedIn: true})
         } else if ((user && user.email) && request.session?.verification?.status !== 0) {
             if (!request.session.verification || request.session?.verification?.status === -1) {
@@ -55,7 +57,9 @@ router.get('/', (request, response) => {
     if (request.session.user) {
         user = request.db.prepare('SELECT * FROM users WHERE email = ? AND password = ?').all([request.session.user.email, request.session.user.password])
         user = user[0]
-        user.roles = user.roles.split(',')
+        if (user?.roles){
+            user.roles = user.roles.split(',')
+        }
     }
     if (user && user.email) {
         user.loggedIn = true

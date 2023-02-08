@@ -1,5 +1,5 @@
 import React from "react";
-import PaymentVerifiedTicket from "../components/PaymentVerifiedTicket.jsx";
+import PaymentVerifiedTicket from "../components/paymentComponents/PaymentVerifiedTicket.jsx";
 
 
 export default function () {

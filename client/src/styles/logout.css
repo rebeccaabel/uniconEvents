@@ -1,0 +1,53 @@
+
+.logout-container {
+    background: linear-gradient(to right, #FF9B9B, #FF7C7C);
+    color: white;
+    padding: 40px;
+    height: 500px;
+    text-align: center;
+}
+
+.logout-container h4{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+/*****************
+    MEDIA Q
+*****************/
+
+@media only screen and (max-width: 480px) {
+    .logout-container {
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .logout-container {
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .logout-container {
+        text-align: center;
+        margin: auto;
+        padding: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}
+
