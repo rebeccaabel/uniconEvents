@@ -1,7 +1,7 @@
 import GlobalContext from "./GlobalContext.jsx";
 import {useContext,useState} from "react";
 import {Link} from "react-router-dom";
-export default function ({name, image, location,datum,id}) {
+export default function ({details}) {
     const {wishlists} = useContext(GlobalContext)
     const {artistInfo } = useContext(GlobalContext);
     const [saved, setSaved] = useState(false)
