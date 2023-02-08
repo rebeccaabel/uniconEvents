@@ -77,7 +77,9 @@ export const GlobalProvider = ({ children }) => {
                 chosenSeats,
                 setChosenSeats,
                 wishlists,
-                setWishlists
+                setWishlists,
+                artistInfo,
+                setArtistInfo
             }}
         >
             {children}

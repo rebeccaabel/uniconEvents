@@ -16,7 +16,6 @@ export default function () {
         <DescriptionArtistHub/>
         <LocationArtistHub/>
        <PriceArtistHub/>
-        
         <GoogleMaps/>
 
     </div>
