@@ -1,18 +1,8 @@
 import React, {useEffect, useState, useContext, createContext} from 'react';
 import GlobalContext from "./GlobalContext.jsx";
 export default function () {
-    //const {seats, setSeats} = useContext(GlobalContext);
-    //const [value, setMyValue] = useState("0");
-    const [standingTickets, setStandingTickets] = useState([])
+    const {standingTickets, setStandingTickets} = useContext(GlobalContext);
 
-    /*
-    useEffect(() => {
-        setSeats([...seats, {
-            type:"standing",
-            seats: standingTickets
-        }])
-    })*/
-    console.log(standingTickets)
     return <>
         <div id="standing-area">
             <h2> 👯 This is the standing area 👯</h2>
