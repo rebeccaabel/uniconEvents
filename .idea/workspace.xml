@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ArtistHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Artistcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Artistcard.jsx" afterDir="false" />
     </list>
     <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main-database" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
   </component>
