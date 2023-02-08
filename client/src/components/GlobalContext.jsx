@@ -30,7 +30,7 @@ export const GlobalProvider = ({ children }) => {
     const getPassword = async (password) => {
         setIsLoading(true)
         const response = await fetch("/rest/users/password", {
-            method: "get",
+            method: "delete",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({password})
         })
