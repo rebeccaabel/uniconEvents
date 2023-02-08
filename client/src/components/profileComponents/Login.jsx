@@ -1,7 +1,7 @@
 import React, {useContext, useState} from "react";
 import {Link} from "react-router-dom";
-import GlobalContext from "./GlobalContext.jsx";
-import "../styles/loginpage.css"
+import GlobalContext from "../GlobalContext.jsx";
+import "../../styles/loginpage.css"
 
 export default function () {
     const [email, setEmail] = useState("");

@@ -1,6 +1,6 @@
-import Button from "../components/TicketButton.jsx";
+import Button from "../paymentComponents/TicketButton.jsx";
 import {useContext} from "react";
-import GlobalContext from "./GlobalContext.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 import {useParams} from "react-router-dom";
 
 export default function ({details}) {

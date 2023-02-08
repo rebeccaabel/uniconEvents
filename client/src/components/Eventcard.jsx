@@ -1,9 +1,6 @@
 import GlobalContext from "./GlobalContext.jsx";
 import {useContext,useState} from "react";
 import {Link} from "react-router-dom";
-import TicketButton from "./TicketButton.jsx";
-
-
 export default function ({name, image, location,datum,id}) {
     const {wishlists} = useContext(GlobalContext)
     const {artistInfo } = useContext(GlobalContext);

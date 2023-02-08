@@ -1,4 +1,4 @@
-import Filter from "../components/Filter.jsx";
+import Filter from "../components/filterComponents/Filter.jsx";
 import "../styles/Dropdown.css"
 import "../styles/Filterpage.css"
 

@@ -5,12 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Logo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Artistcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Artistcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AboutArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistPageComponents/AboutArtists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/eventComponents/EventHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Artistcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/artistPageComponents/Artistcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CalculatePricePaymentpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/CalculatePricePaymentpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/CardDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ChooseSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sectionComponents/ChooseSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DescriptionArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/eventComponents/DescriptionEventHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DisplayArtistCardPayment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/DisplayArtistCardPayment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DisplayDetailsPricing.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/PaymentVerifiedTicket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PaymentVerifiedTicket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/filterComponents/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FilterDropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/filterComponents/FilterDropdown.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FormPaymentDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/FormPaymentDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ImageArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/eventComponents/ImageEventHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/LocationArtisthub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/eventComponents/LocationEventHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/LogOutButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/LogOutButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/LogoHeader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MonthArray.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MyCalender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/MyCalender.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PaymentVerifiedTicket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/PaymentVerifiedTicket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/startPageComponents/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PriceArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/eventComponents/PriceEventHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PriceCalculation.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profile-login-links.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Profile-login-links.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SavedCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/SavedCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Searchbar-navbar-component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Searchbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Seat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sectionComponents/Seat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SelectDropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sectionComponents/SelectDropdown.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Sidenavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Sidenavbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/StageArea.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sectionComponents/StageArea.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TicketButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/TicketButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TitleArtistHub.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/eventComponents/TitleEventHub.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/artistArray.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/mostRecentEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/startPageComponents/mostRecentEvents.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ArtistHubPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ArtistHubPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Artistpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Artistpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Filterpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Loginpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Loginpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Profilepage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profilepage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Sectionpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Startpage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/VerifiedPaymentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/VerifiedPaymentPage.jsx" afterDir="false" />
     </list>
     <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,10 +110,11 @@
       <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents\client\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/styles" />
-      <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/client" />
-      <recent name="C:\Users\liina\OneDrive\Skrivbord\Projects kurs 3\unicornEvents" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/client/src/components/startPageComponents" />
+      <recent name="$PROJECT_DIR$/client/src/components/paymentComponents" />
+      <recent name="$PROJECT_DIR$/client/src/components/profileComponents" />
+      <recent name="$PROJECT_DIR$/client/src/components/eventComponents" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -123,7 +170,7 @@
       <workItem from="1675789484623" duration="605000" />
       <workItem from="1675791404512" duration="980000" />
       <workItem from="1675799525722" duration="4999000" />
-      <workItem from="1675854047812" duration="2312000" />
+      <workItem from="1675854047812" duration="5500000" />
     </task>
     <servers />
   </component>

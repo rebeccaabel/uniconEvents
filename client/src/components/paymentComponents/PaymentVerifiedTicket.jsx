@@ -1,8 +1,8 @@
 import React from "react";
-import { artists } from "./artistArray.jsx";
-import "../styles/PaymentVerifiedTicket.css";
 
-import Map from "../components/GoogleMaps.jsx";
+import "../../styles/PaymentVerifiedTicket.css";
+
+import Map from "../GoogleMaps.jsx";
 
 function VerifiedCard(props) {
     return (

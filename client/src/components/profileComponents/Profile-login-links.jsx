@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import profile2 from "../images/profile2.png";
+import profile2 from "../../images/profile2.png";
 
 export default function () {
     return  <div className="profile-signup-login">

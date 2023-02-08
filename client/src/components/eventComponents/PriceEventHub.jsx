@@ -1,4 +1,4 @@
-import Button from "./TicketButton.jsx";
+import Button from "../paymentComponents/TicketButton.jsx";
 
 export default function () {
     return  <div className="ticket">

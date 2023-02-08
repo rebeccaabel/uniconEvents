@@ -1,5 +1,5 @@
-import PopularEvents from "../components/PopularEvents.jsx";
-import MostRecentEvents from "../components/mostRecentEvents.jsx";
+import PopularEvents from "../components/startPageComponents/PopularEvents.jsx";
+import MostRecentEvents from "../components/startPageComponents/mostRecentEvents.jsx";
 
 
 

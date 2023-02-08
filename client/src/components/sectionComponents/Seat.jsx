@@ -1,6 +1,6 @@
 import {useState, useContext} from "react";
 import {Link} from "react-router-dom";
-import GlobalContext from "./GlobalContext.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 export default function () {
     let {chosenSeats, setChosenSeats} = useContext(GlobalContext)
     chosenSeats.splice(0, chosenSeats.length)

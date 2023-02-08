@@ -1,6 +1,6 @@
 
 import {useEffect, useState, useContext} from "react";
-import GlobalContext from "./GlobalContext.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 
 export default function () {
     const {chosenSeats} = useContext(GlobalContext)

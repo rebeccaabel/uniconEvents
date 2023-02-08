@@ -1,4 +1,4 @@
-import AboutArtists from "../components/AboutArtists.jsx";
+import AboutArtists from "../components/artistPageComponents/AboutArtists.jsx";
 
 
 export default function () {

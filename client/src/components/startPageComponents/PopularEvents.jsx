@@ -1,6 +1,6 @@
-import Eventcard from "./Eventcard.jsx";
+import Eventcard from "../Eventcard.jsx";
 import {useContext} from "react";
-import GlobalContext from "./GlobalContext.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 
 export default function () {
     const {concerts} = useContext(GlobalContext)

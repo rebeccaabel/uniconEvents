@@ -1,7 +1,7 @@
 import React, {useContext, useState} from "react";
 import {Link} from "react-router-dom";
-import GlobalContext from "./GlobalContext.jsx";
-import "../styles/registerpage.css"
+import GlobalContext from "../GlobalContext.jsx";
+import "../../styles/registerpage.css"
 
 export default function (props) {
     const [email, setEmail] = useState("");

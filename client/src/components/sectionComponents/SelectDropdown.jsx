@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useContext, createContext} from 'react';
-import GlobalContext from "./GlobalContext.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 export default function () {
     const {standingTickets, setStandingTickets} = useContext(GlobalContext);
 

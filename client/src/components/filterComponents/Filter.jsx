@@ -1,7 +1,7 @@
 import { useContext, useRef, useState } from "react";
-import Card from "./EventCard";
-import GlobalContext from "./GlobalContext";
-import Dropdown from "./FilterDropdown";
+import Card from "../Eventcard.jsx";
+import GlobalContext from "../GlobalContext.jsx";
+import Dropdown from "./FilterDropdown.jsx";
 
 export default function () {
     const { concerts } = useContext(GlobalContext)

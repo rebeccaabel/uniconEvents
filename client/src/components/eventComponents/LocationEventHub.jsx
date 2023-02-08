@@ -1,4 +1,4 @@
-import GlobalContext from "./GlobalContext.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 import {useParams} from "react-router-dom";
 import {useContext} from "react";
 

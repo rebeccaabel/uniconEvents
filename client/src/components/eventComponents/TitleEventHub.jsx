@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import GlobalContext from "./GlobalContext.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 import {useParams} from "react-router-dom";
 
 export default function () {
@@ -7,11 +7,13 @@ export default function () {
     const id = useParams().id
     const concert = concerts.find(c => c.id === parseInt(id))
 
+
+
     if (!concert) return null
-    const {image} = concert
+    const {name} = concert
 
 
-    return    <div className="artist-image">
-        <img src={image} alt={"picture of artist"}/>
+    return   <div>
+        <h1 id="title">{name}</h1>
     </div>
 }

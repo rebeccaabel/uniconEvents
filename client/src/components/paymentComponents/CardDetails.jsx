@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
-import DisplayArtistCardPayment from "../components/DisplayArtistCardPayment";
-import CalculatePricePaymentpage from "../components/CalculatePricePaymentpage.jsx";
-import FormPaymentDetails from "../components/FormPaymentDetails.jsx";
+import DisplayArtistCardPayment from "./DisplayArtistCardPayment.jsx";
+import CalculatePricePaymentpage from "./CalculatePricePaymentpage.jsx";
+import FormPaymentDetails from "./FormPaymentDetails.jsx";
 
 
 export default function () {

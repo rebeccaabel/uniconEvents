@@ -1,5 +1,5 @@
-import Eventcard from "./Eventcard";
-import GlobalContext from "./GlobalContext";
+import Eventcard from "../Eventcard.jsx";
+import GlobalContext from "../GlobalContext.jsx";
 import { useContext } from "react";
 
 export default function () {

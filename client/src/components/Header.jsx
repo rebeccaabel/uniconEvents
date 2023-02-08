@@ -1,37 +1,25 @@
 import {Link} from "react-router-dom";
 import profile2 from "../images/profile2.png"
-import LogoHeader from "../images/Component 3home-button.png"
 import Navbar from "./Navbar.jsx";
-import Searchbar from "./Searchbar.jsx";
 import GlobalContext from "./GlobalContext.jsx";
 import {useContext} from "react";
-import LogOutButton from "./LogOutButton.jsx";
+import LogOutButton from "./profileComponents/LogOutButton.jsx";
+import Logo from "./Logo.jsx";
 
 export default function () {
 
     const {auth} = useContext(GlobalContext)
 
     return <header>
-        <div className="header-logo-title">
-            <img src={LogoHeader} alt="u-logo"/>
-            <h1>Unicorn Events</h1>
-        </div>
-
-
+        <Logo/>
         <div className="searchbar-and-navbar-wrapper">
-            <div className="search-header">
-                <Searchbar/>
-            </div>
-
             <div className="nav-header">
                 <Navbar/>
             </div>
         </div>
 
         <div className="profile-signup-login">
-
-                <HeaderButton/>
-
+            <HeaderButton/>
             <ProfileIcon/>
         </div>
     </header>
