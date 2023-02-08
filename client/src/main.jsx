@@ -27,11 +27,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                             <Route path={'settings'} element={<UserSettings/>}/>
                             <Route path={'calender'} element={<MyCalender/>}/>
                         </Route>
+                        <Route path={'sectionpage'} element={<Sectionpage/>}/>
                         <Route path={'paymentpage'} element={<Paymentpage/>}/>
                         <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'ArtistHub/:id'} element={<ArtistHub/>}/>
                         <Route path={'login'} element={<Loginpage/>}/>
-
                     </Route>
                 )
             )

@@ -1,16 +1,16 @@
 import { createContext, useState, useEffect } from "react";
 
 const GlobalContext = createContext(null);
-
 export const GlobalProvider = ({ children }) => {
-
 
     // useState for all variables
     const [auth, setAuth] = useState({loggedIn:false})
     const [isLoading, setIsLoading] = useState(true)
     const [concerts, setConcerts] = useState([])
     const [artistInfo, setArtistInfo] = useState([])
-    const [wishlists, setWishlists] = useState([])
+    const [chosenSeats, setChosenSeats] = useState([])
+    const [standingTickets, setStandingTickets] = useState([])
+
     // useEffect to run methods upon load
     useEffect(() => {
         void checkAuth()
@@ -63,8 +63,6 @@ export const GlobalProvider = ({ children }) => {
     }
 
 
-
-
     return (
         <GlobalContext.Provider
             value={{
@@ -73,14 +71,10 @@ export const GlobalProvider = ({ children }) => {
                 isLoading,
                 submitLogin,
                 logout,
-
-
-
-
-
-
-                wishlists,
-                setWishlists
+                standingTickets,
+                setStandingTickets,
+                chosenSeats,
+                setChosenSeats
             }}
         >
             {children}

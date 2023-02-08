@@ -1,37 +1,36 @@
-.artist-info-wrapper{
+.artist-info-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-left: 25%;
     margin-right: 25%;
     border-radius: 1%;
-
-
 }
 
-#title{
-    display:flex;
+#title {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 3rem;
-    color:white;
+    color: white;
     font-size: 3rem;
 }
 
-.artist-image, #title{
+.artist-image,
+#title {
     display: flex;
     justify-content: center;
 
 }
 
-.artist-image > img{
+.artist-image>img {
     width: 25rem;
     margin-top: 1rem;
 }
 
-.description{
+.description {
     display: flex;
-    color:white;
+    color: white;
     margin: 5%;
     justify-content: center;
     flex-direction: column;
@@ -41,29 +40,29 @@
 
 }
 
-.present-artist-list{
+.present-artist-list {
     display: flex;
     justify-content: center;
     border-top: 1px solid black;
 }
 
-.location{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    color:white;
-
-}
-
-.ticket{
+.location {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color:white;
+    border-bottom: 1px solid black;
+    color: white;
+
 }
 
-.ticket button{
+.ticket {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.ticket button {
     border: 1px solid black;
     border-radius: 5px;
     background: linear-gradient(to bottom, white, gray);
@@ -71,38 +70,38 @@
     margin: 1rem;
 }
 
-.google-maps{
+.google-maps {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.google-maps iframe{
+.google-maps iframe {
     width: 500px;
     height: 310px;
     border-radius: 5px;
 }
 
-@media screen and (max-width: 1520px){
-    .artist-info-wrapper{
+@media screen and (max-width: 1520px) {
+    .artist-info-wrapper {
         margin-left: 15%;
         margin-right: 15%;
     }
 }
 
-@media screen and (max-width: 1065){
-    .artist-info-wrapper{
+@media screen and (max-width: 1065) {
+    .artist-info-wrapper {
         margin-left: 10%;
         margin-right: 10%;
     }
 }
 
-@media screen and (max-width: 900px){
-    .artist-image > img{
+@media screen and (max-width: 900px) {
+    .artist-image>img {
         width: 15rem;
     }
 
-    .google-maps iframe{
+    .google-maps iframe {
         width: 350px;
         height: 310px;
         border-radius: 5px;
@@ -110,12 +109,13 @@
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-    .artist-info-wrapper{
+    .artist-info-wrapper {
         margin-left: 0%;
         margin-right: 0%;
     }
+
     #title {
         display: flex;
         justify-content: center;
@@ -123,15 +123,15 @@
         margin: 0rem;
     }
 
-    .artist-image > img{
+    .artist-image>img {
         width: 15rem;
     }
 
-    h2{
+    h2 {
         font-size: medium;
     }
 
-    .description{
+    .description {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
