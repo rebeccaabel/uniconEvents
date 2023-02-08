@@ -6,6 +6,7 @@ export default function ({details}) {
     const {artistInfo } = useContext(GlobalContext);
     const [saved, setSaved] = useState(false)
     const [showEvent, setShowEvent] = useState(false)
+    const {name, image, datum, venue, id} = details
     return<>
         <div className={"whatever"}>
         <Link to={`/ArtistHub/${id}`}>

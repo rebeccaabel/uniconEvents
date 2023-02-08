@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/startPageComponents/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/startPageComponents/PopularEvents.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
     </list>
     <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
