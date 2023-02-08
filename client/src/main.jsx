@@ -13,7 +13,7 @@ import ArtistHub from "./pages/ArtistHubPage.jsx";
 import Sectionpage from "./pages/Sectionpage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import LogOutPage from "./pages/LogOutPage.jsx";
-import MyCalender from "./components/profileComponents/MyCalender.jsx";
+import MyCalender from "./components/profileComponents/Calender.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

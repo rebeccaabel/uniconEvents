@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState} from 'react'
 import GlobalContext from "../GlobalContext.jsx";
 import SavedCard from "./SavedCard.jsx";
 
+
 export default function () {
     const {wishlists} = useContext(GlobalContext)
     const [date, setDate] = useState(new Date())
@@ -13,22 +14,24 @@ export default function () {
     }, [])
 
     return <>
-        <Calendar/>
+        <div className={"my-events"}>
         <MyEvents/>
+        </div>
     </>
 
     function MyEvents() {
-        return <div className={"my-events"}>
-            <h3>{date.toLocaleString("en-GB", {month: "long"})}</h3>
-            <h4>{date.getFullYear()}</h4>
-            <h4>Your planned events:</h4>
-            <div className={"saved-card"}>
+        return <div className={"saved-card"}>
+                <Calendar/>
+                <h3>{date.toLocaleString("en-GB", {month: "long"})}</h3>
+                <h4>{date.getFullYear()}</h4>
+                <h4>Your planned events:</h4>
                 <PrintArtist/>
             </div>
-        </div>
+
     }
     function Calendar() {
-        return <div className={"calender"}>
+        return <>
+        <div className={"calender"}>
             <select className={"years"} value={date.getFullYear()} onChange={handleChange}>
                 <option value={"2021"}>2021</option>
                 <option value={"2022"}>2022</option>
@@ -37,9 +40,12 @@ export default function () {
                 <option value={"2025"}>2025</option>
                 <option value={"2026"}>2026</option>
             </select>
-            <button className="prev" onClick={decrementMonth}><i className="fa-solid fa-arrow-left"></i></button>
-            <button className="next-month" onClick={incrementMonth}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
+            <div id={"calender-buttons"}>
+            <button className="prev" onClick={decrementMonth}><i className="fa-solid fa-arrow-left"></i></button>
+            <button className="next" onClick={incrementMonth}><i className="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </>
     }
 
     function PrintArtist(){
