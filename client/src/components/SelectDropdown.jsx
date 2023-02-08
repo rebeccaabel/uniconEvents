@@ -12,7 +12,7 @@ export default function () {
             seats: standingTickets
         }])
     })*/
-
+    console.log(standingTickets)
     return <>
         <div id="standing-area">
             <h2> 👯 This is the standing area 👯</h2>
