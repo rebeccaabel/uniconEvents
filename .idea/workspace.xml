@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Paymentpage.jsx" afterDir="false" />
     </list>
     <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,29 +21,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/client/src/styles/App.css">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="0" changelist="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" />
-        <range start1="18" end1="20" start2="17" end2="17" changelist="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" />
-        <range start1="43" end1="43" start2="40" end2="41" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="119" end1="120" start2="117" end2="117" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="128" end1="129" start2="125" end2="125" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="132" end1="133" start2="128" end2="128" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="138" end1="139" start2="133" end2="134" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="142" end1="142" start2="137" end2="146" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="149" end1="150" start2="153" end2="154" changelist="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" />
-        <range start1="151" end1="151" start2="155" end2="166" changelist="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" />
-        <range start1="152" end1="154" start2="167" end2="167" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="201" end1="203" start2="214" end2="214" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="333" end1="383" start2="344" end2="344" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="441" end1="446" start2="402" end2="402" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="455" end1="462" start2="411" end2="411" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="463" end1="468" start2="412" end2="414" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="470" end1="471" start2="416" end2="419" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
