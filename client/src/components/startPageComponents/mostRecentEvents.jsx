@@ -12,7 +12,7 @@ export default function () {
     return <div className="card-area-wrapper">
         <h2>Newly Added Events</h2>
         <div className="card-area-events">
-            {cloneConcerts.slice(0, 10).map(concert => <Eventcard details={concert} />)}
+            {cloneConcerts.slice(0, 8).map(concert => <Eventcard details={concert} />)}
         </div>
     </div>
 
