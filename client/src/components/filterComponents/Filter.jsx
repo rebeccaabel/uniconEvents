@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from "react";
-import Card from "../Eventcard.jsx";
+import Eventcard from "../Eventcard.jsx";
 import GlobalContext from "../GlobalContext.jsx";
 import BandOptions from "./BandOptions.js";
 import Dropdown from "./FilterDropdown.jsx";
@@ -23,7 +23,7 @@ export default function () {
 
     function filterArray() {
         const cloneConcerts = [...concerts]
-        console.log(cloneConcerts[0].date)
+        console.log(startDate.current.value)
         for (let i = cloneConcerts.length - 1; i >= 0; i--) {
             if (selectedBand &&
                 cloneConcerts[i].name !== selectedBand) {
@@ -32,8 +32,8 @@ export default function () {
                 cloneConcerts[i].venue !== selectedVenue) {
                 cloneConcerts.splice(i, 1)
             }/* else if (startDate && endDate &&
-                cloneConcerts[i].date.getTime() !> startDate.getTime() &
-                cloneConcerts[i].date.getTime() !< endDate.getTime()) {
+                cloneConcerts[i].datum.getTime() !> startDate.getTime() &
+                cloneConcerts[i].datum.getTime() !< endDate.getTime()) {
                 cloneConcerts.splice(i,1) 
         } */
         }
@@ -44,7 +44,7 @@ export default function () {
         return <div className="card-area-wrapper">
             <div className="card-area">
                 {
-                    sortedArray.map(artist => <Card title={artist.name} venue={artist.venue} image={artist.image} />)
+                    sortedArray.map(concert => <Eventcard details={concert}/>)
                 }
             </div>
         </div>
