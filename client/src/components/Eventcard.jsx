@@ -1,13 +1,16 @@
 import GlobalContext from "./GlobalContext.jsx";
 import {useContext,useState} from "react";
 import {Link} from "react-router-dom";
+import LogOutButton from "./profileComponents/LogOutButton.jsx";
+import Login from "./profileComponents/Login.jsx";
 export default function ({name, image, location,datum,id}) {
+    const {auth} = useContext(GlobalContext)
     const {wishlists} = useContext(GlobalContext)
     const {artistInfo } = useContext(GlobalContext);
     const [saved, setSaved] = useState(false)
     const [showEvent, setShowEvent] = useState(false)
     return<>
-        <div className={"whatever"}>
+        <div className={"card-container"}>
         <Link to={`/ArtistHub/${id}`}>
     <div className="card" onClick={() => { artistHubInfo() }} style={{ backgroundImage: `url(${image})` }}>
         <div className="event-card-details">
@@ -27,8 +30,16 @@ export default function ({name, image, location,datum,id}) {
 
     }
     function handleClick(){
-        setSaved(!saved)
-        wishlists.push({name:name, datum:new Date(datum).toDateString(), month:new Date(datum).getMonth(),year:new Date(datum).getFullYear(), venue:location, image:image, id:id})
+        if(auth.loggedIn === true) {
+            setSaved(!saved)
+            wishlists.push({name:name,
+                datum:new Date(datum).toDateString(),
+                month:new Date(datum).getMonth(),
+                year:new Date(datum).getFullYear(),
+                venue:location,
+                image:image,
+                id:id})
+        }
     }
     function artistHubInfo() {
         setShowEvent(!showEvent)
