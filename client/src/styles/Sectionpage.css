@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 1%;
     border-radius: 0.5rem;
-    width: 50%;
+    width: 60%;
     height: 50%;
     margin: 2%;
 }
@@ -34,11 +34,21 @@
     padding: 1%;
 }
 
+#stage-area h1 {
+    color:black;
+}
+#seated-area h4 {
+    color:black;
+}
+#standing-area {
+    color:black;
+}
 
-button {
+#seated-area button {
     margin: 0.08rem;
-    padding: 0.05rem;
-    border-radius: 0.4rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
 }
 
 div .black-btn {
@@ -49,12 +59,23 @@ div .black-btn {
 div .white-btn {
     background-color: white;
 }
-a button {
+#seated-area a button {
     padding: 0.5rem;
 }
-a button:hover {
+#seated-area a button {
+    border: 1px solid grey;
+}
+#seated-area a button:hover {
     box-shadow: 0px 0px 15px 2px rgb(175, 70, 70);
-    color: #6D5E76;
+    color: #9b3333;
+}
+@media screen and (max-width: 1000px) {
+    #outer-div {
+        width: 99%;
+    }
+    #seated-area button {
+        font-size: 0.6rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -65,9 +86,13 @@ a button:hover {
 
 @media screen and (max-width: 600px) {
     #seated-area div button {
-        font-size: 0.2rem;
+        font-size: 0.7rem;
+        padding: 0.3rem;
     }
     #stage-area {
         font-size: 0.5rem;
+    }
+    #seated-area h4 {
+         font-size: 1rem;
     }
 }

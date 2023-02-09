@@ -139,6 +139,7 @@ nav a:link{
 }
 
 #register-button-header {
+    margin-right: 1rem;
     background-color: #fd7fba;
     border-radius: 3px;
     color: white;
