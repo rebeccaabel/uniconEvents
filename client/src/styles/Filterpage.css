@@ -1,94 +1,144 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap', sans-serif;
-}
+@media only screen and (max-width: 800px) {
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+    }
+  }
 
-html {
-    box-sizing: border-box;
-}
+  @media only screen and (max-width: 450px) {
+    .card {
+        width: 262px;
+        height: 150px;
+    }
+  }
 
 .filter-container {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    background-color: white;
-}
-
-
-
-.filter-buttons-dates {
+    background: linear-gradient(white 60%,lightgray);
+    color: black;
     display: flex;
-    flex: auto;
-    gap: 5%;
-
-
-}
-.filter-buttons-cities  {
-    display: flex;
-    flex: auto;
-    gap: 5%;
-
-}
-
-.filter-buttons-dates button {
-    font-size: 1rem;
-    margin-bottom: 5%;
-    padding: 0.5rem;
-    border-radius: 0.7rem;
-}
-
-.filter-buttons-dates button:hover {
-    cursor:pointer;
-}
-.filter-buttons-cities button {
-    font-size: 1rem;
-    margin-bottom: 5%;
-    padding: 0.5rem;
-    border-radius: 0.7rem;
-}
-
-.date-filters button:hover, .city-filters button:hover  {
-    cursor:pointer;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
 }
 
 .two-dates-filter {
     display: flex;
-    padding: 2rem;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.filter-search-button button {
+.two-dates-filter input {
     display: flex;
-    padding: 2%;
-    color: #2e045b;
-    margin: 5% auto;
-    width: 5rem;
-    height: 2rem;
-    align-items: center;
-    border-radius: 0.5rem;
-}
-
-.calender-container button:hover {
-    cursor:pointer;
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .card-area-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
     padding: 3rem;
+    min-height: 50vh;
 }
-
 
 .card-area {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 2em;
+    align-content: center;
+    padding: 0;
 }
 
 /***********************
-        FOOTER
+        SEARCH BUTTON
 ***********************/
+.button-wrap {
+    height: 100%;
+    margin: 30px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+.search-button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .search-button:hover, .search-button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .search-button:hover::before, .search-button:focus::before {
+    opacity: 1;
+  }
+  
+  .search-button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .search-button:hover::after, .search-button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }

@@ -4,8 +4,7 @@ import "../styles/Filterpage.css"
 
 export default function () {
 
-    return <>
-        <Filter/>
-    </>
+    return <Filter/>
+    
 
 }
