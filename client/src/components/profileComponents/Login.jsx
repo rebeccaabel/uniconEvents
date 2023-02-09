@@ -12,8 +12,12 @@ export default function () {
 
     const fetchUser = (event) => {
         event.preventDefault()
+        if (!email || !password) {
+            return alert('Email and password fields cannot be empty!');
+        }
         submitLogin(email, password)
         nav("/")
+
     }
 
     return <>

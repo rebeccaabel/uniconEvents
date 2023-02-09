@@ -12,6 +12,9 @@ export default function (props) {
 
     const postUser = (event) => {
         event.preventDefault()
+        if (!email || !password) {
+            return alert('Email and password fields cannot be empty!');
+        }
         register(email, password)
         nav("/login")
     }
