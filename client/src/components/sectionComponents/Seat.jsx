@@ -38,7 +38,7 @@ export default function () {
                 {seats}
             </div>
             <Link to={"/Paymentpage"}>
-                <button onClick={() => {checkSeat()}} id="Proceed-Payment-button">Proceed to payment</button>
+                <button id="proceed2PaymentBtn"onClick={() => {checkSeat()}} id="Proceed-Payment-button">Proceed to payment</button>
             </Link>
         </div>
     </>
