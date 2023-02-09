@@ -3,7 +3,6 @@ import CalculatePricePaymentpage from "./CalculatePricePaymentpage.jsx";
 import FormPaymentDetails from "./FormPaymentDetails.jsx";
 import ImageArtistHub from "../eventComponents/ImageEventHub.jsx";
 
-
 export default function () {
 
     return <div className="payment-wrapper">
@@ -18,11 +17,4 @@ export default function () {
             </Link>
         </div>
     </div>
-
-
-
-
-    async function asyncCall() {
-
-    }
 }
