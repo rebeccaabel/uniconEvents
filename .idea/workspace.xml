@@ -6,16 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/startPageComponents/PopularEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/startPageComponents/PopularEvents.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/startPageComponents/mostRecentEvents.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/startPageComponents/mostRecentEvents.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Artistpage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Artistpage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/paymentComponents/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/CardDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/paymentComponents/FormPaymentDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/FormPaymentDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profileComponents/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profileComponents/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Register.jsx" afterDir="false" />
     </list>
-    <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/Sectionpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/Sectionpage.css" afterDir="false" />
-    </list>
+    <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,22 +24,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/client/src/styles/App.css">
-      <ranges>
-        <range start1="92" end1="93" start2="92" end2="93" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="100" end1="100" start2="100" end2="101" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="108" end1="109" start2="109" end2="110" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="110" end1="111" start2="111" end2="113" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="144" end1="145" start2="146" end2="147" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="146" end1="146" start2="148" end2="153" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="155" end1="155" start2="162" end2="167" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="257" end1="276" start2="269" end2="269" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="277" end1="301" start2="270" end2="270" changelist="9077c339-53a2-40bc-9370-fa45c5bb105d" />
-        <range start1="341" end1="344" start2="310" end2="310" changelist="b984a70e-aad8-4314-ada6-5be8ff22db69" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

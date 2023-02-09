@@ -12,9 +12,7 @@ export default function () {
                 <CalculatePricePaymentpage/>
                 <FormPaymentDetails/>
             </div>
-            <Link to={'/VerifiedPaymentPage'}>
-                <button> Purchase</button>
-            </Link>
+
         </div>
     </div>
 }
