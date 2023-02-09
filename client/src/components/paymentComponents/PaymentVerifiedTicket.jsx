@@ -26,7 +26,4 @@ function VerifiedCard(props) {
     window.print()
     }
 }
-
-
-
 export default VerifiedCard;
