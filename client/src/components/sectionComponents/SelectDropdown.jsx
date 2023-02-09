@@ -3,9 +3,9 @@ import GlobalContext from "../GlobalContext.jsx";
 export default function () {
     const {standingTickets, setStandingTickets} = useContext(GlobalContext);
 
-    return <>
-        <div id="standing-area">
+    return <div id="standing-area">
             <h2> 👯 This is the standing area 👯</h2>
+            <p>Price: 250 sek per ticket</p>
             <label>Choose number of tickets </label>
             <select value={standingTickets} onChange={(e) => {
                 const selectedValue = e.target.value;
@@ -18,5 +18,4 @@ export default function () {
                 <option value="4" id="number4">4</option>
             </select>
         </div>
-    </>
 }

@@ -15,8 +15,7 @@ export default function () {
         nav("/VerifiedPaymentPage")
     }
 
-    return <>
-        <form className="date-form" onSubmit={emptyFields}>
+    return <form className="date-form" onSubmit={emptyFields}>
             <label>Name on Card</label>
             <input value={name}
                    onChange={event => setName(event.target.value)}
@@ -43,13 +42,9 @@ export default function () {
                 type="text"
                 placeholder="123"
                 value={cvc}
-
             />
 
-            <input type='submit' name='submit' value='Purchase'/>
-
+            <input id="inputbtn" type='submit' name='submit' value='Purchase'/>
         </form>
-
-    </>
 }
 

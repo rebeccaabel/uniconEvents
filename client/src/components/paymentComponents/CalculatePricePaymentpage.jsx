@@ -8,11 +8,9 @@ export default function () {
     let { priceSeats, priceStanding, total, newSeats } = calcSeats();
 
     return <div id="payment-details">
-        <p>Price per ticket for the seated area: 500</p>
-        <p>Total (seated area): {priceSeats}</p>
-        <p>Price per ticket for the standing area: 250</p>
-        <p>Total (standing area): {priceStanding}</p>
-        <p>The total amount will be {total}</p>
+        <p>Total (seated area): {priceSeats} sek</p>
+        <p>Total (standing area): {priceStanding} sek</p>
+        <p>The total amount will be {total} sek</p>
         <p>Your seatnumbers are {newSeats}</p>
     </div>
 
