@@ -52,9 +52,7 @@ export default function () {
         for (let i = 0; i < wishlists.length; i++) {
             if (getMonth[i] === date.getMonth() && getYear[i] === date.getFullYear()) {
                 setSaved("Your planned events")
-                return filteredEvents.map(artist => <SavedCard datum={artist.datum.toString()} image={artist.image}
-                                                               name={artist.name} location={artist.venue}
-                                                               id={artist.id}/>)
+                return filteredEvents.map(artist => <SavedCard details={artist}/>)
             } else {setSaved("You have no saved events this month")
             }
         }

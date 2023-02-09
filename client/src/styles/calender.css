@@ -91,15 +91,21 @@
     color: white;
     font-size: 0.8em;
 }
+#saved-artist h3 {
+    background: -webkit-linear-gradient(#ffffff, #fffdfd, #fdfdfd, #ffffff, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #saved-artist p {
     color: white;
 }
 
-#save-event i{
+.save-event i{
     font-size: 2rem;
     position: absolute;
 }
-#save-event i:hover {
+.save-event i:hover {
     font-size: 2rem;
     animation: grow;
     animation-duration: 10s;

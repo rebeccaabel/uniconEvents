@@ -2,6 +2,7 @@ import GlobalContext from "./GlobalContext.jsx";
 import {useContext,useState} from "react";
 import {Link} from "react-router-dom";
 export default function ({details}) {
+    const {auth } = useContext(GlobalContext);
     const {wishlists} = useContext(GlobalContext)
     const {artistInfo } = useContext(GlobalContext);
     const [saved, setSaved] = useState(false)
@@ -9,7 +10,7 @@ export default function ({details}) {
     const {name, image, datum, venue, id} = details
     return<>
         <div className={"card-container"}>
-        <Link to={`/ArtistHub/${id}`}>
+        <Link to={`/ArtistHub/${id}`} style={{ textDecoration: 'none' }}>
     <div className="card" onClick={() => { artistHubInfo() }} style={{ backgroundImage: `url(${image})` }}>
         <div className="event-card-details">
              <h3 >{name}</h3>
@@ -24,7 +25,7 @@ export default function ({details}) {
 
     function SaveButton(){
         return <button className={"save-event"} onClick={() => {handleClick()} }
-                       style={{color:saved ? "pink" : "black"}}><i className="fa-solid fa-heart"></i></button>
+                       style={{color:saved ? "pink" : "grey"}}><i className="fa-solid fa-heart"></i></button>
 
     }
     function handleClick(){
@@ -37,6 +38,7 @@ export default function ({details}) {
                 venue:location,
                 image:image,
                 id:id})
+
         }
     }
     function artistHubInfo() {

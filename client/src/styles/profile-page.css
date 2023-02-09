@@ -1,37 +1,16 @@
-.profile-page {
-    display: flex;
-}
-
-.side-navbar-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
 .side-navbar {
     display: flex;
-    flex-direction: row;
-    margin-left: 1rem;
-    margin-top: 2rem;
-    background-color: white;
-    width: 6rem;
-}
-
-
-.contact-information {
-    display: flex;
     flex-direction: column;
-    color: white;
-    margin-left: 10rem;
-    width: 20em;
+    margin: 2em;
+    background: -webkit-linear-gradient(pink, #8a676c, #1f1818);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1em;
+    width: 8rem;
+    border: solid pink .1rem;
+    box-shadow: 0 0 2em rgb(246, 189, 194);
 }
-
-.contact-information input {
-    display: flex;
-    margin: 1rem;
+.side-navbar:hover {
+    opacity: 90%;
 }
-
-
-
-
-
 
