@@ -6,8 +6,6 @@ import ImageArtistHub from "./ImageEventHub.jsx";
 import TitleArtistHub from "./TitleEventHub.jsx";
 import GoogleMaps from "../GoogleMaps.jsx";
 
-
-
 export default function () {
 
     return <div className="artist-info-wrapper">

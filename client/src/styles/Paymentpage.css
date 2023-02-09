@@ -19,6 +19,14 @@
 .payment-details {
     margin: 5% 5%;
 }
+.payment-details p{
+    color:black;
+    padding: 1%;
+}
+.payment-wrapper button:hover {
+    box-shadow: 0px 0px 15px 2px rgb(175, 70, 70);
+    color: #8c1818;
+}
 
 
 

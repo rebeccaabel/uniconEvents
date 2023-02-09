@@ -1,11 +1,6 @@
-import React from "react";
+import '../styles/Paymentpage.css'
 import PaymentVerifiedTicket from "../components/paymentComponents/PaymentVerifiedTicket.jsx";
 
-
 export default function () {
-
-    return <>
-        <PaymentVerifiedTicket/>
-    </>
-
+    return <PaymentVerifiedTicket/>
 }
