@@ -3,12 +3,17 @@
     flex-direction: column;
     align-items: center;
 }
-#verified-ticket h1 {
+.verified-ticket h1 {
     padding: 1%;
+    margin: 1%;
+    font-size: 2rem;
+    text-align: center;
 }
-
-.header{
-    padding-bottom: 20px;
+#payment-details p {
+    color: black;
+}
+#payment-details {
+    padding: 3%;
 }
 
 .details{
@@ -16,12 +21,6 @@
     flex-direction: column;
     font-size: 1.5rem;
     text-align: center;
-}
-
-.card-img{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
 }
 
 body{

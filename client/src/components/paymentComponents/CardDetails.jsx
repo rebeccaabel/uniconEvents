@@ -9,8 +9,8 @@ export default function () {
 
     return <div className="payment-wrapper">
         <div className="payment-container">
-            <ImagePaymentpage/>
             <TitlePaymentpage/>
+            <ImagePaymentpage/>
             <div className="payment-details">
                 <CalculatePricePaymentpage/>
                 <FormPaymentDetails/>

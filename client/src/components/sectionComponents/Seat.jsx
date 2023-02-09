@@ -31,9 +31,9 @@ export default function () {
         }} className={active ? "black-btn" : "white-btn"}>{input}</button>
     }
 
-    return <>
-        <div id="seated-area">
+    return <div id="seated-area">
             <h4>This is the seated area. Please choose your preferred seats.</h4>
+            <h4>Price: 500 sek per ticket</h4>
             <div>
                 {seats}
             </div>
@@ -41,5 +41,4 @@ export default function () {
                 <button onClick={() => {checkSeat()}} id="Proceed-Payment-button">Proceed to payment</button>
             </Link>
         </div>
-    </>
 }

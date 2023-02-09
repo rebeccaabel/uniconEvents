@@ -3,7 +3,5 @@ import "../styles/Artistpage.css"
 
 
 export default function () {
-    return <>
-        <AboutArtists/>
-    </>
+    return <AboutArtists/>
 }
