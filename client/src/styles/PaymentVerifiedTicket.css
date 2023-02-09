@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: center;
 }
+#verified-ticket h1 {
+    padding: 1%;
+}
 
 .header{
     padding-bottom: 20px;

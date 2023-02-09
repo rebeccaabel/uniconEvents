@@ -3,7 +3,7 @@ import '../styles/loginpage.css'
 
 export default function () {
 
-    return <>
-        <Login/>
-    </>
-        }
+    return <Login/>
+}
+
+

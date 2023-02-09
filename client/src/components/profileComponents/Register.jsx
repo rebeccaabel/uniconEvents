@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import GlobalContext from "../GlobalContext.jsx";
 import "../../styles/registerpage.css"
 
@@ -7,12 +7,16 @@ export default function (props) {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("")
     const [password, setPassword] = useState("")
-
+    const nav = useNavigate()
     const {register} = useContext(GlobalContext)
 
     const postUser = (event) => {
         event.preventDefault()
+        if (!email || !password) {
+            return alert('Email and password fields cannot be empty!');
+        }
         register(email, password)
+        nav("/login")
     }
 
 
