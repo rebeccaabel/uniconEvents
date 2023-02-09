@@ -7,6 +7,11 @@
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Eventcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/paymentComponents/CardDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/CardDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profileComponents/Calender.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/Calender.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profileComponents/SavedCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profileComponents/SavedCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/calender.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/calender.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/profile-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/profile-page.css" afterDir="false" />
     </list>
     <list id="b6a9903c-fdc4-40ce-ae25-63f74bbea0e0" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +126,7 @@
       <workItem from="1675791404512" duration="980000" />
       <workItem from="1675799525722" duration="4999000" />
       <workItem from="1675854047812" duration="8400000" />
-      <workItem from="1675926256704" duration="861000" />
+      <workItem from="1675926256704" duration="13316000" />
     </task>
     <servers />
   </component>

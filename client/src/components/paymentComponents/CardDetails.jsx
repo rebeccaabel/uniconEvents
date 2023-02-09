@@ -21,8 +21,4 @@ export default function () {
 
 
 
-
-    async function asyncCall() {
-
-    }
 }

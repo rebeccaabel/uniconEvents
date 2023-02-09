@@ -1,10 +1,121 @@
-#calender-buttons button {
-    color: #bb4f4f;
+
+/* Component: Calender */
+#my-events {
+    color: #dcabab;
     display: flex;
+    justify-content: center;
+    animation: calenderMove;
+    animation-duration: 1s;
 }
 
+@keyframes calenderMove{
+    from{
+        margin-left:100%;
+    }
+    to{
+        margin-right: 0%;
+    }
+}
 
+.saved-card {
+    display: flex;
+    flex-direction: column;
+}
 
-.saved-card{
+.saved-card h5 {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    background: -webkit-linear-gradient(#524f4f, rgba(237, 184, 250, 0.74), #fab9b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.saved-card h3 {
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    background: -webkit-linear-gradient(#000000, rgba(240, 184, 246, 0.74), #fab9b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#select-month {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 3em;
+}
+
+#select-month button {
+    width: 8em;
+    margin: 2em;
+    background-color: #ffe2ff;
+    color: black;
+}
+
+#select-month button:hover {
+    opacity: 60%;
+}
+
+#select-year button:hover {
+    opacity: 60%;
+}
+
+#select-year {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#select-year h4 {
+    font-size: 2em;
+    background: -webkit-linear-gradient(#6d337a, #f1a0af, #efaaaa, #8d0000, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#select-year button {
+    width: 3em;
+    margin: 2em;
+    background-color: #ffe2ff;
+    color: black;
+}
+
+/* Component: SavedCard */
+#saved-artist {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+    color: white;
+    font-size: 0.8em;
+}
+#saved-artist p {
+    color: white;
+}
+
+#save-event i{
+    font-size: 2rem;
+    position: absolute;
+}
+#save-event i:hover {
+    font-size: 2rem;
+    animation: grow;
+    animation-duration: 10s;
+}
+
+@keyframes grow{
+    from{
+        background: -webkit-linear-gradient(pink, #8a676c, #1f1818);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4rem;
+    }
+    to{
+        background: -webkit-linear-gradient(pink, #8a676c, #1f1818);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 8rem;
+    }
 }

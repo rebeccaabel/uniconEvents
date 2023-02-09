@@ -26,7 +26,7 @@ export default function ({name, image, location,datum,id}) {
 
     function SaveButton(){
         return <button className={"save-event"} onClick={() => {handleClick()} }
-                       style={{color:saved ? "red" : "black"}}><i className="fa-solid fa-heart"></i></button>
+                       style={{color:saved ? "pink" : "black"}}><i className="fa-solid fa-heart"></i></button>
 
     }
     function handleClick(){
