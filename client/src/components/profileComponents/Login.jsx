@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import GlobalContext from "../GlobalContext.jsx";
 import "../../styles/loginpage.css"
 
@@ -7,11 +7,13 @@ export default function () {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("")
     const {submitLogin} = useContext(GlobalContext)
+    const nav = useNavigate()
 
 
     const fetchUser = (event) => {
         event.preventDefault()
         submitLogin(email, password)
+        nav("/")
     }
 
     return <>
