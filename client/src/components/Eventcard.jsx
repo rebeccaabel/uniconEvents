@@ -2,14 +2,15 @@ import GlobalContext from "./GlobalContext.jsx";
 import {useContext,useState} from "react";
 import {Link} from "react-router-dom";
 export default function ({details}) {
+    const {auth } = useContext(GlobalContext);
     const {wishlists} = useContext(GlobalContext)
     const {artistInfo } = useContext(GlobalContext);
     const [saved, setSaved] = useState(false)
     const [showEvent, setShowEvent] = useState(false)
     const {name, image, datum, venue, id} = details
     return<>
-        <div className={"whatever"}>
-        <Link to={`/ArtistHub/${id}`}>
+        <div className={"card-container"}>
+        <Link to={`/ArtistHub/${id}`} style={{ textDecoration: 'none' }}>
     <div className="card" onClick={() => { artistHubInfo() }} style={{ backgroundImage: `url(${image})` }}>
         <div className="event-card-details">
              <h3 >{name}</h3>
@@ -24,12 +25,21 @@ export default function ({details}) {
 
     function SaveButton(){
         return <button className={"save-event"} onClick={() => {handleClick()} }
-                       style={{color:saved ? "red" : "black"}}><i className="fa-solid fa-heart"></i></button>
+                       style={{color:saved ? "pink" : "grey"}}><i className="fa-solid fa-heart"></i></button>
 
     }
     function handleClick(){
-        setSaved(!saved)
-        wishlists.push({name:name, datum:new Date(datum).toDateString(), month:new Date(datum).getMonth(),year:new Date(datum).getFullYear(), venue:location, image:image, id:id})
+        if(auth.loggedIn === true) {
+            setSaved(!saved)
+            wishlists.push({name:name,
+                datum:new Date(datum).toDateString(),
+                month:new Date(datum).getMonth(),
+                year:new Date(datum).getFullYear(),
+                venue:location,
+                image:image,
+                id:id})
+
+        }
     }
     function artistHubInfo() {
         setShowEvent(!showEvent)

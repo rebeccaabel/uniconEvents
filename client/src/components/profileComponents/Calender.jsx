@@ -2,10 +2,13 @@ import React, {useContext, useEffect, useState} from 'react'
 import GlobalContext from "../GlobalContext.jsx";
 import SavedCard from "./SavedCard.jsx";
 
+
+
 export default function () {
     const {wishlists} = useContext(GlobalContext)
     const [date, setDate] = useState(new Date())
     const [filteredEvents, setFilteredEvents] = useState(...wishlists)
+    const [saved, setSaved] = useState("You have no saved events this month")
 
     useEffect(() => {
         setFilteredEvents(wishlists)
@@ -13,46 +16,46 @@ export default function () {
     }, [])
 
     return <>
-        <Calendar/>
-        <MyEvents/>
+        <div id={"my-events"}>
+            <EventNav/>
+        </div>
     </>
-
-    function MyEvents() {
-        return <div className={"my-events"}>
+    function EventNav() {
+        return <div className={"saved-card"}>
+            <SelectYear/>
+            <SelectMonth/>
             <h3>{date.toLocaleString("en-GB", {month: "long"})}</h3>
-            <h4>{date.getFullYear()}</h4>
-            <h4>Your planned events:</h4>
-            <div className={"saved-card"}>
-                <PrintArtist/>
-            </div>
+            <h5>{saved}</h5>
+            <PrintArtist/>
         </div>
     }
-    function Calendar() {
-        return <div className={"calender"}>
-            <select className={"years"} value={date.getFullYear()} onChange={handleChange}>
-                <option value={"2021"}>2021</option>
-                <option value={"2022"}>2022</option>
-                <option value={"2023"}>2023</option>
-                <option value={"2024"}>2024</option>
-                <option value={"2025"}>2025</option>
-                <option value={"2026"}>2026</option>
-            </select>
+    function SelectYear() {
+        return <>
+            <div id={"select-year"}>
+                <button className="next" onClick={decrementYear}><i className="fa-solid fa-arrow-left"></i></button>
+                <h4>{date.getFullYear()}</h4>
+                <button className="next" onClick={incrementYear}><i className="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </>
+    }
+    function SelectMonth() {
+        return <div id={"select-month"}>
             <button className="prev" onClick={decrementMonth}><i className="fa-solid fa-arrow-left"></i></button>
-            <button className="next-month" onClick={incrementMonth}><i className="fa-solid fa-arrow-right"></i></button>
+            <button className="next" onClick={incrementMonth}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
     }
 
-    function PrintArtist(){
+   function PrintArtist() {
         let getMonth = wishlists.map(findMonth => findMonth.month)
         let getYear = wishlists.map(findYear => findYear.year)
-        for(let i = 0; i<wishlists.length; i++) {
+        for (let i = 0; i < wishlists.length; i++) {
             if (getMonth[i] === date.getMonth() && getYear[i] === date.getFullYear()) {
-                return filteredEvents.map(artist => <SavedCard datum={artist.datum.toString()} image={artist.image} name={artist.name} location={artist.venue} id={artist.id}/>)
+                setSaved("Your planned events")
+                return filteredEvents.map(artist => <SavedCard details={artist}/>)
+            } else {setSaved("You have no saved events this month")
             }
         }
-    }
-    function handleChange(e) {
-        setDate(new Date(date.setFullYear(e.target.value)))
     }
     function incrementMonth() {
         if (date.getMonth() === 11) {
@@ -63,7 +66,6 @@ export default function () {
         }
         setDate(new Date(date.valueOf()))
     }
-
     function decrementMonth() {
         if (date.getMonth() === 0) {
             date.setFullYear(date.getFullYear() - 1)
@@ -71,6 +73,15 @@ export default function () {
         } else {
             date.setMonth(date.getMonth() - 1)
         }
+        setDate(new Date(date.valueOf()))
+    }
+    function incrementYear() {
+
+            date.setFullYear(date.getFullYear() + 1)
+        setDate(new Date(date.valueOf()))
+    }
+    function decrementYear() {
+        date.setFullYear(date.getFullYear() - 1)
         setDate(new Date(date.valueOf()))
     }
 

@@ -32,7 +32,7 @@ export default function () {
     function ProfileIcon() {
         if (!auth.loggedIn) return null
 
-        return <Link to="profile">
+        return <Link to="profile/calender">
             <img id="round-login-avatar" alt="avatar-logo" src={profile2}/>
         </Link>
     }
