@@ -90,7 +90,7 @@ nav {
     margin: auto;
 }
 
-nav button {
+#nav-button {
     margin-top: 0.5em;
     background: transparent;
     border: transparent;
@@ -98,6 +98,7 @@ nav button {
     display: flex;
     justify-content: center;
     margin-left: 1rem;
+    box-shadow: none;
 
 }
 
@@ -106,9 +107,10 @@ nav a:link{
 }
 
 
-nav button:hover {
+#nav-button:hover {
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: bold;
+    color: black;
 }
 
 .profile-signup-login {
@@ -142,7 +144,12 @@ nav button:hover {
     color: white;
     padding: 1px;
     width: 4em;
+    box-shadow: #f687bb;
+}
 
+#register-button-header:hover {
+    box-shadow: 0px 10px 20px 0px rgba(255, 105, 180, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 #login-button {
@@ -152,6 +159,11 @@ nav button:hover {
     padding: 1px;
     width: 4em;
     margin-right: 2rem;
+}
+
+#login-button:hover {
+    box-shadow: 0px 10px 20px 0px rgba(217, 70, 143, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 #logout-button {
@@ -255,50 +267,7 @@ nav button:hover {
 
 
 
-.artist-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 200px;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
 
-.card-area-artists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: auto;
-    gap: 2em;
-    color: #000000;
-    background-color: transparent;
-
-}
-
-.about-artist-text {
-    background-color: white;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
-}
-
-.about-artist-text h3 {
-    padding-left: 0.8rem;
-    padding-bottom: 0.5rem;
-}
-
-.artist-details {
-    color: cornflowerblue;
-    padding: 1rem;
-    width: 200px;
-}
-
-.artist-details:hover{
-    cursor: pointer;
-}
 
 /**************************
             FOOTER
@@ -339,9 +308,6 @@ footer ul a {
     color: #553177;
 }
 
-/***********************
-        PROFILE PAGE
-***********************/
 
 /**************************
         MEDIA QUERIES
