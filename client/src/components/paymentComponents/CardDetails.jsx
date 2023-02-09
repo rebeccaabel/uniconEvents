@@ -12,7 +12,6 @@ export default function () {
                 <CalculatePricePaymentpage/>
                 <FormPaymentDetails/>
             </div>
-
         </div>
     </div>
 }
