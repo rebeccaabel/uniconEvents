@@ -1,32 +1,27 @@
 import React from "react";
 
 import "../../styles/PaymentVerifiedTicket.css";
-
 import Map from "../GoogleMaps.jsx";
+import TitleArtistHub from "../eventComponents/TitleEventHub.jsx";
+import LocationArtistHub from "../eventComponents/LocationEventHub.jsx";
+import ImageArtistHub from "../eventComponents/ImageEventHub.jsx";
+import CalculatePricePaymentpage from "./CalculatePricePaymentpage.jsx";
 
 function VerifiedCard(props) {
     return (
         <div className="verified-ticket">
-            <div className="header">
-                <h1>Thanks for your purchase</h1>
-            </div>
-            
-            <div className="card-img">
-                <img src={artists[0].image}></img>
-            </div>
-
+                <h1>Thank you for your purchase!</h1>
+                <CalculatePricePaymentpage/>
+                <ImageArtistHub/>
             <div className="details">
-                <p>{artists[0].title}</p>
-                <p>{artists[0].location} - avicii arena</p>
-                <p>{artists[0].date.toLocaleDateString('sv-SE')}</p>
+                <TitleArtistHub/>
+                <LocationArtistHub/>
                 <button onClick={printTicket}></button>
             </div>
-
             <Map/>
         </div>
 
     )
-
     function printTicket(){
     window.print()
     }
