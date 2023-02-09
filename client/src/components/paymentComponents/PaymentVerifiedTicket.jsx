@@ -18,7 +18,7 @@ function VerifiedCard() {
             <div className="details">
                 <TitleArtistHub/>
                 <LocationArtistHub/>
-                <button style={{width:"50px", height:"50px", background:"grey"}} onClick={printTicket}>Print out ticket</button>
+                <button id={"print-button"} onClick={printTicket}>Print out ticket</button>
             </div>
             <Map/>
         </div>

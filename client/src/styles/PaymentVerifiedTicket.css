@@ -27,3 +27,9 @@
 body{
     color: white;
 }
+
+.verified-ticket button{
+    width: 4em;
+    height: 5rem;
+    background-color: pink;
+}
