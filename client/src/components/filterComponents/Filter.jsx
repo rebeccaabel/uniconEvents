@@ -1,24 +1,18 @@
 import { useContext, useRef, useState } from "react";
 import Card from "../Eventcard.jsx";
 import GlobalContext from "../GlobalContext.jsx";
+import BandOptions from "./BandOptions.js";
 import Dropdown from "./FilterDropdown.jsx";
+import VenueOptions from "./VenueOptions.js";
 
 export default function () {
     const { concerts } = useContext(GlobalContext)
     let [sortedArray, setSortedArray] = useState([])
     const [selectedVenue, setSelectedVenue] = useState(null)
     const [selectedBand, setSelectedBand] = useState(null)
-    const currentDate = new Date().toJSON().slice(0, 10);
     const startDate = useRef(null)
     const endDate = useRef(null)
-    const venueOptions = concerts.map(a => a.venue)
-    const uniqueVenueOptions = venueOptions.filter((c, index) => {
-        return venueOptions.indexOf(c) === index
-    })
-    const bandOptions = concerts.map(a => a.name)
-    const uniqueBandOptions = bandOptions.filter((c, index) => {
-        return bandOptions.indexOf(c) === index
-    })
+    const currentDate = new Date().toJSON().slice(0, 10);
 
     const selectBand = (band) => {
         setSelectedBand(band)
@@ -29,30 +23,31 @@ export default function () {
 
     function filterArray() {
         const cloneConcerts = [...concerts]
-
+        console.log(cloneConcerts[0].date)
         for (let i = cloneConcerts.length - 1; i >= 0; i--) {
             if (selectedBand &&
                 cloneConcerts[i].name !== selectedBand) {
-                cloneConcerts.splice(i,1)
-            }else if (selectedVenue &&
-                cloneConcerts[i].venue !== selectedVenue){
-                cloneConcerts.splice(i,1)
-            }/*else if (startDate && endDate &&
+                cloneConcerts.splice(i, 1)
+            } else if (selectedVenue &&
+                cloneConcerts[i].venue !== selectedVenue) {
+                cloneConcerts.splice(i, 1)
+            }/* else if (startDate && endDate &&
                 cloneConcerts[i].date.getTime() !> startDate.getTime() &
                 cloneConcerts[i].date.getTime() !< endDate.getTime()) {
                 cloneConcerts.splice(i,1) 
-        }*/
+        } */
         }
         return setSortedArray(sortedArray = cloneConcerts)
     }
 
     function DisplayResults() {
-        return <div className="card-area">
+        return <div className="card-area-wrapper">
+            <div className="card-area">
                 {
                     sortedArray.map(artist => <Card title={artist.name} venue={artist.venue} image={artist.image} />)
                 }
             </div>
-        
+        </div>
     }
 
     function TwoDatesFilter() {
@@ -63,23 +58,18 @@ export default function () {
     }
 
     function SearchButton() {
-        return <button id="filter-page-search-button" onClick={() => { filterArray() }}>Search</button>
-    }
+        return<div class="button-wrap">
+         <button className="search-button" onClick={() => { filterArray() }}>Search</button>
+        </div>    
+}
 
-   
- 
     return <>
-       
         <div className="filter-container">
-            <Dropdown isSearchable placeHolder="Select Venue..." options={uniqueVenueOptions} selection={selectVenue} />
-            <Dropdown isSearchable placeHolder="Select Band..." options={uniqueBandOptions} selection={selectBand}/>
+            <Dropdown isSearchable placeHolder="Select Venue..." options={VenueOptions()} selection={selectVenue} />
+            <Dropdown isSearchable placeHolder="Select Band..." options={BandOptions()} selection={selectBand} />
             <TwoDatesFilter />
             <SearchButton />
         </div>
-        <div className="card-area-wrapper">
-            <DisplayResults />
-        </div>
+        <DisplayResults />
     </>
 }
-
-/* sortBetweenTwoDatesFilter(startDate, endDate) */
