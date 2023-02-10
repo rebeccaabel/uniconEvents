@@ -27,6 +27,16 @@ body{
     color: white;
 }
 
+#qr-code {
+    width: 8%;
+}
+
+#print-button {
+    background-color: #f687bb;
+    width: 200px;
+    height: 50px;
+}
+
 .verified-ticket button{
     width: 4em;
     height: 5rem;

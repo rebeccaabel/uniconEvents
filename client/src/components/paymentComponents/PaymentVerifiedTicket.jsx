@@ -12,7 +12,7 @@ function VerifiedCard() {
                 <h1>Thank you for your purchase!</h1>
             <ImagePaymentpage/>
             <h2>Your Ticket</h2>
-            <img style={{width:"50px", height:"50px"}} src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="" title="" />
+            <img id={"qr-code"}   src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="" title="" />
                 <CalculatePricePaymentpage/>
             <div className="details">
                 <button id={"print-button"} onClick={printTicket}>Print out ticket</button>
