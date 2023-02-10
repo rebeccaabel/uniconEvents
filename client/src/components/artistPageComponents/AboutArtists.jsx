@@ -4,7 +4,7 @@ import GlobalContext from "../GlobalContext.jsx";
 
 export default function () {
     const {concerts} = useContext(GlobalContext)
-    
+
     return <div className="card-area-wrapper">
         <h2>About Artists</h2>
         <div className="card-area-artists">

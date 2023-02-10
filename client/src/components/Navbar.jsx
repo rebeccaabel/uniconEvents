@@ -10,7 +10,7 @@ export default function () {
             <button id={"nav-button"}>About Artists</button>
         </Link>
 
-        <Link to="/filterpage">
+        <Link to="/filter">
             <button id={"nav-button"}>Advanced search</button>
         </Link>
     </nav>

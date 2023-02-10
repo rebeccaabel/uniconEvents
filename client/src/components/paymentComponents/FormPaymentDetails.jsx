@@ -12,7 +12,7 @@ export default function () {
         if (!name || !cardDigits || !expDate || !cvc) {
             return alert('Card Information cannot be empty!');
         }
-        nav("/VerifiedPaymentPage")
+        nav("/verification")
     }
 
     return <form className="date-form" onSubmit={emptyFields}>
