@@ -24,15 +24,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route path={'/'} element={<App/>}>
                         <Route index element={<Startpage/>}/>
                         <Route path={'artists'} element={<Artistpage/>}/>
-                        <Route path={'filterpage'} element={<Filterpage/>}/>
+                        <Route path={'filter'} element={<Filterpage/>}/>
                         <Route path={'profile'} element={<Profilepage/>}>
 
                             <Route path={'calender'} element={<MyCalender/>}/>
                         </Route>
-                        <Route path={'paymentpage'} element={<Paymentpage/>}/>
-                        <Route path={'VerifiedPaymentPage'} element={<VerifiedPaymentPage/>}/>
-                        <Route path={'ArtistHub/:id'} element={<ArtistHub/>}/>
-                        <Route path={'sectionpage'} element={<Sectionpage/>}/>
+                        <Route path={'payment'} element={<Paymentpage/>}/>
+                        <Route path={'verification'} element={<VerifiedPaymentPage/>}/>
+                        <Route path={'event/:id'} element={<ArtistHub/>}/>
+                        <Route path={'section'} element={<Sectionpage/>}/>
                         <Route path={'login'} element={<Loginpage/>}/>
                         <Route path={'register'} element={<RegisterPage/>}/>
                         <Route path={'signout'} element={<LogOutPage/>}/>

@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import CalculatePricePaymentpage from "./CalculatePricePaymentpage.jsx";
 import FormPaymentDetails from "./FormPaymentDetails.jsx";
 import ImageArtistHub from "../eventComponents/ImageEventHub.jsx";

@@ -11,7 +11,7 @@ export default function ({details}) {
     const {name, image, datum, venue, id} = details
 
     return <div className={"card-container"}>
-        <Link to={`/ArtistHub/${id}`} style={{textDecoration: 'none'}}>
+        <Link to={`/event/${id}`} style={{textDecoration: 'none'}}>
             <div className="card" onClick={() => {
                 artistHubInfo()
             }} style={{backgroundImage: `url(${image})`}}>
