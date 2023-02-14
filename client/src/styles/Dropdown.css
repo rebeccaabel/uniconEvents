@@ -21,7 +21,7 @@
   position: absolute;
   transform: translate(-5px, 167px);
   z-index: 1;
-  width: 100%;
+  min-height: 300px;
   border: 1px solid black;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;

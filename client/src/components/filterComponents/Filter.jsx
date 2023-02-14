@@ -62,8 +62,8 @@ export default function () {
 
     return <>
         <div className="filter-container">
-            <Dropdown isSearchable placeHolder="Select Band..." options={BandOptions()} selection={setSelectedBand} />
-            <Dropdown isSearchable placeHolder="Select Venue..." options={VenueOptions()} selection={setSelectedVenue} />
+            <Dropdown isSearchable placeHolder="Select Band..." options={BandOptions(selectedVenue)} selection={setSelectedBand} />
+            <Dropdown isSearchable placeHolder="Select Venue..." options={VenueOptions(selectedBand)} selection={setSelectedVenue} />
             <TwoDatesFilter />
             <SearchButton />
         </div>
