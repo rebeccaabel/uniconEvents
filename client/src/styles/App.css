@@ -98,8 +98,7 @@ nav {
     display: flex;
     justify-content: center;
     margin-left: 1rem;
-    box-shadow: none;
-
+    box-shadow:  .08em .02em .08em 0.01em rgba(141, 3, 73, 0.28);
 }
 
 nav a:link{
@@ -109,8 +108,8 @@ nav a:link{
 
 #nav-button:hover {
     cursor: pointer;
-    font-weight: bold;
-    color: black;
+    opacity: 60%;
+    color: #E70C75;
 }
 
 .profile-signup-login {

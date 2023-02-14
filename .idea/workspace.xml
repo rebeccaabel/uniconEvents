@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9077c339-53a2-40bc-9370-fa45c5bb105d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/paymentComponents/PaymentVerifiedTicket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/paymentComponents/PaymentVerifiedTicket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/PaymentVerifiedTicket.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/PaymentVerifiedTicket.css" afterDir="false" />
     </list>
     <list id="b984a70e-aad8-4314-ada6-5be8ff22db69" name="Changes by leozarazaga" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +126,7 @@
       <workItem from="1675854047812" duration="6605000" />
       <workItem from="1675930377211" duration="894000" />
       <workItem from="1676013645425" duration="2155000" />
+      <workItem from="1676366320639" duration="2332000" />
     </task>
     <servers />
   </component>
