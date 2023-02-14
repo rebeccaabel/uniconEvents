@@ -8,7 +8,9 @@ export default function () {
     const concert = concerts.find(c => c.id === parseInt(id))
 
     if (!concert) return null
-    const {name} = concert
-    return <h2 id={"title-paymentpage"}>{name}</h2>
+    const {datum, venue} = concert
 
+    return <> <h2>Date: {datum}</h2>
+        <h2>Location: {venue}</h2>
+    </>
 }

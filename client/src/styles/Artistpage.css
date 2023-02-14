@@ -9,6 +9,12 @@
     border-top-right-radius: 2rem;
 }
 
+#iFrameMaps {
+    width: 70%;
+    height: 50%;
+    margin: 3%;
+}
+
 .card-area-artists {
     display: flex;
     flex-wrap: wrap;

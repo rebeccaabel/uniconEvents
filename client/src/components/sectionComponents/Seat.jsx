@@ -1,7 +1,13 @@
 import {useState, useContext} from "react";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import GlobalContext from "../GlobalContext.jsx";
 export default function () {
+    const {concerts} = useContext(GlobalContext);
+    const id = useParams().id
+    const concert = concerts.find(c => c.id === parseInt(id))
+
+    if (!concert) return null
+
     let {chosenSeats, setChosenSeats} = useContext(GlobalContext)
     chosenSeats.splice(0, chosenSeats.length)
     let cloneChosenSeats = [...chosenSeats]
@@ -37,8 +43,9 @@ export default function () {
             <div>
                 {seats}
             </div>
-            <Link to={"/payment"}>
+            <Link to={`/payment/${id}`}>
                 <button onClick={() => {checkSeat()}} id="Proceed-Payment-button">Proceed to payment</button>
             </Link>
         </div>
 }
+//`/section/${id}`

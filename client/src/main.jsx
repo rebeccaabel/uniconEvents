@@ -29,10 +29,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
                             <Route path={'calender'} element={<MyCalender/>}/>
                         </Route>
-                        <Route path={'payment'} element={<Paymentpage/>}/>
-                        <Route path={'verification'} element={<VerifiedPaymentPage/>}/>
+                        <Route path={'payment/:id'} element={<Paymentpage/>}/>
+                        <Route path={'verification/:id'} element={<VerifiedPaymentPage/>}/>
                         <Route path={'event/:id'} element={<ArtistHub/>}/>
-                        <Route path={'section'} element={<Sectionpage/>}/>
+                        <Route path={'section/:id'} element={<Sectionpage/>}/>
                         <Route path={'login'} element={<Loginpage/>}/>
                         <Route path={'register'} element={<RegisterPage/>}/>
                         <Route path={'signout'} element={<LogOutPage/>}/>
