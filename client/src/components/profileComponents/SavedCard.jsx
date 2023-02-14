@@ -9,7 +9,7 @@ export default function ({details}) {
     const [card, setCard] = useState(wishlists)
     return <>
     {(card && <div id={"saved-artist"}>
-        <Link to={`/ArtistHub/${id}`} style={{ textDecoration: 'none' }} ><div className="card" style={{backgroundImage: `url(${image})`}}>
+        <Link to={`/event/${id}`} style={{ textDecoration: 'none' }} ><div className="card" style={{backgroundImage: `url(${image})`}}>
             <h3>{name}</h3>
             <p>{location}</p>
             <p>{datum}</p>
