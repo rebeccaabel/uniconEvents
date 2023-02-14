@@ -3,6 +3,32 @@
     flex-direction: column;
     align-items: center;
 }
+
+#title-paymentpage {
+    font-size: 2rem;
+}
+
+#details-box {
+    background-color: rgba(245, 245, 245, 0.52);
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2%;
+}
+
+#image-payment {
+    width: 30%;
+}
+
+#iFrameMaps {
+    width: 70%;
+    height: 50%;
+    margin: 3%;
+}
+
 .verified-ticket h1 {
     padding: 1%;
     margin: 1%;
@@ -28,7 +54,8 @@ body{
 }
 
 #qr-code {
-    width: 8%;
+    width: 15%;
+    margin: 2%;
 }
 
 #print-button {

@@ -1,3 +1,13 @@
+import {useContext} from "react";
+import GlobalContext from "../GlobalContext.jsx";
+import {useParams} from "react-router-dom";
+
 export default function () {
-    return <img id="dancingPeople"src="https://kurera.se/wp-content/uploads/2018/02/livemusik_ar_bra_for_halsan_600-580x402.jpg" alt=""/>
+    const {concerts} = useContext(GlobalContext);
+    const id = useParams().id
+    const concert = concerts.find(c => c.id === parseInt(id))
+
+    if (!concert) return null
+    const {image} = concert
+    return <img id="image-payment" src={image} alt={"picture of artist"}/>
 }

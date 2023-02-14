@@ -1,7 +1,13 @@
-import {useNavigate} from "react-router-dom";
-import {useState} from "react";
+import {useNavigate, useParams} from "react-router-dom";
+import {useContext, useState} from "react";
+import GlobalContext from "../GlobalContext.jsx";
 
 export default function () {
+    const {concerts} = useContext(GlobalContext);
+    const id = useParams().id
+    const concert = concerts.find(c => c.id === parseInt(id))
+
+    if (!concert) return null
     const [name, setName] = useState("")
     const [cardDigits, setCardDigits] = useState("")
     const [expDate, setExpDate] = useState("")
@@ -12,7 +18,8 @@ export default function () {
         if (!name || !cardDigits || !expDate || !cvc) {
             return alert('Card Information cannot be empty!');
         }
-        nav("/verification")
+        nav(`/verification/${id}`)
+
     }
 
     return <form className="date-form" onSubmit={emptyFields}>
