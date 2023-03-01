@@ -12,6 +12,6 @@ export default function () {
     if (!concert) return null
     const {venue} = concert
 
-    return <iframe id="iFrameMaps"src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFTOXrCK1OfYXLRLXdCK70_U9w5rlqXEY&q=${venue}`}></iframe>
+    return <iframe id="iFrameMaps"src={`https://www.google.com/maps/embed/v1/place?q=${venue}`}></iframe>
 
 }
